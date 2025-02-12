@@ -174,3 +174,4 @@ G:\Rerum\AssistenteIA\AssistenteIA.Web\obj\Debug\net8.0\refint\AssistenteIA.Web.
 G:\Rerum\AssistenteIA\AssistenteIA.Web\obj\Debug\net8.0\AssistenteIA.Web.pdb
 G:\Rerum\AssistenteIA\AssistenteIA.Web\obj\Debug\net8.0\AssistenteIA.Web.genruntimeconfig.cache
 G:\Rerum\AssistenteIA\AssistenteIA.Web\obj\Debug\net8.0\ref\AssistenteIA.Web.dll
+G:\Rerum\AssistenteIA\AssistenteIA.Web\obj\Debug\net8.0\AssistenteIA.Web.sourcelink.json

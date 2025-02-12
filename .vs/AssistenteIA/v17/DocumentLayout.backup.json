@@ -3,24 +3,12 @@
   "WorkspaceRootPath": "G:\\Rerum\\AssistenteIA\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{AC78F04A-88AD-4B16-9DFE-0842421D8B19}|AssistenteIA.ApiService\\AssistenteIA.ApiService.csproj|g:\\rerum\\assistenteia\\assistenteia.apiservice\\services\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC78F04A-88AD-4B16-9DFE-0842421D8B19}|AssistenteIA.ApiService\\AssistenteIA.ApiService.csproj|solutionrelative:assistenteia.apiservice\\services\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AC78F04A-88AD-4B16-9DFE-0842421D8B19}|AssistenteIA.ApiService\\AssistenteIA.ApiService.csproj|g:\\rerum\\assistenteia\\assistenteia.apiservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{AC78F04A-88AD-4B16-9DFE-0842421D8B19}|AssistenteIA.ApiService\\AssistenteIA.ApiService.csproj|solutionrelative:assistenteia.apiservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC78F04A-88AD-4B16-9DFE-0842421D8B19}|AssistenteIA.ApiService\\AssistenteIA.ApiService.csproj|g:\\rerum\\assistenteia\\assistenteia.apiservice\\services\\chatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC78F04A-88AD-4B16-9DFE-0842421D8B19}|AssistenteIA.ApiService\\AssistenteIA.ApiService.csproj|solutionrelative:assistenteia.apiservice\\services\\chatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{19CAC2E0-F737-4A0D-AE52-EDFCC577C52B}|AssistenteIA.Tests\\AssistenteIA.Tests.csproj|g:\\rerum\\assistenteia\\assistenteia.tests\\webtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{19CAC2E0-F737-4A0D-AE52-EDFCC577C52B}|AssistenteIA.Tests\\AssistenteIA.Tests.csproj|solutionrelative:assistenteia.tests\\webtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC78F04A-88AD-4B16-9DFE-0842421D8B19}|AssistenteIA.ApiService\\AssistenteIA.ApiService.csproj|g:\\rerum\\assistenteia\\assistenteia.apiservice\\services\\llmservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC78F04A-88AD-4B16-9DFE-0842421D8B19}|AssistenteIA.ApiService\\AssistenteIA.ApiService.csproj|solutionrelative:assistenteia.apiservice\\services\\llmservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC78F04A-88AD-4B16-9DFE-0842421D8B19}|AssistenteIA.ApiService\\AssistenteIA.ApiService.csproj|g:\\rerum\\assistenteia\\assistenteia.apiservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC78F04A-88AD-4B16-9DFE-0842421D8B19}|AssistenteIA.ApiService\\AssistenteIA.ApiService.csproj|solutionrelative:assistenteia.apiservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C2129658-CC94-45E8-A945-97EFABB21EAA}|AssistenteIA.Web\\AssistenteIA.Web.csproj|g:\\rerum\\assistenteia\\assistenteia.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,6 +19,30 @@
       "RelativeMoniker": "D:0:0:{C2129658-CC94-45E8-A945-97EFABB21EAA}|AssistenteIA.Web\\AssistenteIA.Web.csproj|solutionrelative:assistenteia.web\\assistenteiaapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{C2129658-CC94-45E8-A945-97EFABB21EAA}|AssistenteIA.Web\\AssistenteIA.Web.csproj|g:\\rerum\\assistenteia\\assistenteia.web\\components\\pages\\chat.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C2129658-CC94-45E8-A945-97EFABB21EAA}|AssistenteIA.Web\\AssistenteIA.Web.csproj|solutionrelative:assistenteia.web\\components\\pages\\chat.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC78F04A-88AD-4B16-9DFE-0842421D8B19}|AssistenteIA.ApiService\\AssistenteIA.ApiService.csproj|g:\\rerum\\assistenteia\\assistenteia.apiservice\\services\\chatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC78F04A-88AD-4B16-9DFE-0842421D8B19}|AssistenteIA.ApiService\\AssistenteIA.ApiService.csproj|solutionrelative:assistenteia.apiservice\\services\\chatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC78F04A-88AD-4B16-9DFE-0842421D8B19}|AssistenteIA.ApiService\\AssistenteIA.ApiService.csproj|g:\\rerum\\assistenteia\\assistenteia.apiservice\\extensions\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC78F04A-88AD-4B16-9DFE-0842421D8B19}|AssistenteIA.ApiService\\AssistenteIA.ApiService.csproj|solutionrelative:assistenteia.apiservice\\extensions\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC78F04A-88AD-4B16-9DFE-0842421D8B19}|AssistenteIA.ApiService\\AssistenteIA.ApiService.csproj|g:\\rerum\\assistenteia\\assistenteia.apiservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC78F04A-88AD-4B16-9DFE-0842421D8B19}|AssistenteIA.ApiService\\AssistenteIA.ApiService.csproj|solutionrelative:assistenteia.apiservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19CAC2E0-F737-4A0D-AE52-EDFCC577C52B}|AssistenteIA.Tests\\AssistenteIA.Tests.csproj|g:\\rerum\\assistenteia\\assistenteia.tests\\webtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19CAC2E0-F737-4A0D-AE52-EDFCC577C52B}|AssistenteIA.Tests\\AssistenteIA.Tests.csproj|solutionrelative:assistenteia.tests\\webtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC78F04A-88AD-4B16-9DFE-0842421D8B19}|AssistenteIA.ApiService\\AssistenteIA.ApiService.csproj|g:\\rerum\\assistenteia\\assistenteia.apiservice\\services\\llmservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC78F04A-88AD-4B16-9DFE-0842421D8B19}|AssistenteIA.ApiService\\AssistenteIA.ApiService.csproj|solutionrelative:assistenteia.apiservice\\services\\llmservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AC78F04A-88AD-4B16-9DFE-0842421D8B19}|AssistenteIA.ApiService\\AssistenteIA.ApiService.csproj|g:\\rerum\\assistenteia\\assistenteia.apiservice\\models\\dtos\\dadosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC78F04A-88AD-4B16-9DFE-0842421D8B19}|AssistenteIA.ApiService\\AssistenteIA.ApiService.csproj|solutionrelative:assistenteia.apiservice\\models\\dtos\\dadosdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -39,24 +51,12 @@
       "RelativeMoniker": "D:0:0:{AC78F04A-88AD-4B16-9DFE-0842421D8B19}|AssistenteIA.ApiService\\AssistenteIA.ApiService.csproj|solutionrelative:assistenteia.apiservice\\services\\healthcheckservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2129658-CC94-45E8-A945-97EFABB21EAA}|AssistenteIA.Web\\AssistenteIA.Web.csproj|g:\\rerum\\assistenteia\\assistenteia.web\\components\\pages\\chat.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C2129658-CC94-45E8-A945-97EFABB21EAA}|AssistenteIA.Web\\AssistenteIA.Web.csproj|solutionrelative:assistenteia.web\\components\\pages\\chat.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C2129658-CC94-45E8-A945-97EFABB21EAA}|AssistenteIA.Web\\AssistenteIA.Web.csproj|g:\\rerum\\assistenteia\\assistenteia.web\\components\\pages\\chatmarkdown.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C2129658-CC94-45E8-A945-97EFABB21EAA}|AssistenteIA.Web\\AssistenteIA.Web.csproj|solutionrelative:assistenteia.web\\components\\pages\\chatmarkdown.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC78F04A-88AD-4B16-9DFE-0842421D8B19}|AssistenteIA.ApiService\\AssistenteIA.ApiService.csproj|g:\\rerum\\assistenteia\\assistenteia.apiservice\\services\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC78F04A-88AD-4B16-9DFE-0842421D8B19}|AssistenteIA.ApiService\\AssistenteIA.ApiService.csproj|solutionrelative:assistenteia.apiservice\\services\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AC78F04A-88AD-4B16-9DFE-0842421D8B19}|AssistenteIA.ApiService\\AssistenteIA.ApiService.csproj|g:\\rerum\\assistenteia\\assistenteia.apiservice\\models\\dtos\\mensagemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC78F04A-88AD-4B16-9DFE-0842421D8B19}|AssistenteIA.ApiService\\AssistenteIA.ApiService.csproj|solutionrelative:assistenteia.apiservice\\models\\dtos\\mensagemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC78F04A-88AD-4B16-9DFE-0842421D8B19}|AssistenteIA.ApiService\\AssistenteIA.ApiService.csproj|g:\\rerum\\assistenteia\\assistenteia.apiservice\\extensions\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC78F04A-88AD-4B16-9DFE-0842421D8B19}|AssistenteIA.ApiService\\AssistenteIA.ApiService.csproj|solutionrelative:assistenteia.apiservice\\extensions\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AC78F04A-88AD-4B16-9DFE-0842421D8B19}|AssistenteIA.ApiService\\AssistenteIA.ApiService.csproj|g:\\rerum\\assistenteia\\assistenteia.apiservice\\models\\enums\\classificacaoatendimento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -153,60 +153,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "WebTests.cs",
-              "DocumentMoniker": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Tests\\WebTests.cs",
-              "RelativeDocumentMoniker": "AssistenteIA.Tests\\WebTests.cs",
-              "ToolTip": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Tests\\WebTests.cs",
-              "RelativeToolTip": "AssistenteIA.Tests\\WebTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T17:12:35.187Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "G:\\Rerum\\AssistenteIA\\AssistenteIA.ApiService\\Program.cs",
               "RelativeDocumentMoniker": "AssistenteIA.ApiService\\Program.cs",
               "ToolTip": "G:\\Rerum\\AssistenteIA\\AssistenteIA.ApiService\\Program.cs",
               "RelativeToolTip": "AssistenteIA.ApiService\\Program.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAADAAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB4AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-05T14:19:40.661Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "HealthCheckService.cs",
-              "DocumentMoniker": "G:\\Rerum\\AssistenteIA\\AssistenteIA.ApiService\\Services\\HealthCheckService.cs",
-              "RelativeDocumentMoniker": "AssistenteIA.ApiService\\Services\\HealthCheckService.cs",
-              "ToolTip": "G:\\Rerum\\AssistenteIA\\AssistenteIA.ApiService\\Services\\HealthCheckService.cs",
-              "RelativeToolTip": "AssistenteIA.ApiService\\Services\\HealthCheckService.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAiwB8AAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T14:06:12.844Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 4,
               "Title": "Chat.razor",
               "DocumentMoniker": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\Components\\Pages\\Chat.razor",
               "RelativeDocumentMoniker": "AssistenteIA.Web\\Components\\Pages\\Chat.razor",
               "ToolTip": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\Components\\Pages\\Chat.razor",
               "RelativeToolTip": "AssistenteIA.Web\\Components\\Pages\\Chat.razor",
-              "ViewState": "AgIAAFsAAAAAAAAAAAAMwHEAAAA+AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-06T10:13:12.175Z"
+              "WhenOpened": "2025-02-06T10:13:12.175Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "MensagemDTO.cs",
               "DocumentMoniker": "G:\\Rerum\\AssistenteIA\\AssistenteIA.ApiService\\Models\\DTOs\\MensagemDTO.cs",
               "RelativeDocumentMoniker": "AssistenteIA.ApiService\\Models\\DTOs\\MensagemDTO.cs",
@@ -218,7 +194,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "ChatMarkdown.razor",
               "DocumentMoniker": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\Components\\Pages\\ChatMarkdown.razor",
               "RelativeDocumentMoniker": "AssistenteIA.Web\\Components\\Pages\\ChatMarkdown.razor",
@@ -230,7 +206,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "DadosDTO.cs",
               "DocumentMoniker": "G:\\Rerum\\AssistenteIA\\AssistenteIA.ApiService\\Models\\DTOs\\DadosDTO.cs",
               "RelativeDocumentMoniker": "AssistenteIA.ApiService\\Models\\DTOs\\DadosDTO.cs",
@@ -242,32 +218,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "ChatService.cs",
               "DocumentMoniker": "G:\\Rerum\\AssistenteIA\\AssistenteIA.ApiService\\Services\\ChatService.cs",
               "RelativeDocumentMoniker": "AssistenteIA.ApiService\\Services\\ChatService.cs",
               "ToolTip": "G:\\Rerum\\AssistenteIA\\AssistenteIA.ApiService\\Services\\ChatService.cs",
               "RelativeToolTip": "AssistenteIA.ApiService\\Services\\ChatService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAqwA8AAABbAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAiwA8AAABkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-11T16:41:35.17Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 0,
               "Title": "DatabaseService.cs",
               "DocumentMoniker": "G:\\Rerum\\AssistenteIA\\AssistenteIA.ApiService\\Services\\DatabaseService.cs",
               "RelativeDocumentMoniker": "AssistenteIA.ApiService\\Services\\DatabaseService.cs",
               "ToolTip": "G:\\Rerum\\AssistenteIA\\AssistenteIA.ApiService\\Services\\DatabaseService.cs",
               "RelativeToolTip": "AssistenteIA.ApiService\\Services\\DatabaseService.cs",
-              "ViewState": "AgIAAGwAAAAAAAAAAAAowIAAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAKkAAAAAAAAAAAAqwLkAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T14:00:36.874Z"
+              "WhenOpened": "2025-02-11T14:00:36.874Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "LLMService.cs",
               "DocumentMoniker": "G:\\Rerum\\AssistenteIA\\AssistenteIA.ApiService\\Services\\LLMService.cs",
               "RelativeDocumentMoniker": "AssistenteIA.ApiService\\Services\\LLMService.cs",
@@ -275,57 +252,82 @@
               "RelativeToolTip": "AssistenteIA.ApiService\\Services\\LLMService.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAiwDAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T14:06:48.008Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-05T14:06:48.008Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "appsettings.json",
               "DocumentMoniker": "G:\\Rerum\\AssistenteIA\\AssistenteIA.ApiService\\appsettings.json",
               "RelativeDocumentMoniker": "AssistenteIA.ApiService\\appsettings.json",
               "ToolTip": "G:\\Rerum\\AssistenteIA\\AssistenteIA.ApiService\\appsettings.json",
               "RelativeToolTip": "AssistenteIA.ApiService\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-02-05T14:08:36.41Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 6,
               "Title": "ServiceExtensions.cs",
               "DocumentMoniker": "G:\\Rerum\\AssistenteIA\\AssistenteIA.ApiService\\Extensions\\ServiceExtensions.cs",
               "RelativeDocumentMoniker": "AssistenteIA.ApiService\\Extensions\\ServiceExtensions.cs",
               "ToolTip": "G:\\Rerum\\AssistenteIA\\AssistenteIA.ApiService\\Extensions\\ServiceExtensions.cs",
               "RelativeToolTip": "AssistenteIA.ApiService\\Extensions\\ServiceExtensions.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAqwBgAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwA4AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-05T14:30:16.203Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
+              "Title": "HealthCheckService.cs",
+              "DocumentMoniker": "G:\\Rerum\\AssistenteIA\\AssistenteIA.ApiService\\Services\\HealthCheckService.cs",
+              "RelativeDocumentMoniker": "AssistenteIA.ApiService\\Services\\HealthCheckService.cs",
+              "ToolTip": "G:\\Rerum\\AssistenteIA\\AssistenteIA.ApiService\\Services\\HealthCheckService.cs",
+              "RelativeToolTip": "AssistenteIA.ApiService\\Services\\HealthCheckService.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAiwB8AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T14:06:12.844Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\Program.cs",
               "RelativeDocumentMoniker": "AssistenteIA.Web\\Program.cs",
               "ToolTip": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\Program.cs",
               "RelativeToolTip": "AssistenteIA.Web\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T10:04:04.562Z"
+              "WhenOpened": "2025-02-06T10:04:04.562Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "AssistenteIAApiClient.cs",
               "DocumentMoniker": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\AssistenteIAApiClient.cs",
               "RelativeDocumentMoniker": "AssistenteIA.Web\\AssistenteIAApiClient.cs",
               "ToolTip": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\AssistenteIAApiClient.cs",
               "RelativeToolTip": "AssistenteIA.Web\\AssistenteIAApiClient.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T10:05:13.157Z"
+              "WhenOpened": "2025-02-06T10:05:13.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "WebTests.cs",
+              "DocumentMoniker": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Tests\\WebTests.cs",
+              "RelativeDocumentMoniker": "AssistenteIA.Tests\\WebTests.cs",
+              "ToolTip": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Tests\\WebTests.cs",
+              "RelativeToolTip": "AssistenteIA.Tests\\WebTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T17:12:35.187Z"
             },
             {
               "$type": "Document",
@@ -347,7 +349,7 @@
               "RelativeDocumentMoniker": "Servico1\\Program.cs",
               "ToolTip": "G:\\Rerum\\AssistenteIA\\Servico1\\Program.cs",
               "RelativeToolTip": "Servico1\\Program.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAIBJwCEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-11T14:17:49.598Z"
             },
@@ -479,7 +481,7 @@
               "RelativeDocumentMoniker": "AssistenteIA.ApiService\\AssistenteIA.ApiService.csproj",
               "ToolTip": "G:\\Rerum\\AssistenteIA\\AssistenteIA.ApiService\\AssistenteIA.ApiService.csproj",
               "RelativeToolTip": "AssistenteIA.ApiService\\AssistenteIA.ApiService.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-02-05T14:00:37.047Z"
             },
@@ -551,7 +553,7 @@
               "RelativeDocumentMoniker": "AssistenteIA.Web\\Components\\Pages\\Chat.razor.css",
               "ToolTip": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\Components\\Pages\\Chat.razor.css",
               "RelativeToolTip": "AssistenteIA.Web\\Components\\Pages\\Chat.razor.css",
-              "ViewState": "AgIAAAkAAAAAAAAAACBjwCYAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAIBpwCYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-02-06T10:57:34.284Z"
             },

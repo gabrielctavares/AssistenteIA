@@ -402,3 +402,5 @@ G:\Rerum\AssistenteIA\AssistenteIA.ApiService\obj\Debug\net8.0\refint\Assistente
 G:\Rerum\AssistenteIA\AssistenteIA.ApiService\obj\Debug\net8.0\AssistenteIA.ApiService.pdb
 G:\Rerum\AssistenteIA\AssistenteIA.ApiService\obj\Debug\net8.0\AssistenteIA.ApiService.genruntimeconfig.cache
 G:\Rerum\AssistenteIA\AssistenteIA.ApiService\obj\Debug\net8.0\ref\AssistenteIA.ApiService.dll
+G:\Rerum\AssistenteIA\AssistenteIA.ApiService\obj\Debug\net8.0\AssistenteIA.ApiService.sourcelink.json
+G:\Rerum\AssistenteIA\AssistenteIA.ApiService\bin\Debug\net8.0\Npgsql.dll

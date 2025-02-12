@@ -15,6 +15,7 @@
           "Azure.AI.OpenAI": "2.1.0",
           "Microsoft.Data.SqlClient": "6.0.1",
           "Microsoft.Extensions.AI.OpenAI": "9.1.0-preview.1.25064.3",
+          "Npgsql": "9.0.2",
           "OllamaSharp": "5.0.6",
           "OpenAI": "2.1.0"
         },
@@ -1138,6 +1139,17 @@
           }
         }
       },
+      "Npgsql/9.0.2": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.2"
+        },
+        "runtime": {
+          "lib/net8.0/Npgsql.dll": {
+            "assemblyVersion": "9.0.2.0",
+            "fileVersion": "9.0.2.0"
+          }
+        }
+      },
       "OllamaSharp/5.0.6": {
         "dependencies": {
           "Microsoft.Bcl.AsyncInterfaces": "9.0.0",
@@ -2058,6 +2070,13 @@
       "sha512": "sha512-KZYeKBET/2Z0gY1WlTAK7+RHTl7GSbtvTLDXEZZojUdAPqpQNDL6tHv7VUpqfX5VEOh+uRGKaZXkuD253nEOBQ==",
       "path": "mono.texttemplating/2.2.1",
       "hashPath": "mono.texttemplating.2.2.1.nupkg.sha512"
+    },
+    "Npgsql/9.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hCbO8box7i/XXiTFqCJ3GoowyLqx3JXxyrbOJ6om7dr+eAknvBNhhUHeJVGAQo44sySZTfdVffp4BrtPeLZOAA==",
+      "path": "npgsql/9.0.2",
+      "hashPath": "npgsql.9.0.2.nupkg.sha512"
     },
     "OllamaSharp/5.0.6": {
       "type": "package",

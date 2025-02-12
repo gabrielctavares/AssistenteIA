@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AssistenteIA.ApiService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+22a0bb34c08a3552d3c3d0d43c5fca1e193e2460")]
 [assembly: System.Reflection.AssemblyProductAttribute("AssistenteIA.ApiService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AssistenteIA.ApiService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

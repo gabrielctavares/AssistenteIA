@@ -6,7 +6,6 @@ public class AssistenteIAApiClient(HttpClient httpClient)
 {
     public async Task<DadosDTO> PostMessage(string chat, CancellationToken cancellationToken = default)
     {
-
         var response = await httpClient.PostAsJsonAsync("/chat", new ChatMessage(chat), cancellationToken);
         response.EnsureSuccessStatusCode();
         return (await response.Content.ReadFromJsonAsync<DadosDTO>(cancellationToken))!;
