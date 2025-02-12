@@ -1,3 +1,5 @@
 .vs/
-**/[bB]in/
-**/[oO]bj/
+**/bin/
+**/obj/
+**/Bin/
+**/Obj/

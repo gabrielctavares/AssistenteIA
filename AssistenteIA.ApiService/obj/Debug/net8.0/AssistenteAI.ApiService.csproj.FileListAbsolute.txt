@@ -1,6 +1,0 @@
-G:\Rerun\SQL-Helper\SQL-Helper.ApiService\obj\Debug\net8.0\AssistenteAI.ApiService.csproj.AssemblyReference.cache
-G:\Rerun\SQL-Helper\SQL-Helper.ApiService\obj\Debug\net8.0\AssistenteAI.ApiService.GeneratedMSBuildEditorConfig.editorconfig
-G:\Rerun\SQL-Helper\SQL-Helper.ApiService\obj\Debug\net8.0\AssistenteAI.ApiService.AssemblyInfoInputs.cache
-G:\Rerun\SQL-Helper\SQL-Helper.ApiService\obj\Debug\net8.0\AssistenteAI.ApiService.AssemblyInfo.cs
-G:\Rerun\SQL-Helper\SQL-Helper.ApiService\obj\Debug\net8.0\AssistenteAI.ApiService.csproj.CoreCompileInputs.cache
-G:\Rerun\SQL-Helper\SQL-Helper.ApiService\obj\Debug\net8.0\AssistenteAI.ApiService.MvcApplicationPartsAssemblyInfo.cache
