@@ -1,0 +1,6 @@
+@Servico1_HostAddress = http://localhost:5135
+
+GET {{Servico1_HostAddress}}/home/
+Accept: application/json
+
+###

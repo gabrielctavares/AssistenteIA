@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\SQL-Helper.ApiService.props" />
+</Project>

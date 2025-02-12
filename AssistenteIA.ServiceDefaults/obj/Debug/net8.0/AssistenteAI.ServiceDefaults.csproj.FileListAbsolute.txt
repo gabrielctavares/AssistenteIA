@@ -1,0 +1,12 @@
+G:\Rerun\SQL-Helper\SQL-Helper.ServiceDefaults\bin\Debug\net8.0\AssistenteAI.ServiceDefaults.deps.json
+G:\Rerun\SQL-Helper\SQL-Helper.ServiceDefaults\bin\Debug\net8.0\AssistenteAI.ServiceDefaults.dll
+G:\Rerun\SQL-Helper\SQL-Helper.ServiceDefaults\bin\Debug\net8.0\AssistenteAI.ServiceDefaults.pdb
+G:\Rerun\SQL-Helper\SQL-Helper.ServiceDefaults\obj\Debug\net8.0\AssistenteAI.ServiceDefaults.csproj.AssemblyReference.cache
+G:\Rerun\SQL-Helper\SQL-Helper.ServiceDefaults\obj\Debug\net8.0\AssistenteAI.ServiceDefaults.GeneratedMSBuildEditorConfig.editorconfig
+G:\Rerun\SQL-Helper\SQL-Helper.ServiceDefaults\obj\Debug\net8.0\AssistenteAI.ServiceDefaults.AssemblyInfoInputs.cache
+G:\Rerun\SQL-Helper\SQL-Helper.ServiceDefaults\obj\Debug\net8.0\AssistenteAI.ServiceDefaults.AssemblyInfo.cs
+G:\Rerun\SQL-Helper\SQL-Helper.ServiceDefaults\obj\Debug\net8.0\AssistenteAI.ServiceDefaults.csproj.CoreCompileInputs.cache
+G:\Rerun\SQL-Helper\SQL-Helper.ServiceDefaults\obj\Debug\net8.0\AssistenteAI.ServiceDefaults.dll
+G:\Rerun\SQL-Helper\SQL-Helper.ServiceDefaults\obj\Debug\net8.0\refint\AssistenteAI.ServiceDefaults.dll
+G:\Rerun\SQL-Helper\SQL-Helper.ServiceDefaults\obj\Debug\net8.0\AssistenteAI.ServiceDefaults.pdb
+G:\Rerun\SQL-Helper\SQL-Helper.ServiceDefaults\obj\Debug\net8.0\ref\AssistenteAI.ServiceDefaults.dll

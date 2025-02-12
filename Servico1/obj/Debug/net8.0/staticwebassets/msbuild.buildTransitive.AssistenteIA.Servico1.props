@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\AssistenteIA.Servico1.props" />
+</Project>

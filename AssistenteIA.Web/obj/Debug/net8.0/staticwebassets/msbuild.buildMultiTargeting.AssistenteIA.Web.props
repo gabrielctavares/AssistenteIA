@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\AssistenteIA.Web.props" />
+</Project>

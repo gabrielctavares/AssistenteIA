@@ -1,0 +1,203 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "G:\\Rerun\\SQL-Helper\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AC78F04A-88AD-4B16-9DFE-0842421D8B19}|SQL-Helper.ApiService\\SQL-Helper.ApiService.csproj|g:\\rerun\\sql-helper\\sql-helper.apiservice\\models\\aiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC78F04A-88AD-4B16-9DFE-0842421D8B19}|SQL-Helper.ApiService\\SQL-Helper.ApiService.csproj|solutionrelative:sql-helper.apiservice\\models\\aiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC78F04A-88AD-4B16-9DFE-0842421D8B19}|SQL-Helper.ApiService\\AssistenteAI.ApiService.csproj|g:\\rerun\\sql-helper\\sql-helper.apiservice\\assistenteai.apiservice.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{AC78F04A-88AD-4B16-9DFE-0842421D8B19}|SQL-Helper.ApiService\\AssistenteAI.ApiService.csproj|solutionrelative:sql-helper.apiservice\\assistenteai.apiservice.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC78F04A-88AD-4B16-9DFE-0842421D8B19}|SQL-Helper.ApiService\\SQL-Helper.ApiService.csproj|g:\\rerun\\sql-helper\\sql-helper.apiservice\\services\\llmservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC78F04A-88AD-4B16-9DFE-0842421D8B19}|SQL-Helper.ApiService\\SQL-Helper.ApiService.csproj|solutionrelative:sql-helper.apiservice\\services\\llmservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC78F04A-88AD-4B16-9DFE-0842421D8B19}|SQL-Helper.ApiService\\SQL-Helper.ApiService.csproj|g:\\rerun\\sql-helper\\sql-helper.apiservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AC78F04A-88AD-4B16-9DFE-0842421D8B19}|SQL-Helper.ApiService\\SQL-Helper.ApiService.csproj|solutionrelative:sql-helper.apiservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC78F04A-88AD-4B16-9DFE-0842421D8B19}|SQL-Helper.ApiService\\SQL-Helper.ApiService.csproj|g:\\rerun\\sql-helper\\sql-helper.apiservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC78F04A-88AD-4B16-9DFE-0842421D8B19}|SQL-Helper.ApiService\\SQL-Helper.ApiService.csproj|solutionrelative:sql-helper.apiservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2129658-CC94-45E8-A945-97EFABB21EAA}|SQL-Helper.Web\\SQL-Helper.Web.csproj|g:\\rerun\\sql-helper\\sql-helper.web\\components\\pages\\chat.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C2129658-CC94-45E8-A945-97EFABB21EAA}|SQL-Helper.Web\\SQL-Helper.Web.csproj|solutionrelative:sql-helper.web\\components\\pages\\chat.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC78F04A-88AD-4B16-9DFE-0842421D8B19}|SQL-Helper.ApiService\\SQL-Helper.ApiService.csproj|g:\\rerun\\sql-helper\\sql-helper.apiservice\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AC78F04A-88AD-4B16-9DFE-0842421D8B19}|SQL-Helper.ApiService\\SQL-Helper.ApiService.csproj|solutionrelative:sql-helper.apiservice\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\9.0.102\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2129658-CC94-45E8-A945-97EFABB21EAA}|SQL-Helper.Web\\SQL-Helper.Web.csproj|g:\\rerun\\sql-helper\\sql-helper.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2129658-CC94-45E8-A945-97EFABB21EAA}|SQL-Helper.Web\\SQL-Helper.Web.csproj|solutionrelative:sql-helper.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2129658-CC94-45E8-A945-97EFABB21EAA}|SQL-Helper.Web\\SQL-Helper.Web.csproj|g:\\rerun\\sql-helper\\sql-helper.web\\weatherapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2129658-CC94-45E8-A945-97EFABB21EAA}|SQL-Helper.Web\\SQL-Helper.Web.csproj|solutionrelative:sql-helper.web\\weatherapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC78F04A-88AD-4B16-9DFE-0842421D8B19}|SQL-Helper.ApiService\\AssistenteAI.ApiService.csproj|g:\\rerun\\sql-helper\\sql-helper.apiservice\\assistenteai.apiservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{AC78F04A-88AD-4B16-9DFE-0842421D8B19}|SQL-Helper.ApiService\\AssistenteAI.ApiService.csproj|solutionrelative:sql-helper.apiservice\\assistenteai.apiservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SQL-Helper.ApiService",
+              "DocumentMoniker": "G:\\Rerun\\SQL-Helper\\SQL-Helper.ApiService\\AssistenteAI.ApiService.csproj",
+              "RelativeDocumentMoniker": "SQL-Helper.ApiService\\AssistenteAI.ApiService.csproj",
+              "ToolTip": "G:\\Rerun\\SQL-Helper\\SQL-Helper.ApiService\\AssistenteAI.ApiService.csproj",
+              "RelativeToolTip": "SQL-Helper.ApiService\\AssistenteAI.ApiService.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-05T13:51:48.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AIConfig.cs",
+              "DocumentMoniker": "G:\\Rerun\\SQL-Helper\\SQL-Helper.ApiService\\Models\\AIConfig.cs",
+              "RelativeDocumentMoniker": "SQL-Helper.ApiService\\Models\\AIConfig.cs",
+              "ToolTip": "G:\\Rerun\\SQL-Helper\\SQL-Helper.ApiService\\Models\\AIConfig.cs",
+              "RelativeToolTip": "SQL-Helper.ApiService\\Models\\AIConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T13:49:58.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "G:\\Rerun\\SQL-Helper\\SQL-Helper.ApiService\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "SQL-Helper.ApiService\\appsettings.Development.json",
+              "ToolTip": "G:\\Rerun\\SQL-Helper\\SQL-Helper.ApiService\\appsettings.Development.json",
+              "RelativeToolTip": "SQL-Helper.ApiService\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-04T18:54:26.856Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "chat.razor",
+              "DocumentMoniker": "G:\\Rerun\\SQL-Helper\\SQL-Helper.Web\\Components\\Pages\\chat.razor",
+              "RelativeDocumentMoniker": "SQL-Helper.Web\\Components\\Pages\\chat.razor",
+              "ToolTip": "G:\\Rerun\\SQL-Helper\\SQL-Helper.Web\\Components\\Pages\\chat.razor",
+              "RelativeToolTip": "SQL-Helper.Web\\Components\\Pages\\chat.razor",
+              "ViewState": "AgIAADAAAAAAAAAAAAASwEQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-04T17:26:37.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Microsoft.PackageDependencyResolution.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.102\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\9.0.102\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "ViewState": "AgIAAPQAAAAAAAAAAAAjwAkBAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-02-03T14:21:48.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "G:\\Rerun\\SQL-Helper\\SQL-Helper.ApiService\\appsettings.json",
+              "RelativeDocumentMoniker": "SQL-Helper.ApiService\\appsettings.json",
+              "ToolTip": "G:\\Rerun\\SQL-Helper\\SQL-Helper.ApiService\\appsettings.json",
+              "RelativeToolTip": "SQL-Helper.ApiService\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-03T14:16:58.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "G:\\Rerun\\SQL-Helper\\SQL-Helper.Web\\Program.cs",
+              "RelativeDocumentMoniker": "SQL-Helper.Web\\Program.cs",
+              "ToolTip": "G:\\Rerun\\SQL-Helper\\SQL-Helper.Web\\Program.cs",
+              "RelativeToolTip": "SQL-Helper.Web\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBZwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T14:16:43.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "G:\\Rerun\\SQL-Helper\\SQL-Helper.ApiService\\Program.cs",
+              "RelativeDocumentMoniker": "SQL-Helper.ApiService\\Program.cs",
+              "ToolTip": "G:\\Rerun\\SQL-Helper\\SQL-Helper.ApiService\\Program.cs",
+              "RelativeToolTip": "SQL-Helper.ApiService\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T14:16:29.873Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LLMService.cs",
+              "DocumentMoniker": "G:\\Rerun\\SQL-Helper\\SQL-Helper.ApiService\\Services\\LLMService.cs",
+              "RelativeDocumentMoniker": "SQL-Helper.ApiService\\Services\\LLMService.cs",
+              "ToolTip": "G:\\Rerun\\SQL-Helper\\SQL-Helper.ApiService\\Services\\LLMService.cs",
+              "RelativeToolTip": "SQL-Helper.ApiService\\Services\\LLMService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T14:13:07.413Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "WeatherApiClient.cs",
+              "DocumentMoniker": "G:\\Rerun\\SQL-Helper\\SQL-Helper.Web\\WeatherApiClient.cs",
+              "RelativeDocumentMoniker": "SQL-Helper.Web\\WeatherApiClient.cs",
+              "ToolTip": "G:\\Rerun\\SQL-Helper\\SQL-Helper.Web\\WeatherApiClient.cs",
+              "RelativeToolTip": "SQL-Helper.Web\\WeatherApiClient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T14:16:37.895Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SQL-Helper.ApiService.csproj",
+              "DocumentMoniker": "G:\\Rerun\\SQL-Helper\\SQL-Helper.ApiService\\AssistenteAI.ApiService.csproj",
+              "RelativeDocumentMoniker": "SQL-Helper.ApiService\\AssistenteAI.ApiService.csproj",
+              "ToolTip": "G:\\Rerun\\SQL-Helper\\SQL-Helper.ApiService\\AssistenteAI.ApiService.csproj",
+              "RelativeToolTip": "SQL-Helper.ApiService\\AssistenteAI.ApiService.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-03T14:16:28.497Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
