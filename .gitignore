@@ -1,4 +1,22 @@
 /.vs
 
-/*/bin
-/*/obj
+/AssistenteIA.ApiService/bin
+/AssistenteIA.ApiService/obj
+
+/AssistenteIA.AppHost/bin
+/AssistenteIA.AppHost/obj
+
+/AssistenteIA.ServiceDefaults/bin
+/AssistenteIA.ServiceDefaults/obj
+
+/AssistenteIA.Servico2/bin
+/AssistenteIA.Servico2/obj
+
+/AssistenteIA.Tests/bin
+/AssistenteIA.Tests/obj
+
+/AssistenteIA.Web/bin
+/AssistenteIA.Web/obj
+
+/Servico1/bin
+/Servico1/obj
