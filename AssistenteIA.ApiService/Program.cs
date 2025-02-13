@@ -27,6 +27,8 @@ builder.Services.AddHealthChecksUI(options =>
 
 
 
+// Configurando os repositórios aqui.
+builder.Services.ConfigureRepositories();
 // Configurando o serviço de LLM Aqui.
 builder.Services.ConfigureServices(builder.Configuration);
 

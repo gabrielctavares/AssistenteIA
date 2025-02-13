@@ -1,17 +1,23 @@
-﻿using System.ClientModel;
-using Microsoft.Extensions.AI;
+﻿using Microsoft.Extensions.AI;
 using AssistenteIA.ApiService.Models;
 using AssistenteIA.ApiService.Services;
+using AssistenteIA.ApiService.Repositories;
 
+using System.ClientModel;
 using OpenAI;
-using OllamaSharp;
-using Azure.AI.OpenAI;
+using Azure.AI.Inference;
 
 
 namespace AssistenteIA.ApiService.Extensions;
 
 public static class ServiceExtensions
 {
+    public static IServiceCollection ConfigureRepositories(this IServiceCollection services)
+    {
+        services.AddScoped<QueryRepository>();
+        services.AddScoped<MetadataRepository>();
+        return services;
+    }
     public static IServiceCollection ConfigureServices(this IServiceCollection services, IConfiguration configuration)
     {
         services.AddScoped<IChatClient>(sp =>
@@ -60,18 +66,17 @@ public static class ServiceExtensions
         }
     }
 
-    private static OllamaApiClient CriarChatOllama(OllamaConfig ollamaConfig) {
-        return new OllamaApiClient(
-            new HttpClient
-            {
-                BaseAddress = new Uri(ollamaConfig.Uri),
-                Timeout = TimeSpan.FromMinutes(5) // Limite alto por demora na resposta
-            }, 
-            ollamaConfig.Model
-        );
+    private static OllamaChatClient CriarChatOllama(OllamaConfig ollamaConfig) {
+        var httpClient = new HttpClient
+        {
+            BaseAddress = new Uri(ollamaConfig.Uri),
+            Timeout = TimeSpan.FromMinutes(5) // Limite alto por demora na resposta
+        };
+
+        return new OllamaChatClient(new Uri(ollamaConfig.Uri), ollamaConfig.Model, httpClient);        
     }
 
-    private static IChatClient CriarChatOpenAI(OpenAIConfig openAIConfig) {
+    private static OpenAIChatClient CriarChatOpenAI(OpenAIConfig openAIConfig) {
         ApiKeyCredential key = new(openAIConfig.ApiKey);
 
         OpenAIClientOptions options = new();
@@ -80,13 +85,13 @@ public static class ServiceExtensions
         if (!string.IsNullOrEmpty(openAIConfig.Uri)) 
             options.Endpoint = new Uri(openAIConfig.Uri);
 
-        return new OpenAIClient(key, options).AsChatClient(openAIConfig.Model);
+        var client = new OpenAIClient(key, options); 
+        return new OpenAIChatClient(client, openAIConfig.Model);
 
     }
-    private static IChatClient CriarChatAzure(AzureConfig azureConfig) {
-        AzureOpenAIClient azureClient = new(new Uri(azureConfig.Uri), new ApiKeyCredential(azureConfig.ApiKey));
-
-        return azureClient.GetChatClient(azureConfig.DeploymentName).AsChatClient();
+    private static AzureAIInferenceChatClient CriarChatAzure(AzureConfig azureConfig) {
+        ChatCompletionsClient azureClient = new(new Uri(azureConfig.Uri), new Azure.AzureKeyCredential(azureConfig.ApiKey));
+        return new AzureAIInferenceChatClient(azureClient, azureConfig.DeploymentName);
     }
 
 }

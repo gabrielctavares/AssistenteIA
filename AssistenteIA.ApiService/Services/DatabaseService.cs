@@ -1,17 +1,12 @@
 ﻿using AssistenteIA.ApiService.Models.DTOs;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using Npgsql;
-using System.Data;
+using AssistenteIA.ApiService.Repositories;
 using System.Text;
 using System.Text.Json;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace AssistenteIA.ApiService.Services;
 
-public class DatabaseService(LLMService service, IConfiguration configuration, ILogger<DatabaseService> logger)
+public class DatabaseService(LLMService service, MetadataRepository metadataRepository, QueryRepository queryRepository,  ILogger<DatabaseService> logger)
 {
-    private readonly string _connectionString = configuration.GetConnectionString("DefaultConnection");
 
     public async Task<DadosDTO> ConsultarDados(string pergunta)
     {
@@ -29,8 +24,13 @@ public class DatabaseService(LLMService service, IConfiguration configuration, I
             {
                 VerificaSQLSeguro(respostaIA.SQL);
 
-                var dados = await ObterDados(respostaIA.SQL);
-                return new DadosDTO(respostaIA.Mensagem + $"<br> ***Debug:*** \n ```sql\n{respostaIA.SQL}\n```", dados);
+                var dados = await queryRepository.ObterDados(respostaIA.SQL);
+
+
+                //TEMPORÁRIO: Adiciona o SQL gerado para debug
+                var mensagemDebug = $"<br> ***Debug:*** \n ```sql\n{respostaIA.SQL}\n```";
+
+                return new DadosDTO(respostaIA.Mensagem + mensagemDebug, dados);
             }
 
             return new DadosDTO(respostaIA.Mensagem, []);
@@ -46,7 +46,7 @@ public class DatabaseService(LLMService service, IConfiguration configuration, I
     {
         StringBuilder promptBuilder = new();
 
-        var schema = await ObterSchema();
+        var schema = await FormatarSchema();
 
         promptBuilder.AppendLine("Você é um assistente especializado em SQL. Converta a pergunta em uma consulta SQL segura.");
         promptBuilder.AppendLine();
@@ -73,154 +73,50 @@ public class DatabaseService(LLMService service, IConfiguration configuration, I
     }
 
 
-    private async Task<string> ObterSchema()
+    private async Task<string> FormatarSchema()
     {
-        var schemaBuilder = new StringBuilder();
+        StringBuilder schemaBuilder = new();
+        var metadata = await metadataRepository.ObterMetadata();
 
-        try
+        foreach (var tabela in metadata)
         {
-            await using var connection = new NpgsqlConnection(_connectionString);
-            await connection.OpenAsync();
+            schemaBuilder.AppendLine($"Tabela: {tabela.Tabela}");
 
-            var tableNames = new List<string>();
-            string tableQuery = @"SELECT table_name  
-                                  FROM information_schema.tables 
-                                  WHERE table_schema = 'public' AND table_type = 'BASE TABLE';";
-
-            await using var tableCmd = new NpgsqlCommand(tableQuery, connection);
-            await using var reader = await tableCmd.ExecuteReaderAsync();            
-            while (await reader.ReadAsync())
-                tableNames.Add(reader.GetString(0));
-            
-
-            foreach (var tableName in tableNames)
+            foreach (var campo in tabela.Campos)
             {
-                schemaBuilder.Append(FormatarTabela(tableName, connection));
+                if (!string.IsNullOrWhiteSpace(campo.Descricao))
+                    schemaBuilder.AppendLine($"  - {campo.Nome} ({campo.Tipo}) - {campo.Descricao}");
+                else
+                    schemaBuilder.AppendLine($"  - {campo.Nome} ({campo.Tipo})");
             }
 
-            return schemaBuilder.ToString();
-        }
-        catch (Exception e)
-        {
-            logger.LogError(e, "Erro ao obter esquema do banco de dados.");
-            throw;
-        }
-    }
 
-    private async Task<string> FormatarTabela(string tabela, NpgsqlConnection connection)
-    {
-        var tableBuilder = new StringBuilder();
-        tableBuilder.AppendLine($"Tabela: {tabela}");        
-        tableBuilder.AppendLine(await FormatarColunas(tabela, connection));
-        tableBuilder.AppendLine(await FormatarPrimaryKeys(tabela, connection));
-        tableBuilder.AppendLine(await FormatarForeignKeys(tabela, connection));
-        return tableBuilder.ToString();
-    }
-
-    private async Task<string> FormatarColunas(string tabela, NpgsqlConnection connection)
-    {
-        var columnBuilder = new StringBuilder();
-
-        string columnQuery = @"
-                SELECT 
-                    c.column_name, 
-                    c.data_type, 
-                    pgd.description AS column_comment
-                FROM information_schema.columns c
-                LEFT JOIN pg_catalog.pg_statio_all_tables st 
-                    ON c.table_schema = st.schemaname AND c.table_name = st.relname
-                LEFT JOIN pg_catalog.pg_description pgd 
-                    ON pgd.objoid = st.relid AND pgd.objsubid = c.ordinal_position
-                WHERE c.table_schema = 'public' AND c.table_name = @tableName;
-            ";
-
-        await using var colCmd = new NpgsqlCommand(columnQuery, connection);
-        colCmd.Parameters.AddWithValue("tableName", tabela);
-        await using var colReader = await colCmd.ExecuteReaderAsync();
-
-        while (await colReader.ReadAsync())
-        {
-            string columnName = colReader.GetString(0);
-            string dataType = colReader.GetString(1);
-            string columnComment = colReader.IsDBNull(2) ? "" : colReader.GetString(2);
-
-            if (!string.IsNullOrWhiteSpace(columnComment))
-                columnBuilder.AppendLine($"  - {columnName} ({dataType}) - {columnComment}");
-            else
-                columnBuilder.AppendLine($"  - {columnName} ({dataType})");
-        }
-
-        return columnBuilder.ToString();
-    }
-
-    private async Task<string> FormatarPrimaryKeys(string tabela, NpgsqlConnection connection)
-    {
-        var pkBuilder = new StringBuilder();
-
-        string pkQuery = @"
-                SELECT kcu.column_name
-                FROM information_schema.table_constraints tc
-                JOIN information_schema.key_column_usage kcu
-                  ON tc.constraint_name = kcu.constraint_name
-                 AND tc.table_schema = kcu.table_schema
-                WHERE tc.constraint_type = 'PRIMARY KEY'
-                  AND tc.table_name = @tableName;
-            ";
-
-        await using var pkCmd = new NpgsqlCommand(pkQuery, connection);
-        pkCmd.Parameters.AddWithValue("tableName", tabela);
-        await using var pkReader = await pkCmd.ExecuteReaderAsync();
-        if (pkReader.HasRows)
-        {
-            pkBuilder.AppendLine("  >> Primary Key(s):");
-            while (await pkReader.ReadAsync())
+            if (tabela.PrimaryKeys.Count != 0)
             {
-                string pkColumn = pkReader.GetString(0);
-                pkBuilder.AppendLine($"    - {pkColumn}");
+                schemaBuilder.AppendLine("  >> Primary Key(s):");
+                schemaBuilder.AppendLine(string.Join(Environment.NewLine, tabela.PrimaryKeys.Select(pk => $"    - {pk}")));
             }
-        }
 
-        return pkBuilder.ToString();
-    }
-
-    private async Task<string> FormatarForeignKeys(string tabela, NpgsqlConnection connection)
-    {
-        var pkBuilder = new StringBuilder();
-
-        string fkQuery = @"
-                SELECT 
-                    kcu.column_name, 
-                    ccu.table_name AS foreign_table_name, 
-                    ccu.column_name AS foreign_column_name
-                FROM information_schema.table_constraints tc 
-                JOIN information_schema.key_column_usage kcu
-                  ON tc.constraint_name = kcu.constraint_name
-                 AND tc.table_schema = kcu.table_schema
-                JOIN information_schema.constraint_column_usage ccu
-                  ON ccu.constraint_name = tc.constraint_name
-                 AND ccu.table_schema = tc.table_schema
-                WHERE tc.constraint_type = 'FOREIGN KEY'
-                  AND tc.table_name = @tableName;
-            ";
-
-        await using var fkCmd = new NpgsqlCommand(fkQuery, connection);
-        fkCmd.Parameters.AddWithValue("tableName", tabela);
-
-        await using var fkReader = await fkCmd.ExecuteReaderAsync();
-        if (fkReader.HasRows)
-        {
-            pkBuilder.AppendLine("  >> Foreign Key(s):");
-            while (await fkReader.ReadAsync())
+            if (tabela.ForeignKeys.Count != 0)
             {
-                string fkColumn = fkReader.GetString(0);
-                string foreignTable = fkReader.GetString(1);
-                string foreignColumn = fkReader.GetString(2);
-                pkBuilder.AppendLine($"    - {fkColumn} -> {foreignTable}({foreignColumn})");
+                schemaBuilder.AppendLine("  >> Foreign Key(s):");
+                schemaBuilder.AppendLine(string.Join(Environment.NewLine, tabela.ForeignKeys.Select(fk => $"    - {fk.Coluna} -> {fk.TabelaReferenciada}({fk.ColunaReferenciada})")));
             }
+
+            if (tabela.UniqueKeys.Count != 0)
+            {
+                schemaBuilder.AppendLine("  >> Unique Key(s):");
+                schemaBuilder.AppendLine(string.Join(Environment.NewLine, tabela.UniqueKeys.Select(unique => $"    - {unique}")));
+            }
+
+
+            schemaBuilder.AppendLine();
         }
 
-        return pkBuilder.ToString();
+        return schemaBuilder.ToString();
     }
+
+
     private ConsultaSQLDTO TratarRespostaIA(string resposta)
     {
         try
@@ -256,39 +152,6 @@ public class DatabaseService(LLMService service, IConfiguration configuration, I
             // LOGA o Update para reverter em caso de problemas
             logger.LogInformation("SQL UPDATE executado: {Sql}", sql);
         }
-            
-
     }
-    private async Task<List<Dictionary<string, object>>> ObterDados(string sql)
-    {
-        var resultado = new List<Dictionary<string, object>>();
-
-        try
-        {
-            using var connection = new NpgsqlConnection(_connectionString);
-            await connection.OpenAsync();
-
-            using var sqlCommand = new NpgsqlCommand(sql, connection);
-            using var reader = await sqlCommand.ExecuteReaderAsync();
-
-            while (await reader.ReadAsync())
-            {
-                var linha = new Dictionary<string, object>();
-
-                for (int i = 0; i < reader.FieldCount; i++)
-                {
-                    linha[reader.GetName(i)] = reader.GetValue(i);
-                }
-
-                resultado.Add(linha);
-            }
-        }
-        catch (Exception e)
-        {
-            logger.LogError(e, "Erro ao executar consulta SQL.");
-            throw;
-        }
-
-        return resultado;
-    }
+    
 }
