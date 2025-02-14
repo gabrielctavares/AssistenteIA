@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "eWvyCKKY2CQZRkWkr9KRWRC7wk82k/84WrjxQdBpQQU=",
+  "Hash": "OnIKn5OPf3okPH0JI+Q1LSM/lRTPkmGkn4E/l2LQJxw=",
   "Source": "AssistenteIA.Web",
   "BasePath": "_content/AssistenteIA.Web",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "AssistenteIA.Web\\wwwroot",
       "Source": "AssistenteIA.Web",
-      "ContentRoot": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
+      "ContentRoot": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
       "BasePath": "_content/AssistenteIA.Web",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\AssistenteIA.Web.styles.css",
+      "Identity": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\AssistenteIA.Web.styles.css",
       "SourceId": "AssistenteIA.Web",
       "SourceType": "Computed",
-      "ContentRoot": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/AssistenteIA.Web",
       "RelativePath": "AssistenteIA.Web#[.{fingerprint}]?.styles.css",
       "AssetKind": "All",
@@ -35,13 +35,13 @@
       "Integrity": "bWaKJkAJe1dt8F8n1x6l/aPEzNXZsYTJEJvgF7fhcMQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\AssistenteIA.Web.styles.css"
+      "OriginalItemSpec": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\AssistenteIA.Web.styles.css"
     },
     {
-      "Identity": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AssistenteIA.Web.bundle.scp.css",
+      "Identity": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AssistenteIA.Web.bundle.scp.css",
       "SourceId": "AssistenteIA.Web",
       "SourceType": "Computed",
-      "ContentRoot": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/AssistenteIA.Web",
       "RelativePath": "AssistenteIA.Web#[.{fingerprint}]!.bundle.scp.css",
       "AssetKind": "All",
@@ -56,13 +56,13 @@
       "Integrity": "bWaKJkAJe1dt8F8n1x6l/aPEzNXZsYTJEJvgF7fhcMQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AssistenteIA.Web.bundle.scp.css"
+      "OriginalItemSpec": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AssistenteIA.Web.bundle.scp.css"
     },
     {
-      "Identity": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\app.css",
+      "Identity": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\app.css",
       "SourceId": "AssistenteIA.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
+      "ContentRoot": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
       "BasePath": "_content/AssistenteIA.Web",
       "RelativePath": "app#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -80,10 +80,10 @@
       "OriginalItemSpec": "wwwroot\\app.css"
     },
     {
-      "Identity": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\favicon.png",
+      "Identity": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\favicon.png",
       "SourceId": "AssistenteIA.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
+      "ContentRoot": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
       "BasePath": "_content/AssistenteIA.Web",
       "RelativePath": "favicon#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -101,10 +101,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.png"
     },
     {
-      "Identity": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "AssistenteIA.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
+      "ContentRoot": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
       "BasePath": "_content/AssistenteIA.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -122,10 +122,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "AssistenteIA.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
+      "ContentRoot": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
       "BasePath": "_content/AssistenteIA.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -143,10 +143,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "AssistenteIA.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
+      "ContentRoot": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
       "BasePath": "_content/AssistenteIA.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -164,10 +164,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "AssistenteIA.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
+      "ContentRoot": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
       "BasePath": "_content/AssistenteIA.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -185,10 +185,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "AssistenteIA.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
+      "ContentRoot": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
       "BasePath": "_content/AssistenteIA.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -206,10 +206,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "AssistenteIA.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
+      "ContentRoot": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
       "BasePath": "_content/AssistenteIA.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -227,10 +227,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "AssistenteIA.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
+      "ContentRoot": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
       "BasePath": "_content/AssistenteIA.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -248,10 +248,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "AssistenteIA.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
+      "ContentRoot": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
       "BasePath": "_content/AssistenteIA.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -269,10 +269,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "AssistenteIA.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
+      "ContentRoot": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
       "BasePath": "_content/AssistenteIA.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -290,10 +290,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "AssistenteIA.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
+      "ContentRoot": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
       "BasePath": "_content/AssistenteIA.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -311,10 +311,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "AssistenteIA.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
+      "ContentRoot": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
       "BasePath": "_content/AssistenteIA.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -332,10 +332,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "AssistenteIA.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
+      "ContentRoot": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
       "BasePath": "_content/AssistenteIA.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -353,10 +353,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "AssistenteIA.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
+      "ContentRoot": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
       "BasePath": "_content/AssistenteIA.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "AssistenteIA.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
+      "ContentRoot": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
       "BasePath": "_content/AssistenteIA.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -395,10 +395,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "AssistenteIA.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
+      "ContentRoot": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
       "BasePath": "_content/AssistenteIA.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "AssistenteIA.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
+      "ContentRoot": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
       "BasePath": "_content/AssistenteIA.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -437,10 +437,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "AssistenteIA.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
+      "ContentRoot": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
       "BasePath": "_content/AssistenteIA.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -458,10 +458,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "AssistenteIA.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
+      "ContentRoot": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
       "BasePath": "_content/AssistenteIA.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -479,10 +479,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "AssistenteIA.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
+      "ContentRoot": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
       "BasePath": "_content/AssistenteIA.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -500,10 +500,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "AssistenteIA.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
+      "ContentRoot": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
       "BasePath": "_content/AssistenteIA.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -521,10 +521,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "AssistenteIA.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
+      "ContentRoot": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
       "BasePath": "_content/AssistenteIA.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -542,10 +542,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "AssistenteIA.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
+      "ContentRoot": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
       "BasePath": "_content/AssistenteIA.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -563,10 +563,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "AssistenteIA.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
+      "ContentRoot": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
       "BasePath": "_content/AssistenteIA.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -584,10 +584,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "AssistenteIA.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
+      "ContentRoot": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
       "BasePath": "_content/AssistenteIA.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -605,10 +605,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "AssistenteIA.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
+      "ContentRoot": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
       "BasePath": "_content/AssistenteIA.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -626,10 +626,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "AssistenteIA.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
+      "ContentRoot": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
       "BasePath": "_content/AssistenteIA.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -647,10 +647,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "AssistenteIA.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
+      "ContentRoot": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
       "BasePath": "_content/AssistenteIA.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -668,10 +668,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "AssistenteIA.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
+      "ContentRoot": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
       "BasePath": "_content/AssistenteIA.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -689,10 +689,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "AssistenteIA.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
+      "ContentRoot": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
       "BasePath": "_content/AssistenteIA.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -710,10 +710,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "AssistenteIA.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
+      "ContentRoot": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
       "BasePath": "_content/AssistenteIA.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -731,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "AssistenteIA.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
+      "ContentRoot": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
       "BasePath": "_content/AssistenteIA.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -752,10 +752,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "AssistenteIA.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
+      "ContentRoot": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
       "BasePath": "_content/AssistenteIA.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -773,10 +773,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "AssistenteIA.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
+      "ContentRoot": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
       "BasePath": "_content/AssistenteIA.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -794,10 +794,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "AssistenteIA.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
+      "ContentRoot": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
       "BasePath": "_content/AssistenteIA.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -815,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "AssistenteIA.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
+      "ContentRoot": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
       "BasePath": "_content/AssistenteIA.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -836,10 +836,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "AssistenteIA.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
+      "ContentRoot": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
       "BasePath": "_content/AssistenteIA.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -857,10 +857,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "AssistenteIA.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
+      "ContentRoot": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
       "BasePath": "_content/AssistenteIA.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -878,10 +878,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "AssistenteIA.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
+      "ContentRoot": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
       "BasePath": "_content/AssistenteIA.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -899,10 +899,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "AssistenteIA.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
+      "ContentRoot": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
       "BasePath": "_content/AssistenteIA.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -920,10 +920,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "AssistenteIA.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
+      "ContentRoot": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
       "BasePath": "_content/AssistenteIA.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -941,10 +941,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "AssistenteIA.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
+      "ContentRoot": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
       "BasePath": "_content/AssistenteIA.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -962,10 +962,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "AssistenteIA.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
+      "ContentRoot": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
       "BasePath": "_content/AssistenteIA.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -983,10 +983,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "AssistenteIA.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
+      "ContentRoot": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
       "BasePath": "_content/AssistenteIA.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1004,10 +1004,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "AssistenteIA.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
+      "ContentRoot": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\",
       "BasePath": "_content/AssistenteIA.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1028,7 +1028,7 @@
   "Endpoints": [
     {
       "Route": "app.css",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\app.css",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\app.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1049,7 +1049,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:08 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1065,7 +1065,7 @@
     },
     {
       "Route": "app.x7aa15g9kh.css",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\app.css",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\app.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1086,7 +1086,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:08 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1110,7 +1110,7 @@
     },
     {
       "Route": "AssistenteIA.Web.522chsjwal.bundle.scp.css",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AssistenteIA.Web.bundle.scp.css",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AssistenteIA.Web.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1131,7 +1131,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 11 Feb 2025 12:16:18 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1155,7 +1155,7 @@
     },
     {
       "Route": "AssistenteIA.Web.522chsjwal.styles.css",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\AssistenteIA.Web.styles.css",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\AssistenteIA.Web.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1176,7 +1176,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 11 Feb 2025 12:16:18 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1200,7 +1200,7 @@
     },
     {
       "Route": "AssistenteIA.Web.bundle.scp.css",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AssistenteIA.Web.bundle.scp.css",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AssistenteIA.Web.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1221,7 +1221,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 11 Feb 2025 12:16:18 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1237,7 +1237,7 @@
     },
     {
       "Route": "AssistenteIA.Web.styles.css",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\AssistenteIA.Web.styles.css",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\AssistenteIA.Web.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1258,7 +1258,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 11 Feb 2025 12:16:18 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1274,7 +1274,7 @@
     },
     {
       "Route": "favicon.ifv42okdf2.png",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\favicon.png",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\favicon.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1295,7 +1295,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:08 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1319,7 +1319,7 @@
     },
     {
       "Route": "favicon.png",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\favicon.png",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\favicon.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1340,7 +1340,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:08 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1356,7 +1356,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.css",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1377,7 +1377,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1393,7 +1393,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.css.map",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1414,7 +1414,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1430,7 +1430,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.css.pj5nd1wqec.map",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1451,7 +1451,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1475,7 +1475,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.43atpzeawx.css",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1496,7 +1496,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1520,7 +1520,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.css",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1541,7 +1541,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1557,7 +1557,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.css.map",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1578,7 +1578,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1594,7 +1594,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.css.v0zj4ognzu.map",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1615,7 +1615,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1639,7 +1639,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1660,7 +1660,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1676,7 +1676,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css.hrwsygsryq.map",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1697,7 +1697,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1721,7 +1721,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1742,7 +1742,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1758,7 +1758,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.c63t5i9ira.css",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1779,7 +1779,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1803,7 +1803,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1824,7 +1824,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1840,7 +1840,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.ft3s53vfgj.map",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1861,7 +1861,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1885,7 +1885,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1906,7 +1906,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1922,7 +1922,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.ynyaa8k90p.css",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1943,7 +1943,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1967,7 +1967,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.zub09dkrxp.css",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1988,7 +1988,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2012,7 +2012,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2033,7 +2033,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:08 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2049,7 +2049,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css.c2jlpeoesf.map",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2070,7 +2070,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:08 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2094,7 +2094,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2115,7 +2115,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:08 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2131,7 +2131,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2152,7 +2152,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2168,7 +2168,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css.aexeepp0ev.map",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2189,7 +2189,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2213,7 +2213,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2234,7 +2234,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2250,7 +2250,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.sejl45xvog.css",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2271,7 +2271,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2295,7 +2295,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2316,7 +2316,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2332,7 +2332,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.ausgxo2sd3.map",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2353,7 +2353,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2377,7 +2377,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2398,7 +2398,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2414,7 +2414,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.22vffe00uq.css",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2435,7 +2435,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2459,7 +2459,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2480,7 +2480,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2496,7 +2496,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.cosvhxvwiu.map",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2517,7 +2517,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2541,7 +2541,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2562,7 +2562,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2578,7 +2578,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.xvp3kq03qx.css",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2599,7 +2599,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2623,7 +2623,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.t1cqhe9u97.css",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2644,7 +2644,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:08 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2668,7 +2668,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2689,7 +2689,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2705,7 +2705,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css.fvhpjtyr6v.map",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2726,7 +2726,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2750,7 +2750,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2771,7 +2771,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2787,7 +2787,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2808,7 +2808,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2824,7 +2824,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.fsbi9cje9m.map",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2845,7 +2845,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2869,7 +2869,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2890,7 +2890,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2906,7 +2906,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.tmc1g35s3z.css",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2927,7 +2927,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2951,7 +2951,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.qesaa3a1fm.css",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2972,7 +2972,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2996,7 +2996,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3017,7 +3017,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3033,7 +3033,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.ee0r1s7dh0.map",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3054,7 +3054,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3078,7 +3078,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3099,7 +3099,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3115,7 +3115,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3136,7 +3136,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3152,7 +3152,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.jd9uben2k1.map",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3173,7 +3173,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3197,7 +3197,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3218,7 +3218,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3234,7 +3234,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.q9ht133ko3.css",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3255,7 +3255,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3279,7 +3279,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.rxsg74s51o.css",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3300,7 +3300,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3324,7 +3324,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3345,7 +3345,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3361,7 +3361,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3382,7 +3382,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3398,7 +3398,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css.r4e9w2rdcm.map",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3419,7 +3419,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3443,7 +3443,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.gye83jo8yx.css",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3464,7 +3464,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3488,7 +3488,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3509,7 +3509,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3525,7 +3525,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.c2oey78nd0.map",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3546,7 +3546,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3570,7 +3570,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3591,7 +3591,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3607,7 +3607,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.wl58j5mj3v.css",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3628,7 +3628,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3652,7 +3652,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3673,7 +3673,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3689,7 +3689,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.j5mq2jizvt.map",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3710,7 +3710,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3734,7 +3734,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3755,7 +3755,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3771,7 +3771,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.d4r6k3f320.css",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3792,7 +3792,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3816,7 +3816,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3837,7 +3837,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3853,7 +3853,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3874,7 +3874,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3890,7 +3890,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.nvvlpmu67g.map",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3911,7 +3911,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3935,7 +3935,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.keugtjm085.css",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3956,7 +3956,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3980,7 +3980,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.8xgqlo6a6u.js",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4001,7 +4001,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4025,7 +4025,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4046,7 +4046,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4062,7 +4062,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js.1r41qatg4j.map",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4083,7 +4083,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4107,7 +4107,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4128,7 +4128,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4144,7 +4144,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4165,7 +4165,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4181,7 +4181,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4202,7 +4202,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4218,7 +4218,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.papv1ttdkf.map",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4239,7 +4239,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4263,7 +4263,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.sebe1i1n8x.js",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4284,7 +4284,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4308,7 +4308,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.qzkrgdt63i.js",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4329,7 +4329,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4353,7 +4353,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4374,7 +4374,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4390,7 +4390,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js.btvp20hza9.map",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4411,7 +4411,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4435,7 +4435,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4456,7 +4456,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4472,7 +4472,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4493,7 +4493,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4509,7 +4509,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js.bcpacz5wz9.map",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4530,7 +4530,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4554,7 +4554,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4575,7 +4575,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4591,7 +4591,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.l53j0jwsua.js",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4612,7 +4612,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4636,7 +4636,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.vf9b1vs9k6.js",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4657,7 +4657,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4681,7 +4681,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4702,7 +4702,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4718,7 +4718,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js.map",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4739,7 +4739,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4755,7 +4755,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js.tsloj4q1ss.map",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4776,7 +4776,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4800,7 +4800,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.iug4zs40ca.js",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4821,7 +4821,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4845,7 +4845,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4866,7 +4866,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4882,7 +4882,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js.map",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4903,7 +4903,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4919,7 +4919,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js.tirsynk4z2.map",
-      "AssetFile": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4940,7 +4940,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 10:03:09 GMT"
+          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
         },
         {
           "Name": "Cache-Control",

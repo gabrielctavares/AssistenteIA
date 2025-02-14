@@ -48,6 +48,7 @@ app.UseHealthChecksUI(options => { options.UIPath = "/dashboard"; });
 
 app.MapPost("/chat", async (ChatService service, [FromBody] MensagemDTO mensagem) =>{
 
+
     return Results.Ok(await service.ProcessarChat(mensagem.Texto));
 })
 .WithName("Chat");

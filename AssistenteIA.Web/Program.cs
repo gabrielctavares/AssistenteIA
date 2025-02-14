@@ -14,10 +14,8 @@ builder.Services.AddRazorComponents()
 
 builder.Services.AddHttpClient<AssistenteIAApiClient>(client =>
     {
-        // This URL uses "https+http://" to indicate HTTPS is preferred over HTTP.
-        // Learn more about service discovery scheme resolution at https://aka.ms/dotnet/sdschemes.
         client.BaseAddress = new("https+http://apiservice");
-        client.Timeout =  TimeSpan.FromMinutes(5); // Precisei aumentar pela logistica atual.
+        client.Timeout =  TimeSpan.FromMinutes(10); // Precisei aumentar pela logistica atual.
     });
 
 var app = builder.Build();

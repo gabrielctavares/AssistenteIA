@@ -7,5 +7,5 @@ namespace Projects;
 [global::System.Diagnostics.DebuggerDisplay("Type = {GetType().Name,nq}, ProjectPath = {ProjectPath}")]
 public class AssistenteIA_Servico1 : global::Aspire.Hosting.IProjectMetadata
 {
-    public string ProjectPath => """G:\Rerum\AssistenteIA\Servico1\AssistenteIA.Servico1.csproj""";
+    public string ProjectPath => """G:\Projetos\AssistenteIA\Servico1\AssistenteIA.Servico1.csproj""";
 }

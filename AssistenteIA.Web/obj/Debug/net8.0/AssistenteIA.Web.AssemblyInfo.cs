@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AssistenteIA.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b8485fc572f4dfb9ef9c5dc61dd596398a971562")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0adfd3688f6ed9168b0c1c441f30a580d71105ba")]
 [assembly: System.Reflection.AssemblyProductAttribute("AssistenteIA.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AssistenteIA.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

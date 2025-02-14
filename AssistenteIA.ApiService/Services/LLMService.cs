@@ -4,18 +4,35 @@ namespace AssistenteIA.ApiService.Services;
 
 public class LLMService(IChatClient client, ILogger<LLMService> logger)
 {
+    public async Task<string> GerarResposta(string userQuery, string prompt = null)
+    {
+        try
+        {
+            if (string.IsNullOrEmpty(prompt))
+                prompt = CriarPromptPadrao();
+
+            var mensagemSistema = new ChatMessage(ChatRole.System, prompt);
+            var mensagemCliente = new ChatMessage(ChatRole.User, userQuery);
+
+            var answer = await client.CompleteAsync([mensagemSistema, mensagemCliente]);
+
+            return answer.Choices.FirstOrDefault()?.Text!;
+        }
+        catch (Exception e)
+        {
+            logger.LogError(e, "Erro ao processar resposta");
+            throw;
+        }
+
+    }
+
     private static string CriarPromptPadrao()
     {
         StringBuilder promptBuilder = new();
 
-        promptBuilder.AppendLine("Você é um assistente inteligente e especialista em SQL que responde de forma clara e objetiva em Português-BR.");
+        promptBuilder.AppendLine("Você é um assistente inteligente que responde de forma clara e objetiva em Português-BR.");
         promptBuilder.AppendLine("Seu objetivo é ajudar da melhor forma possível, adaptando o tom da conversa conforme necessário.");
         promptBuilder.AppendLine("Use exemplos e explicações simples quando relevante, sem excesso de detalhes.");
-        promptBuilder.AppendLine();
-        promptBuilder.AppendLine("### Contexto:");
-        promptBuilder.AppendLine("Sistema: Agenda telefônica.");
-        promptBuilder.AppendLine("Tabela: pessoas (id PK, nome, telefone, pai_id FK, mae_id FK).");
-        promptBuilder.AppendLine("- pai_id e mae_id referenciam a própria tabela.");
         promptBuilder.AppendLine();
         promptBuilder.AppendLine("### Regras:");
         promptBuilder.AppendLine("- Se a pergunta for direta, responda de forma breve e objetiva.");
@@ -37,24 +54,5 @@ public class LLMService(IChatClient client, ILogger<LLMService> logger)
 
         return promptBuilder.ToString();
     }
-    public async Task<string> GerarResposta(string userQuery, string prompt = null)
-    {
-        try
-        {
-            if (string.IsNullOrEmpty(prompt))
-                prompt = CriarPromptPadrao();
-
-            var mensagemSistema = new ChatMessage(ChatRole.System, prompt);
-            var mensagemCliente = new ChatMessage(ChatRole.User, userQuery);
-            var answer = await client.CompleteAsync([mensagemSistema, mensagemCliente]);
-
-            return answer.Choices.FirstOrDefault()?.Text!;
-        }
-        catch (Exception e)
-        {
-            logger.LogError(e, "Erro ao processar resposta");
-            throw;
-        }
-
-    }
+    
 }

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "G:\\Rerum\\AssistenteIA\\AssistenteIA.Tests\\AssistenteIA.Tests.csproj": {}
+    "G:\\Projetos\\AssistenteIA\\AssistenteIA.Tests\\AssistenteIA.Tests.csproj": {}
   },
   "projects": {
-    "G:\\Rerum\\AssistenteIA\\AssistenteIA.AppHost\\AssistenteIA.AppHost.csproj": {
+    "G:\\Projetos\\AssistenteIA\\AssistenteIA.AppHost\\AssistenteIA.AppHost.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\Rerum\\AssistenteIA\\AssistenteIA.AppHost\\AssistenteIA.AppHost.csproj",
+        "projectUniqueName": "G:\\Projetos\\AssistenteIA\\AssistenteIA.AppHost\\AssistenteIA.AppHost.csproj",
         "projectName": "AssistenteIA.AppHost",
-        "projectPath": "G:\\Rerum\\AssistenteIA\\AssistenteIA.AppHost\\AssistenteIA.AppHost.csproj",
-        "packagesPath": "C:\\Users\\Gabri\\.nuget\\packages\\",
-        "outputPath": "G:\\Rerum\\AssistenteIA\\AssistenteIA.AppHost\\obj\\",
+        "projectPath": "G:\\Projetos\\AssistenteIA\\AssistenteIA.AppHost\\AssistenteIA.AppHost.csproj",
+        "packagesPath": "C:\\Users\\Rerum\\.nuget\\packages\\",
+        "outputPath": "G:\\Projetos\\AssistenteIA\\AssistenteIA.AppHost\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Rerum\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -89,24 +89,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "G:\\Rerum\\AssistenteIA\\AssistenteIA.Tests\\AssistenteIA.Tests.csproj": {
+    "G:\\Projetos\\AssistenteIA\\AssistenteIA.Tests\\AssistenteIA.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Tests\\AssistenteIA.Tests.csproj",
+        "projectUniqueName": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Tests\\AssistenteIA.Tests.csproj",
         "projectName": "AssistenteIA.Tests",
-        "projectPath": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Tests\\AssistenteIA.Tests.csproj",
-        "packagesPath": "C:\\Users\\Gabri\\.nuget\\packages\\",
-        "outputPath": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Tests\\obj\\",
+        "projectPath": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Tests\\AssistenteIA.Tests.csproj",
+        "packagesPath": "C:\\Users\\Rerum\\.nuget\\packages\\",
+        "outputPath": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Rerum\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -121,8 +121,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "G:\\Rerum\\AssistenteIA\\AssistenteIA.AppHost\\AssistenteIA.AppHost.csproj": {
-                "projectPath": "G:\\Rerum\\AssistenteIA\\AssistenteIA.AppHost\\AssistenteIA.AppHost.csproj"
+              "G:\\Projetos\\AssistenteIA\\AssistenteIA.AppHost\\AssistenteIA.AppHost.csproj": {
+                "projectPath": "G:\\Projetos\\AssistenteIA\\AssistenteIA.AppHost\\AssistenteIA.AppHost.csproj"
               }
             }
           }
@@ -137,7 +137,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -180,7 +180,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

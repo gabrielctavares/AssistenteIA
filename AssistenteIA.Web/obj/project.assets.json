@@ -2593,23 +2593,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Gabri\\.nuget\\packages\\": {},
+    "C:\\Users\\Rerum\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\AssistenteIA.Web.csproj",
+      "projectUniqueName": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\AssistenteIA.Web.csproj",
       "projectName": "AssistenteIA.Web",
-      "projectPath": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\AssistenteIA.Web.csproj",
-      "packagesPath": "C:\\Users\\Gabri\\.nuget\\packages\\",
-      "outputPath": "G:\\Rerum\\AssistenteIA\\AssistenteIA.Web\\obj\\",
+      "projectPath": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\AssistenteIA.Web.csproj",
+      "packagesPath": "C:\\Users\\Rerum\\.nuget\\packages\\",
+      "outputPath": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Rerum\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2624,8 +2624,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "G:\\Rerum\\AssistenteIA\\AssistenteIA.ServiceDefaults\\AssistenteIA.ServiceDefaults.csproj": {
-              "projectPath": "G:\\Rerum\\AssistenteIA\\AssistenteIA.ServiceDefaults\\AssistenteIA.ServiceDefaults.csproj"
+            "G:\\Projetos\\AssistenteIA\\AssistenteIA.ServiceDefaults\\AssistenteIA.ServiceDefaults.csproj": {
+              "projectPath": "G:\\Projetos\\AssistenteIA\\AssistenteIA.ServiceDefaults\\AssistenteIA.ServiceDefaults.csproj"
             }
           }
         }
@@ -2640,7 +2640,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.100"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0": {
@@ -2674,7 +2674,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

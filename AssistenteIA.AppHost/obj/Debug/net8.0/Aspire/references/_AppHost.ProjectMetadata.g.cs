@@ -8,5 +8,5 @@ namespace Projects;
 public class AssistenteIA_AppHost
 {
     private AssistenteIA_AppHost() { }
-    public static string ProjectPath => """G:\Rerum\AssistenteIA\AssistenteIA.AppHost""";
+    public static string ProjectPath => """G:\Projetos\AssistenteIA\AssistenteIA.AppHost""";
 }

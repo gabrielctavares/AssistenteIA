@@ -22,3 +22,16 @@ G:\Rerum\AssistenteIA\AssistenteIA.ServiceDefaults\obj\Debug\net8.0\AssistenteIA
 G:\Rerum\AssistenteIA\AssistenteIA.ServiceDefaults\obj\Debug\net8.0\refint\AssistenteIA.ServiceDefaults.dll
 G:\Rerum\AssistenteIA\AssistenteIA.ServiceDefaults\obj\Debug\net8.0\AssistenteIA.ServiceDefaults.pdb
 G:\Rerum\AssistenteIA\AssistenteIA.ServiceDefaults\obj\Debug\net8.0\ref\AssistenteIA.ServiceDefaults.dll
+G:\Projetos\AssistenteIA\AssistenteIA.ServiceDefaults\bin\Debug\net8.0\AssistenteIA.ServiceDefaults.deps.json
+G:\Projetos\AssistenteIA\AssistenteIA.ServiceDefaults\bin\Debug\net8.0\AssistenteIA.ServiceDefaults.dll
+G:\Projetos\AssistenteIA\AssistenteIA.ServiceDefaults\bin\Debug\net8.0\AssistenteIA.ServiceDefaults.pdb
+G:\Projetos\AssistenteIA\AssistenteIA.ServiceDefaults\obj\Debug\net8.0\AssistenteIA.ServiceDefaults.csproj.AssemblyReference.cache
+G:\Projetos\AssistenteIA\AssistenteIA.ServiceDefaults\obj\Debug\net8.0\AssistenteIA.ServiceDefaults.GeneratedMSBuildEditorConfig.editorconfig
+G:\Projetos\AssistenteIA\AssistenteIA.ServiceDefaults\obj\Debug\net8.0\AssistenteIA.ServiceDefaults.AssemblyInfoInputs.cache
+G:\Projetos\AssistenteIA\AssistenteIA.ServiceDefaults\obj\Debug\net8.0\AssistenteIA.ServiceDefaults.AssemblyInfo.cs
+G:\Projetos\AssistenteIA\AssistenteIA.ServiceDefaults\obj\Debug\net8.0\AssistenteIA.ServiceDefaults.csproj.CoreCompileInputs.cache
+G:\Projetos\AssistenteIA\AssistenteIA.ServiceDefaults\obj\Debug\net8.0\AssistenteIA.ServiceDefaults.sourcelink.json
+G:\Projetos\AssistenteIA\AssistenteIA.ServiceDefaults\obj\Debug\net8.0\AssistenteIA.ServiceDefaults.dll
+G:\Projetos\AssistenteIA\AssistenteIA.ServiceDefaults\obj\Debug\net8.0\refint\AssistenteIA.ServiceDefaults.dll
+G:\Projetos\AssistenteIA\AssistenteIA.ServiceDefaults\obj\Debug\net8.0\AssistenteIA.ServiceDefaults.pdb
+G:\Projetos\AssistenteIA\AssistenteIA.ServiceDefaults\obj\Debug\net8.0\ref\AssistenteIA.ServiceDefaults.dll

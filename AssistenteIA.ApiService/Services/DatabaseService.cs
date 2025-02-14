@@ -71,8 +71,6 @@ public class DatabaseService(LLMService service, MetadataRepository metadataRepo
 
         return promptBuilder.ToString();
     }
-
-
     private async Task<string> FormatarSchema()
     {
         StringBuilder schemaBuilder = new();
