@@ -1,8 +1,5 @@
 ﻿using Microsoft.ML;
 using Microsoft.ML.Data;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text.Json;
 
 namespace AssistenteIA.ApiService.Services;
@@ -26,8 +23,8 @@ public static class RAGService
 
         var predictionEngine = mlContext.Model.CreatePredictionEngine<QuestionSqlPair, SqlPrediction>(model);
 
-        var prediction = predictionEngine.Predict(new QuestionSqlPair { Pergunta = texto });
         var bestMatchSql = FindClosestQuery(texto, [.. data.Select(d => d.Pergunta)], [.. data.Select(d => d.SQL)]);
+        var prediction = predictionEngine.Predict(new QuestionSqlPair { Pergunta = texto, SQL = bestMatchSql });
 
         Console.WriteLine($"Pergunta: {texto}");
         Console.WriteLine($"SQL Previsto: {prediction.SqlQuery}");

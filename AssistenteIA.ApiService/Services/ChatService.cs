@@ -1,6 +1,5 @@
 ﻿using AssistenteIA.ApiService.Models.DTOs;
 using AssistenteIA.ApiService.Models.Enums;
-using System.Runtime.CompilerServices;
 using System.Text;
 
 namespace AssistenteIA.ApiService.Services;
@@ -25,12 +24,10 @@ public class ChatService(LLMService llmService, DatabaseService databaseService,
 
         var classificacaoAtendimento = await Task.FromResult("0"); //  await llmService.GerarResposta(mensagem, CriarPrompt());
 
-        if(int.TryParse(classificacaoAtendimento, out var result))
-        {
-            return result == 0 ? ClassificacaoAtendimento.ConsultarOuAlterarDados : ClassificacaoAtendimento.ConsultarFuncionamentoServicos;
-        }
+        if (int.TryParse(classificacaoAtendimento, out int valor))
+            return valor == 0 ? ClassificacaoAtendimento.ConsultarOuAlterarDados : ClassificacaoAtendimento.ConsultarFuncionamentoServicos;
 
-        return ClassificacaoAtendimento.ConsultarOuAlterarDados;
+        return ClassificacaoAtendimento.ConsultarOuAlterarDados;               
     }
     private string CriarPrompt()
     {

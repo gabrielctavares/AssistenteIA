@@ -22,15 +22,13 @@ builder.Services.AddHealthChecksUI(options =>
     options.SetEvaluationTimeInSeconds(5);
     options.MaximumHistoryEntriesPerEndpoint(10);
     options.AddHealthCheckEndpoint("API de Chat", "/health");
-})
-.AddInMemoryStorage();
+}).AddInMemoryStorage();
 
-
-
-// Configurando os repositórios aqui.
+// Configurando todas as injeções de depêndencia aqui
+builder.Services.ConfigureEmbeddingClient(builder.Configuration);
+builder.Services.ConfigureChatClient(builder.Configuration);
 builder.Services.ConfigureRepositories();
-// Configurando o serviço de LLM Aqui.
-builder.Services.ConfigureServices(builder.Configuration);
+builder.Services.ConfigureServices();
 
 
 var app = builder.Build();
@@ -46,9 +44,8 @@ app.UseHealthChecks("/health", new HealthCheckOptions
 app.UseHealthChecksUI(options => { options.UIPath = "/dashboard"; });
 
 
-app.MapPost("/chat", async (ChatService service, [FromBody] MensagemDTO mensagem) =>{
-
-
+app.MapPost("/chat", async (ChatService service, EmbeddingService rag, [FromBody] MensagemDTO mensagem) =>
+{
     return Results.Ok(await service.ProcessarChat(mensagem.Texto));
 })
 .WithName("Chat");

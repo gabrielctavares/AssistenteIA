@@ -5,15 +5,27 @@ using System.Text.Json;
 
 namespace AssistenteIA.ApiService.Services;
 
-public class DatabaseService(LLMService service, MetadataRepository metadataRepository, QueryRepository queryRepository,  ILogger<DatabaseService> logger)
+public class ChatHistory
 {
+    private readonly IList<string> _messages = [];
+    public void AddUserMessage(string message) => _messages.Add($"User: {message}");
+    public void AddAssistantMessage(string message) => _messages.Add($"Assistant: {message}");
+    public string GetHistoryAsContext(int maxMessages = 10) => string.Join("\n", _messages.TakeLast(maxMessages));
+}
+
+
+public class DatabaseService(LLMService llmService, EmbeddingService embeddingService, MetadataRepository metadataRepository, QueryRepository queryRepository,   ILogger<DatabaseService> logger)
+{
+    private readonly ChatHistory chatHistory = new();
 
     public async Task<DadosDTO> ConsultarDados(string pergunta)
     {
         try
         {
-            var prompt = await GerarPromptSQL();
-            var resposta = await service.GerarResposta(pergunta, prompt);
+            var prompt = await  GerarPromptSQL();
+
+            var embedding = await embeddingService.GerarEmbedding(pergunta);
+            var resposta = await llmService.GerarResposta(embedding, prompt);
             var respostaIA = TratarRespostaIA(resposta);
 
             
@@ -54,12 +66,15 @@ public class DatabaseService(LLMService service, MetadataRepository metadataRepo
         promptBuilder.AppendLine($"{schema}");
         promptBuilder.AppendLine("Em caso de modificações, gere um SELECT para mostrar as alterações.");
         promptBuilder.AppendLine();
+        promptBuilder.AppendLine("### Contexto Adicional:");
+        promptBuilder.AppendLine("Utilize o embedding como referência, mas priorize a pergunta do usuário.");
         promptBuilder.AppendLine("### Regras:");
         promptBuilder.AppendLine("- Não altere a estrutura das tabelas.");
         promptBuilder.AppendLine("- Não crie novas tabelas.");
         promptBuilder.AppendLine("- Não use DELETE.");
         promptBuilder.AppendLine("- Somente SQL Independente de parâmetros.");
         promptBuilder.AppendLine("- Evite UPDATE sem WHERE.");
+        promptBuilder.AppendLine("- Em comparações com strings, prefira case insensitive e %like%.");
         promptBuilder.AppendLine();
         promptBuilder.AppendLine("### Resposta:");
         promptBuilder.AppendLine("- A resposta deve ser um JSON com os campos \"Mensagem\" e \"SQL\".");

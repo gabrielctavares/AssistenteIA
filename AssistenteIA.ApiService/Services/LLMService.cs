@@ -1,8 +1,9 @@
-﻿using Microsoft.Extensions.AI;
+﻿
+using Microsoft.Extensions.AI;
 using System.Text;
 namespace AssistenteIA.ApiService.Services;
 
-public class LLMService(IChatClient client, ILogger<LLMService> logger)
+public class LLMService(Microsoft.Extensions.AI.IChatClient client, ILogger<LLMService> logger)
 {
     public async Task<string> GerarResposta(string userQuery, string prompt = null)
     {

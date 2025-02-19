@@ -15,7 +15,7 @@ builder.Services.AddRazorComponents()
 builder.Services.AddHttpClient<AssistenteIAApiClient>(client =>
     {
         client.BaseAddress = new("https+http://apiservice");
-        client.Timeout =  TimeSpan.FromMinutes(10); // Precisei aumentar pela logistica atual.
+        client.Timeout = Timeout.InfiniteTimeSpan;
     });
 
 var app = builder.Build();

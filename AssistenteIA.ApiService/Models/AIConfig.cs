@@ -15,6 +15,7 @@ public class OpenAIConfig
     public string ApiKey { get; set; } = default!;
     public string Uri { get; set; } = default!;
     public string Model { get; set; } = default!;
+    public string EmbeddingModel { get; set; } = default!;
 
 }
 public class AzureConfig
@@ -28,4 +29,5 @@ public class OllamaConfig
 {
     public string Uri { get; set; } = default!;
     public string Model { get; set; } = default!;
+    public string EmbeddingModel { get; set; } = default!;
 }
