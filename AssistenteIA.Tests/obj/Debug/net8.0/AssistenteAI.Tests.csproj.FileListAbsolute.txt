@@ -1,7 +1,0 @@
-G:\Rerun\SQL-Helper\SQL-Helper.Tests\bin\Debug\net8.0\.msCoverageSourceRootsMapping_AssistenteAI.Tests
-G:\Rerun\SQL-Helper\SQL-Helper.Tests\bin\Debug\net8.0\CoverletSourceRootsMapping_AssistenteAI.Tests
-G:\Rerun\SQL-Helper\SQL-Helper.Tests\obj\Debug\net8.0\AssistenteAI.Tests.csproj.AssemblyReference.cache
-G:\Rerun\SQL-Helper\SQL-Helper.Tests\obj\Debug\net8.0\AssistenteAI.Tests.GeneratedMSBuildEditorConfig.editorconfig
-G:\Rerun\SQL-Helper\SQL-Helper.Tests\obj\Debug\net8.0\AssistenteAI.Tests.AssemblyInfoInputs.cache
-G:\Rerun\SQL-Helper\SQL-Helper.Tests\obj\Debug\net8.0\AssistenteAI.Tests.AssemblyInfo.cs
-G:\Rerun\SQL-Helper\SQL-Helper.Tests\obj\Debug\net8.0\AssistenteAI.Tests.csproj.CoreCompileInputs.cache
