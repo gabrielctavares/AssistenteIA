@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AssistenteIA.Servico1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5f8467e749e94aa627e3d5a81828e594bfb4532c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5eb36c83944724659c91eeb1362d312cf5ee25d3")]
 [assembly: System.Reflection.AssemblyProductAttribute("AssistenteIA.Servico1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AssistenteIA.Servico1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

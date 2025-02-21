@@ -1,13 +1,12 @@
-﻿using System.Runtime.CompilerServices;
-using System.Text;
+﻿using System.Text;
 
 namespace AssistenteIA.ApiService.Models.DTOs;
 
-public record DadosDTO(string Mensagem, List<Dictionary<string, object>> Dados);
+public record RespostaDTO(string Mensagem, List<Dictionary<string, object>> Dados);
 
-public static class DadosExtension
+public static class RespostaExtension
 {
-    public static string ToMarkdown(this DadosDTO dados)
+    public static string ToMarkdown(this RespostaDTO dados)
     {
         if (dados.Dados == null || dados.Dados.Count == 0)
             return dados.Mensagem;

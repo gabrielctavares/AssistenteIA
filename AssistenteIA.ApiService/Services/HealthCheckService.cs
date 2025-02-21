@@ -6,13 +6,13 @@ namespace AssistenteIA.ApiService.Services;
 public class HealthCheckService(HttpClient httpClient)
 {
 
-    public async Task<DadosDTO> VerificarServicos()
+    public async Task<RespostaDTO> VerificarServicos(CancellationToken cancellationToken = default)
     {
-        var dados = await ObterSaudeServicos();
-        return new DadosDTO("Confira o estado dos serviços", dados);
+        var dados = await ObterSaudeServicos(cancellationToken);
+        return new RespostaDTO("Confira o estado dos serviços", dados);
     }
         
-    private async Task<List<Dictionary<string, object>>> ObterSaudeServicos()
+    private async Task<List<Dictionary<string, object>>> ObterSaudeServicos(CancellationToken cancellationToken = default)
     {
         var result = new List<Dictionary<string, object>>();        
        
@@ -27,7 +27,7 @@ public class HealthCheckService(HttpClient httpClient)
             try
             {
 
-                var response = await httpClient.GetAsync(item.URL);
+                var response = await httpClient.GetAsync(item.URL, cancellationToken);
 
                 if (response.IsSuccessStatusCode)
                 {

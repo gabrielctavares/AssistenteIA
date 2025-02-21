@@ -1,39 +1,30 @@
 ﻿using AssistenteIA.ApiService.Models;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using Microsoft.Extensions.Configuration;
 using Npgsql;
-using System.Linq;
-using System.Text;
+using Dapper;
 
 namespace AssistenteIA.ApiService.Repositories;
 
-public class MetadataRepository(IConfiguration configuration, ILogger<MetadataRepository> logger): BaseRepository(configuration)
+public class MetadataRepository(IConfiguration configuration, ILogger<MetadataRepository> logger) : BaseRepository(configuration)
 {
-    public async Task<List<Metadata>> ObterMetadata()
+    public async Task<List<Metadata>> ObterMetadata(CancellationToken cancellationToken = default)
     {
         var metadata = new List<Metadata>();
         try
         {
-            await using var connection = ObterConexao();
-            await connection.OpenAsync();
+            using var connection = await ObterConexao(cancellationToken);
 
-            string tableQuery = @"SELECT table_name  
-                                  FROM information_schema.tables 
-                                  WHERE table_type = 'BASE TABLE' AND table_schema = @schemaName;";
+            string tableQuery = @"
+                    SELECT table_name  
+                    FROM information_schema.tables 
+                    WHERE table_type = 'BASE TABLE' AND table_schema = @schemaName;";
 
-            await using var tableCmd = new NpgsqlCommand(tableQuery, connection);
-            tableCmd.Parameters.AddWithValue("schemaName", SCHEMA);
-
-            var tabelas = new List<string>();
-            
-            await using (var reader = await tableCmd.ExecuteReaderAsync()) 
-            {
-                while (await reader.ReadAsync())
-                    tabelas.Add(reader.GetString(0));
-            } 
-
+            var tabelas = (await connection.QueryAsync<string>(tableQuery, new { schemaName = SCHEMA })).AsList();
 
             foreach (var tabela in tabelas)
-                metadata.Add(await ObterMetadadosTabela(tabela, connection));               
+            {
+                metadata.Add(await ObterMetadadosTabela(tabela, connection));
+            }
 
             return metadata;
         }
@@ -59,13 +50,11 @@ public class MetadataRepository(IConfiguration configuration, ILogger<MetadataRe
 
     private async Task<List<Campo>> ObterColunas(string tabela, NpgsqlConnection connection)
     {
-        var colunas = new List<Campo>();
-
         string columnQuery = @"
                 SELECT 
-                    c.column_name, 
-                    c.data_type, 
-                    pgd.description AS column_comment
+                    c.column_name as nome, 
+                    c.data_type as tipo, 
+                    pgd.description AS descricao
                 FROM 
                     information_schema.columns c
                 LEFT JOIN pg_catalog.pg_statio_all_tables st 
@@ -73,35 +62,21 @@ public class MetadataRepository(IConfiguration configuration, ILogger<MetadataRe
                 LEFT JOIN pg_catalog.pg_description pgd 
                     ON pgd.objoid = st.relid AND pgd.objsubid = c.ordinal_position
                 WHERE 
-                    c.table_schema = @schemaName AND c.table_name = @tableName;
-            ";
+                    c.table_schema = @schemaName AND c.table_name = @tableName;";
 
-        await using var colCmd = new NpgsqlCommand(columnQuery, connection);
-        colCmd.Parameters.AddWithValue("schemaName", SCHEMA);
-        colCmd.Parameters.AddWithValue("tableName", tabela);
-        await using var colReader = await colCmd.ExecuteReaderAsync();
+        var colunas = await connection.QueryAsync<Campo>(columnQuery, new { schemaName = SCHEMA, tableName = tabela });
 
-        while (await colReader.ReadAsync())
-        {
-            string nome = colReader.GetString(0);
-            string tipo = colReader.GetString(1);
-            string descricao = colReader.IsDBNull(2) ? "" : colReader.GetString(2);
-
-            colunas.Add(new Campo(nome, tipo, descricao));
-        }
-
-        return colunas;
+        return colunas.AsList();
     }
 
     private async Task<Metadata> ObterChaves(Metadata metadata, NpgsqlConnection connection)
     {
-
         string tableConstraintsQuery = @"
                 SELECT 
-	                tc.constraint_type as constraint_type,
-	                kcu.column_name, 
-	                ccu.table_name AS foreign_table_name, 
-	                ccu.column_name AS foreign_column_name
+                    tc.constraint_type as constraint_type,
+                    kcu.column_name, 
+                    ccu.table_name AS foreign_table_name, 
+                    ccu.column_name AS foreign_column_name
                 FROM information_schema.table_constraints tc 
                 JOIN information_schema.key_column_usage kcu
                     ON tc.constraint_name = kcu.constraint_name
@@ -110,37 +85,31 @@ public class MetadataRepository(IConfiguration configuration, ILogger<MetadataRe
                     ON ccu.constraint_name = tc.constraint_name
                     AND ccu.table_schema = tc.table_schema
                 WHERE 
-                    tc.table_name = @tableName;
-            ";
+                    tc.table_name = @tableName;";
 
-        await using var constraintsCmd = new NpgsqlCommand(tableConstraintsQuery, connection);
-        constraintsCmd.Parameters.AddWithValue("tableName", metadata.Tabela);
+        var constraints = await connection.QueryAsync<dynamic>(tableConstraintsQuery, new { tableName = metadata.Tabela });
 
-        await using var constraintReader = await constraintsCmd.ExecuteReaderAsync();
-        if (constraintReader.HasRows)
+        foreach (var constraint in constraints)
         {
-            while (await constraintReader.ReadAsync())
+            switch (constraint.constraint_type)
             {
-                switch (constraintReader.GetString(0))
-                {
-                    case "PRIMARY KEY":
-                        metadata.PrimaryKeys.Add(constraintReader.GetString(1));
-                        break;
-                    case "FOREIGN KEY":
-                        metadata.ForeignKeys.Add(new ChaveEstrangeira(constraintReader.GetString(1), constraintReader.GetString(2), constraintReader.GetString(3)));
-                        break;
-
-                    case "UNIQUE":
-                        metadata.UniqueKeys.Add(constraintReader.GetString(1));
-                        break;
-
-                    default:
-                        break;
-                }
+                case "PRIMARY KEY":
+                    metadata.PrimaryKeys.Add(constraint.column_name);
+                    break;
+                case "FOREIGN KEY":
+                    metadata.ForeignKeys.Add(new ChaveEstrangeira(
+                        constraint.column_name,
+                        constraint.foreign_table_name,
+                        constraint.foreign_column_name));
+                    break;
+                case "UNIQUE":
+                    metadata.UniqueKeys.Add(constraint.column_name);
+                    break;
+                default:
+                    break;
             }
         }
 
         return metadata;
     }
-
 }

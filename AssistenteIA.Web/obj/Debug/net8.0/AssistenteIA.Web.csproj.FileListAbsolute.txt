@@ -245,7 +245,6 @@ G:\Projetos\AssistenteIA\AssistenteIA.Web\obj\Debug\net8.0\AssistenteIA.Web.sour
 G:\Projetos\AssistenteIA\AssistenteIA.Web\obj\Debug\net8.0\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
 G:\Projetos\AssistenteIA\AssistenteIA.Web\obj\Debug\net8.0\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css
 G:\Projetos\AssistenteIA\AssistenteIA.Web\obj\Debug\net8.0\scopedcss\Components\Pages\Chat.razor.rz.scp.css
-G:\Projetos\AssistenteIA\AssistenteIA.Web\obj\Debug\net8.0\scopedcss\Components\Pages\ChatMarkdown.razor.rz.scp.css
 G:\Projetos\AssistenteIA\AssistenteIA.Web\obj\Debug\net8.0\scopedcss\bundle\AssistenteIA.Web.styles.css
 G:\Projetos\AssistenteIA\AssistenteIA.Web\obj\Debug\net8.0\scopedcss\projectbundle\AssistenteIA.Web.bundle.scp.css
 G:\Projetos\AssistenteIA\AssistenteIA.Web\obj\Debug\net8.0\staticwebassets.build.json
@@ -264,3 +263,4 @@ G:\Projetos\AssistenteIA\AssistenteIA.Web\obj\Debug\net8.0\refint\AssistenteIA.W
 G:\Projetos\AssistenteIA\AssistenteIA.Web\obj\Debug\net8.0\AssistenteIA.Web.pdb
 G:\Projetos\AssistenteIA\AssistenteIA.Web\obj\Debug\net8.0\AssistenteIA.Web.genruntimeconfig.cache
 G:\Projetos\AssistenteIA\AssistenteIA.Web\obj\Debug\net8.0\ref\AssistenteIA.Web.dll
+G:\Projetos\AssistenteIA\AssistenteIA.Web\obj\Debug\net8.0\scopedcss\Components\Pages\TreinarRag.razor.rz.scp.css

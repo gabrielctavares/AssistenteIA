@@ -12,17 +12,17 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"x7aa15g9kh"},{"Name":"integrity","Value":"sha256-w5gQr9P5FDy0Eh5G2NwKrs9qiq7H6Zs0Xomli9HxITo="},{"Name":"label","Value":"_content/AssistenteIA.Web/app.css"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2825"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022w5gQr9P5FDy0Eh5G2NwKrs9qiq7H6Zs0Xomli9HxITo=\u0022"},{"Name":"Last-Modified","Value":"Thu, 13 Feb 2025 17:10:07 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/AssistenteIA.Web/AssistenteIA.Web.522chsjwal.bundle.scp.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AssistenteIA.Web.522chsjwal.bundle.scp.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"522chsjwal"},{"Name":"integrity","Value":"sha256-bWaKJkAJe1dt8F8n1x6l/aPEzNXZsYTJEJvgF7fhcMQ="},{"Name":"label","Value":"_content/AssistenteIA.Web/AssistenteIA.Web.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"7952"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022bWaKJkAJe1dt8F8n1x6l/aPEzNXZsYTJEJvgF7fhcMQ=\u0022"},{"Name":"Last-Modified","Value":"Thu, 13 Feb 2025 17:10:07 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/AssistenteIA.Web/AssistenteIA.Web.bundle.scp.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AssistenteIA.Web.522chsjwal.bundle.scp.css'))</AssetFile>
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AssistenteIA.Web.qtssfzc6nq.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-bWaKJkAJe1dt8F8n1x6l/aPEzNXZsYTJEJvgF7fhcMQ="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"7952"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022bWaKJkAJe1dt8F8n1x6l/aPEzNXZsYTJEJvgF7fhcMQ=\u0022"},{"Name":"Last-Modified","Value":"Thu, 13 Feb 2025 17:10:07 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-7ptiAI0T2LJ2teP0UYREEO9LQsSSekUmmbiYFiyfl04="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"7950"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00227ptiAI0T2LJ2teP0UYREEO9LQsSSekUmmbiYFiyfl04=\u0022"},{"Name":"Last-Modified","Value":"Thu, 20 Feb 2025 21:29:46 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AssistenteIA.Web/AssistenteIA.Web.qtssfzc6nq.bundle.scp.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AssistenteIA.Web.qtssfzc6nq.bundle.scp.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"qtssfzc6nq"},{"Name":"integrity","Value":"sha256-7ptiAI0T2LJ2teP0UYREEO9LQsSSekUmmbiYFiyfl04="},{"Name":"label","Value":"_content/AssistenteIA.Web/AssistenteIA.Web.bundle.scp.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"7950"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00227ptiAI0T2LJ2teP0UYREEO9LQsSSekUmmbiYFiyfl04=\u0022"},{"Name":"Last-Modified","Value":"Thu, 20 Feb 2025 21:29:46 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/AssistenteIA.Web/favicon.ifv42okdf2.png">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.png'))</AssetFile>

@@ -250,14 +250,14 @@ main[b-v4mgg0xyq4] {
 .copy-btn:hover[b-0tpt6cjhoi] {
     color: #007bff;
 }
-/* _content/AssistenteIA.Web/Components/Pages/ChatMarkdown.razor.rz.scp.css */
-.chat-container[b-f6svbzdki8] {
+/* _content/AssistenteIA.Web/Components/Pages/TreinarRag.razor.rz.scp.css */
+.chat-container[b-n2acxkq6oc] {
     background-color: #f8f9fa;
     padding: 10px;
     border-radius: 5px;
 }
 
-.message[b-f6svbzdki8] {
+.message[b-n2acxkq6oc] {
     padding: 10px;
     border-radius: 8px;
     margin-bottom: 8px;
@@ -266,7 +266,7 @@ main[b-v4mgg0xyq4] {
 }
 
 /* Mensagens do Usuário */
-.user-message[b-f6svbzdki8] {
+.user-message[b-n2acxkq6oc] {
     background-color: #007bff;
     color: white;
     align-self: flex-end;
@@ -275,7 +275,7 @@ main[b-v4mgg0xyq4] {
 }
 
 /* Mensagens da IA */
-.ia-message[b-f6svbzdki8] {
+.ia-message[b-n2acxkq6oc] {
     background-color: #e9ecef;
     color: black;
     align-self: flex-start;
@@ -283,7 +283,7 @@ main[b-v4mgg0xyq4] {
     margin-right: auto;
 }
 
-.chat-container[b-f6svbzdki8] {
+.chat-container[b-n2acxkq6oc] {
     display: flex;
     flex-direction: column;
     height: 400px;
@@ -291,7 +291,7 @@ main[b-v4mgg0xyq4] {
     padding: 10px;
 }
 
-.copy-btn[b-f6svbzdki8] {
+.copy-btn[b-n2acxkq6oc] {
     background: transparent;
     border: none;
     font-size: 1.2rem;
@@ -299,6 +299,6 @@ main[b-v4mgg0xyq4] {
     margin-left: 8px;
 }
 
-.copy-btn:hover[b-f6svbzdki8] {
+.copy-btn:hover[b-n2acxkq6oc] {
     color: #007bff;
 }

@@ -6,15 +6,15 @@ namespace AssistenteIA.ApiService.Services;
 
 public class ChatService(LLMService llmService, DatabaseService databaseService, HealthCheckService healthCheckService)
 {
-    public async Task<DadosDTO> ProcessarChat(string mensagem)
+    public async Task<RespostaDTO> ProcessarChat(string mensagem, CancellationToken cancellationToken = default)
     {
         var classificacao = await ObterClassificacaoAtendimento(mensagem);
 
         return classificacao switch
         {
-            ClassificacaoAtendimento.ConsultarOuAlterarDados => await databaseService.ConsultarDados(mensagem),
-            ClassificacaoAtendimento.ConsultarFuncionamentoServicos => await healthCheckService.VerificarServicos(),
-            _ => new DadosDTO("Não entendi sua pergunta.", []),
+            ClassificacaoAtendimento.ConsultarOuAlterarDados => await databaseService.ConsultarDados(mensagem, cancellationToken),
+            ClassificacaoAtendimento.ConsultarFuncionamentoServicos => await healthCheckService.VerificarServicos(cancellationToken),
+            _ => new RespostaDTO("Não entendi sua pergunta.", []),
         };
     }
 

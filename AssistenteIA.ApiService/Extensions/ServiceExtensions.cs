@@ -16,6 +16,7 @@ public static class ServiceExtensions
     {
         services.AddScoped<QueryRepository>();
         services.AddScoped<MetadataRepository>();
+        services.AddScoped<RAGRepository>();
         return services;
     }
     public static IServiceCollection ConfigureServices(this IServiceCollection services)
@@ -23,7 +24,7 @@ public static class ServiceExtensions
 
         services.AddHttpClient();
 
-        services.AddScoped<EmbeddingService>();
+        services.AddScoped<RAGService>();
         services.AddScoped<LLMService>();
 
         services.AddScoped<DatabaseService>();

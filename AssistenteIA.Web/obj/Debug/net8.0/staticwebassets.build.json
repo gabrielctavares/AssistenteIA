@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "OnIKn5OPf3okPH0JI+Q1LSM/lRTPkmGkn4E/l2LQJxw=",
+  "Hash": "52FxA55K0FB6sBecosk2RkfO0jVRlIdcNOBJoYcWddQ=",
   "Source": "AssistenteIA.Web",
   "BasePath": "_content/AssistenteIA.Web",
   "Mode": "Default",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "522chsjwal",
-      "Integrity": "bWaKJkAJe1dt8F8n1x6l/aPEzNXZsYTJEJvgF7fhcMQ=",
+      "Fingerprint": "qtssfzc6nq",
+      "Integrity": "7ptiAI0T2LJ2teP0UYREEO9LQsSSekUmmbiYFiyfl04=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\AssistenteIA.Web.styles.css"
@@ -52,8 +52,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "522chsjwal",
-      "Integrity": "bWaKJkAJe1dt8F8n1x6l/aPEzNXZsYTJEJvgF7fhcMQ=",
+      "Fingerprint": "qtssfzc6nq",
+      "Integrity": "7ptiAI0T2LJ2teP0UYREEO9LQsSSekUmmbiYFiyfl04=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AssistenteIA.Web.bundle.scp.css"
@@ -1109,96 +1109,6 @@
       ]
     },
     {
-      "Route": "AssistenteIA.Web.522chsjwal.bundle.scp.css",
-      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AssistenteIA.Web.bundle.scp.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "7952"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"bWaKJkAJe1dt8F8n1x6l/aPEzNXZsYTJEJvgF7fhcMQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "522chsjwal"
-        },
-        {
-          "Name": "label",
-          "Value": "AssistenteIA.Web.bundle.scp.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-bWaKJkAJe1dt8F8n1x6l/aPEzNXZsYTJEJvgF7fhcMQ="
-        }
-      ]
-    },
-    {
-      "Route": "AssistenteIA.Web.522chsjwal.styles.css",
-      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\AssistenteIA.Web.styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "7952"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"bWaKJkAJe1dt8F8n1x6l/aPEzNXZsYTJEJvgF7fhcMQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "522chsjwal"
-        },
-        {
-          "Name": "label",
-          "Value": "AssistenteIA.Web.styles.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-bWaKJkAJe1dt8F8n1x6l/aPEzNXZsYTJEJvgF7fhcMQ="
-        }
-      ]
-    },
-    {
       "Route": "AssistenteIA.Web.bundle.scp.css",
       "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AssistenteIA.Web.bundle.scp.css",
       "Selectors": [],
@@ -1209,7 +1119,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7952"
+          "Value": "7950"
         },
         {
           "Name": "Content-Type",
@@ -1217,11 +1127,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"bWaKJkAJe1dt8F8n1x6l/aPEzNXZsYTJEJvgF7fhcMQ=\""
+          "Value": "\"7ptiAI0T2LJ2teP0UYREEO9LQsSSekUmmbiYFiyfl04=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
+          "Value": "Thu, 20 Feb 2025 21:29:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1231,7 +1141,97 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-bWaKJkAJe1dt8F8n1x6l/aPEzNXZsYTJEJvgF7fhcMQ="
+          "Value": "sha256-7ptiAI0T2LJ2teP0UYREEO9LQsSSekUmmbiYFiyfl04="
+        }
+      ]
+    },
+    {
+      "Route": "AssistenteIA.Web.qtssfzc6nq.bundle.scp.css",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AssistenteIA.Web.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7950"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7ptiAI0T2LJ2teP0UYREEO9LQsSSekUmmbiYFiyfl04=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Feb 2025 21:29:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qtssfzc6nq"
+        },
+        {
+          "Name": "label",
+          "Value": "AssistenteIA.Web.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7ptiAI0T2LJ2teP0UYREEO9LQsSSekUmmbiYFiyfl04="
+        }
+      ]
+    },
+    {
+      "Route": "AssistenteIA.Web.qtssfzc6nq.styles.css",
+      "AssetFile": "G:\\Projetos\\AssistenteIA\\AssistenteIA.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\AssistenteIA.Web.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7950"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7ptiAI0T2LJ2teP0UYREEO9LQsSSekUmmbiYFiyfl04=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Feb 2025 21:29:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qtssfzc6nq"
+        },
+        {
+          "Name": "label",
+          "Value": "AssistenteIA.Web.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7ptiAI0T2LJ2teP0UYREEO9LQsSSekUmmbiYFiyfl04="
         }
       ]
     },
@@ -1246,7 +1246,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7952"
+          "Value": "7950"
         },
         {
           "Name": "Content-Type",
@@ -1254,11 +1254,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"bWaKJkAJe1dt8F8n1x6l/aPEzNXZsYTJEJvgF7fhcMQ=\""
+          "Value": "\"7ptiAI0T2LJ2teP0UYREEO9LQsSSekUmmbiYFiyfl04=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 13 Feb 2025 17:10:07 GMT"
+          "Value": "Thu, 20 Feb 2025 21:29:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1268,7 +1268,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-bWaKJkAJe1dt8F8n1x6l/aPEzNXZsYTJEJvgF7fhcMQ="
+          "Value": "sha256-7ptiAI0T2LJ2teP0UYREEO9LQsSSekUmmbiYFiyfl04="
         }
       ]
     },

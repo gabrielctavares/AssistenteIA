@@ -3,9 +3,9 @@ using Microsoft.Extensions.AI;
 using System.Text;
 namespace AssistenteIA.ApiService.Services;
 
-public class LLMService(Microsoft.Extensions.AI.IChatClient client, ILogger<LLMService> logger)
+public class LLMService(IChatClient client, ILogger<LLMService> logger)
 {
-    public async Task<string> GerarResposta(string userQuery, string prompt = null)
+    public async Task<string> GerarResposta(string userQuery, string prompt = null, CancellationToken cancellationToken = default)
     {
         try
         {
@@ -15,7 +15,7 @@ public class LLMService(Microsoft.Extensions.AI.IChatClient client, ILogger<LLMS
             var mensagemSistema = new ChatMessage(ChatRole.System, prompt);
             var mensagemCliente = new ChatMessage(ChatRole.User, userQuery);
 
-            var answer = await client.CompleteAsync([mensagemSistema, mensagemCliente]);
+            var answer = await client.CompleteAsync([mensagemSistema, mensagemCliente], cancellationToken: cancellationToken);
 
             return answer.Choices.FirstOrDefault()?.Text!;
         }

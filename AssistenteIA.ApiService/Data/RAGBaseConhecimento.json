@@ -1,314 +1,314 @@
 [
   {
     "Pergunta": "Domínios cadastrados",
-    "SQL": "SELECT * FROM dominio;"
+    "Resposta": "SELECT * FROM dominio;"
   },
   {
     "Pergunta": "Códigos e descrições dos domínios",
-    "SQL": "SELECT codigo, descricao FROM dominio;"
+    "Resposta": "SELECT codigo, descricao FROM dominio;"
   },
   {
     "Pergunta": "Domínio com código 123",
-    "SQL": "SELECT * FROM dominio WHERE codigo = 123;"
+    "Resposta": "SELECT * FROM dominio WHERE codigo = 123;"
   },
   {
     "Pergunta": "Domínios com classid 102",
-    "SQL": "SELECT * FROM dominio WHERE classid = 102;"
+    "Resposta": "SELECT * FROM dominio WHERE classid = 102;"
   },
   {
     "Pergunta": "Itens do domínio 1",
-    "SQL": "SELECT * FROM itemdominio WHERE dominioid = 1;"
+    "Resposta": "SELECT * FROM itemdominio WHERE dominioid = 1;"
   },
   {
     "Pergunta": "Sigla e descrição dos itens do domínio 1",
-    "SQL": "SELECT sigla, descricao FROM itemdominio WHERE dominioid = 1;"
+    "Resposta": "SELECT sigla, descricao FROM itemdominio WHERE dominioid = 1;"
   },
   {
     "Pergunta": "Itens de domínio com código 10",
-    "SQL": "SELECT * FROM itemdominio WHERE codigo = 10;"
+    "Resposta": "SELECT * FROM itemdominio WHERE codigo = 10;"
   },
   {
     "Pergunta": "Pessoas físicas",
-    "SQL": "SELECT * FROM pessoa WHERE classid = 101;"
+    "Resposta": "SELECT * FROM pessoa WHERE classid = 101;"
   },
   {
     "Pergunta": "Pessoas jurídicas",
-    "SQL": "SELECT * FROM pessoa WHERE classid = 102;"
+    "Resposta": "SELECT * FROM pessoa WHERE classid = 102;"
   },
   {
     "Pergunta": "Pessoas masculinas",
-    "SQL": "SELECT * FROM pessoa WHERE sexo = 1;"
+    "Resposta": "SELECT * FROM pessoa WHERE sexo = 1;"
   },
   {
     "Pergunta": "Pessoas femininas",
-    "SQL": "SELECT * FROM pessoa WHERE sexo = 2;"
+    "Resposta": "SELECT * FROM pessoa WHERE sexo = 2;"
   },
   {
     "Pergunta": "Pessoas nascidas depois de '2000-01-01'",
-    "SQL": "SELECT nome, email FROM pessoa WHERE dtnascimentooucriacao > '2000-01-01';"
+    "Resposta": "SELECT nome, email FROM pessoa WHERE dtnascimentooucriacao > '2000-01-01';"
   },
   {
     "Pergunta": "Pessoa com CPF/CNPJ '12345678901'",
-    "SQL": "SELECT * FROM pessoa WHERE cpfcnpj = '12345678901';"
+    "Resposta": "SELECT * FROM pessoa WHERE cpfcnpj = '12345678901';"
   },
   {
     "Pergunta": "Pessoas ordenadas por nome",
-    "SQL": "SELECT * FROM pessoa ORDER BY nome ASC;"
+    "Resposta": "SELECT * FROM pessoa ORDER BY nome ASC;"
   },
   {
     "Pergunta": "Quantidade de pessoas",
-    "SQL": "SELECT COUNT(*) FROM pessoa;"
+    "Resposta": "SELECT COUNT(*) FROM pessoa;"
   },
   {
     "Pergunta": "Associações tipo Pai",
-    "SQL": "SELECT * FROM associacaopessoa WHERE tipo = 1;"
+    "Resposta": "SELECT * FROM associacaopessoa WHERE tipo = 1;"
   },
   {
     "Pergunta": "Associações tipo Mãe",
-    "SQL": "SELECT * FROM associacaopessoa WHERE tipo = 2;"
+    "Resposta": "SELECT * FROM associacaopessoa WHERE tipo = 2;"
   },
   {
     "Pergunta": "Associações tipo Responsável",
-    "SQL": "SELECT * FROM associacaopessoa WHERE tipo = 3;"
+    "Resposta": "SELECT * FROM associacaopessoa WHERE tipo = 3;"
   },
   {
     "Pergunta": "Associações da pessoa 1",
-    "SQL": "SELECT * FROM associacaopessoa WHERE pessoaid = 1 OR pessoaassociadaid = 1;"
+    "Resposta": "SELECT * FROM associacaopessoa WHERE pessoaid = 1 OR pessoaassociadaid = 1;"
   },
   {
     "Pergunta": "Pessoas e associação (Pai/Mãe)",
-    "SQL": "SELECT p.nome, a.tipo FROM associacaopessoa a JOIN pessoa p ON a.pessoaid = p.objectid WHERE a.tipo IN (1, 2);"
+    "Resposta": "SELECT p.nome, a.tipo FROM associacaopessoa a JOIN pessoa p ON a.pessoaid = p.objectid WHERE a.tipo IN (1, 2);"
   },
   {
     "Pergunta": "Pessoas sem associações",
-    "SQL": "SELECT * FROM pessoa WHERE objectid NOT IN (SELECT pessoaid FROM associacaopessoa) AND objectid NOT IN (SELECT pessoaassociadaid FROM associacaopessoa);"
+    "Resposta": "SELECT * FROM pessoa WHERE objectid NOT IN (SELECT pessoaid FROM associacaopessoa) AND objectid NOT IN (SELECT pessoaassociadaid FROM associacaopessoa);"
   },
   {
     "Pergunta": "Domínios e quantidade de itens",
-    "SQL": "SELECT d.objectid, d.descricao, COUNT(i.objectid) AS total_itens FROM dominio d LEFT JOIN itemdominio i ON d.objectid = i.dominioid GROUP BY d.objectid, d.descricao;"
+    "Resposta": "SELECT d.objectid, d.descricao, COUNT(i.objectid) AS total_itens FROM dominio d LEFT JOIN itemdominio i ON d.objectid = i.dominioid GROUP BY d.objectid, d.descricao;"
   },
   {
     "Pergunta": "Itens com nome do domínio",
-    "SQL": "SELECT i.objectid, i.sigla, i.descricao, d.descricao AS dominio FROM itemdominio i JOIN dominio d ON i.dominioid = d.objectid;"
+    "Resposta": "SELECT i.objectid, i.sigla, i.descricao, d.descricao AS dominio FROM itemdominio i JOIN dominio d ON i.dominioid = d.objectid;"
   },
   {
     "Pergunta": "E-mails das pessoas",
-    "SQL": "SELECT email FROM pessoa WHERE email IS NOT NULL AND email <> '';"
+    "Resposta": "SELECT email FROM pessoa WHERE email IS NOT NULL AND email <> '';"
   },
   {
     "Pergunta": "Domínio com maior código",
-    "SQL": "SELECT * FROM dominio ORDER BY codigo DESC LIMIT 1;"
+    "Resposta": "SELECT * FROM dominio ORDER BY codigo DESC LIMIT 1;"
   },
   {
     "Pergunta": "Pessoas com telefone",
-    "SQL": "SELECT * FROM pessoa WHERE telefone IS NOT NULL AND telefone <> '';"
+    "Resposta": "SELECT * FROM pessoa WHERE telefone IS NOT NULL AND telefone <> '';"
   },
   {
     "Pergunta": "Associações por tipo",
-    "SQL": "SELECT tipo, COUNT(*) AS total FROM associacaopessoa GROUP BY tipo;"
+    "Resposta": "SELECT tipo, COUNT(*) AS total FROM associacaopessoa GROUP BY tipo;"
   },
   {
     "Pergunta": "Pessoas com nome começando com 'A'",
-    "SQL": "SELECT * FROM pessoa WHERE nome ILIKE 'A%';"
+    "Resposta": "SELECT * FROM pessoa WHERE nome ILIKE 'A%';"
   },
   {
     "Pergunta": "Domínios com 'abc' na descrição",
-    "SQL": "SELECT * FROM dominio WHERE descricao ILIKE '%abc%';"
+    "Resposta": "SELECT * FROM dominio WHERE descricao ILIKE '%abc%';"
   },
   {
     "Pergunta": "Itens com 'abc' na sigla",
-    "SQL": "SELECT * FROM itemdominio WHERE sigla ILIKE '%abc%';"
+    "Resposta": "SELECT * FROM itemdominio WHERE sigla ILIKE '%abc%';"
   },
   {
     "Pergunta": "Pessoas nascidas em 1990",
-    "SQL": "SELECT * FROM pessoa WHERE EXTRACT(YEAR FROM dtnascimentooucriacao) = 1990;"
+    "Resposta": "SELECT * FROM pessoa WHERE EXTRACT(YEAR FROM dtnascimentooucriacao) = 1990;"
   },
   {
     "Pergunta": "Primeiras 10 pessoas",
-    "SQL": "SELECT * FROM pessoa LIMIT 10;"
+    "Resposta": "SELECT * FROM pessoa LIMIT 10;"
   },
   {
     "Pergunta": "Últimas 5 pessoas",
-    "SQL": "SELECT * FROM pessoa ORDER BY dtnascimentooucriacao DESC LIMIT 5;"
+    "Resposta": "SELECT * FROM pessoa ORDER BY dtnascimentooucriacao DESC LIMIT 5;"
   },
   {
     "Pergunta": "Domínios ordenados por código",
-    "SQL": "SELECT codigo, descricao FROM dominio ORDER BY codigo ASC;"
+    "Resposta": "SELECT codigo, descricao FROM dominio ORDER BY codigo ASC;"
   },
   {
     "Pergunta": "Associações tipo Responsável",
-    "SQL": "SELECT * FROM associacaopessoa WHERE tipo = 3;"
+    "Resposta": "SELECT * FROM associacaopessoa WHERE tipo = 3;"
   },
   {
     "Pergunta": "Pais nascidos depois de '1980-01-01'",
-    "SQL": "SELECT p.nome FROM pessoa p JOIN associacaopessoa a ON p.objectid = a.pessoaid WHERE a.tipo = 1 AND p.dtnascimentooucriacao > '1980-01-01';"
+    "Resposta": "SELECT p.nome FROM pessoa p JOIN associacaopessoa a ON p.objectid = a.pessoaid WHERE a.tipo = 1 AND p.dtnascimentooucriacao > '1980-01-01';"
   },
   {
     "Pergunta": "E-mails com CPF/CNPJ iniciando com '123'",
-    "SQL": "SELECT email FROM pessoa WHERE cpfcnpj ILIKE '123%';"
+    "Resposta": "SELECT email FROM pessoa WHERE cpfcnpj ILIKE '123%';"
   },
   {
     "Pergunta": "Itens com classid 1",
-    "SQL": "SELECT * FROM itemdominio WHERE classid = 1;"
+    "Resposta": "SELECT * FROM itemdominio WHERE classid = 1;"
   },
   {
     "Pergunta": "Quantidade de itens de domínio",
-    "SQL": "SELECT COUNT(*) FROM itemdominio;"
+    "Resposta": "SELECT COUNT(*) FROM itemdominio;"
   },
   {
     "Pergunta": "Domínios sem itens",
-    "SQL": "SELECT * FROM dominio WHERE objectid NOT IN (SELECT DISTINCT dominioid FROM itemdominio);"
+    "Resposta": "SELECT * FROM dominio WHERE objectid NOT IN (SELECT DISTINCT dominioid FROM itemdominio);"
   },
   {
     "Pergunta": "Pessoas ordenadas por e-mail",
-    "SQL": "SELECT * FROM pessoa ORDER BY email ASC;"
+    "Resposta": "SELECT * FROM pessoa ORDER BY email ASC;"
   },
   {
     "Pergunta": "Nomes e telefones de mulheres",
-    "SQL": "SELECT nome, telefone FROM pessoa WHERE sexo = 2;"
+    "Resposta": "SELECT nome, telefone FROM pessoa WHERE sexo = 2;"
   },
   {
     "Pergunta": "Pessoas com 'Silva' no nome",
-    "SQL": "SELECT * FROM pessoa WHERE nome ILIKE '%Silva%';"
+    "Resposta": "SELECT * FROM pessoa WHERE nome ILIKE '%Silva%';"
   },
   {
     "Pergunta": "IDs e códigos dos domínios",
-    "SQL": "SELECT objectid, codigo FROM dominio;"
+    "Resposta": "SELECT objectid, codigo FROM dominio;"
   },
   {
     "Pergunta": "Itens sem descrição",
-    "SQL": "SELECT * FROM itemdominio WHERE descricao IS NULL OR descricao = '';"
+    "Resposta": "SELECT * FROM itemdominio WHERE descricao IS NULL OR descricao = '';"
   },
   {
     "Pergunta": "Associações com e-mail 'exemplo@teste.com'",
-    "SQL": "SELECT a.* FROM associacaopessoa a JOIN pessoa p ON a.pessoaassociadaid = p.objectid WHERE p.email = 'exemplo@teste.com';"
+    "Resposta": "SELECT a.* FROM associacaopessoa a JOIN pessoa p ON a.pessoaassociadaid = p.objectid WHERE p.email = 'exemplo@teste.com';"
   },
   {
     "Pergunta": "Pessoas entre '2000-01-01' e '2020-12-31'",
-    "SQL": "SELECT * FROM pessoa WHERE dtnascimentooucriacao BETWEEN '2000-01-01' AND '2020-12-31';"
+    "Resposta": "SELECT * FROM pessoa WHERE dtnascimentooucriacao BETWEEN '2000-01-01' AND '2020-12-31';"
   },
   {
     "Pergunta": "Associações ordenadas por tipo",
-    "SQL": "SELECT * FROM associacaopessoa ORDER BY tipo ASC;"
+    "Resposta": "SELECT * FROM associacaopessoa ORDER BY tipo ASC;"
   },
   {
     "Pergunta": "Itens ordenados por sigla",
-    "SQL": "SELECT * FROM itemdominio ORDER BY sigla ASC;"
+    "Resposta": "SELECT * FROM itemdominio ORDER BY sigla ASC;"
   },
   {
     "Pergunta": "Atualizar domínio com código 123 para 'Novo Domínio'",
-    "SQL": "UPDATE dominio SET descricao = 'Novo Domínio' WHERE codigo = 123;"
+    "Resposta": "UPDATE dominio SET descricao = 'Novo Domínio' WHERE codigo = 123;"
   },
   {
     "Pergunta": "Alterar código do domínio com ID 1 para 456",
-    "SQL": "UPDATE dominio SET codigo = 456 WHERE objectid = 1;"
+    "Resposta": "UPDATE dominio SET codigo = 456 WHERE objectid = 1;"
   },
   {
     "Pergunta": "Atualizar item com ID 1 para 'Novo Item'",
-    "SQL": "UPDATE itemdominio SET descricao = 'Novo Item' WHERE objectid = 1;"
+    "Resposta": "UPDATE itemdominio SET descricao = 'Novo Item' WHERE objectid = 1;"
   },
   {
     "Pergunta": "Atualizar sigla do item com ID 1 para 'NI'",
-    "SQL": "UPDATE itemdominio SET sigla = 'NI' WHERE objectid = 1;"
+    "Resposta": "UPDATE itemdominio SET sigla = 'NI' WHERE objectid = 1;"
   },
   {
     "Pergunta": "Alterar código do item com ID 1 para 99",
-    "SQL": "UPDATE itemdominio SET codigo = 99 WHERE objectid = 1;"
+    "Resposta": "UPDATE itemdominio SET codigo = 99 WHERE objectid = 1;"
   },
   {
     "Pergunta": "Atualizar nome da pessoa com CPF '12345678901' para 'João Silva'",
-    "SQL": "UPDATE pessoa SET nome = 'João Silva' WHERE cpfcnpj = '12345678901';"
+    "Resposta": "UPDATE pessoa SET nome = 'João Silva' WHERE cpfcnpj = '12345678901';"
   },
   {
     "Pergunta": "Atualizar e-mail da pessoa com ID 1 para 'joao@exemplo.com'",
-    "SQL": "UPDATE pessoa SET email = 'joao@exemplo.com' WHERE objectid = 1;"
+    "Resposta": "UPDATE pessoa SET email = 'joao@exemplo.com' WHERE objectid = 1;"
   },
   {
     "Pergunta": "Atualizar telefone da pessoa com ID 1 para '999999999'",
-    "SQL": "UPDATE pessoa SET telefone = '999999999' WHERE objectid = 1;"
+    "Resposta": "UPDATE pessoa SET telefone = '999999999' WHERE objectid = 1;"
   },
   {
     "Pergunta": "Atualizar data de nascimento da pessoa com ID 1 para '1990-05-20'",
-    "SQL": "UPDATE pessoa SET dtnascimentooucriacao = '1990-05-20' WHERE objectid = 1;"
+    "Resposta": "UPDATE pessoa SET dtnascimentooucriacao = '1990-05-20' WHERE objectid = 1;"
   },
   {
     "Pergunta": "Atualizar sexo da pessoa com ID 1 para 1",
-    "SQL": "UPDATE pessoa SET sexo = 1 WHERE objectid = 1;"
+    "Resposta": "UPDATE pessoa SET sexo = 1 WHERE objectid = 1;"
   },
   {
     "Pergunta": "Alterar tipo da pessoa com ID 1 para 102",
-    "SQL": "UPDATE pessoa SET classid = 102 WHERE objectid = 1;"
+    "Resposta": "UPDATE pessoa SET classid = 102 WHERE objectid = 1;"
   },
   {
     "Pergunta": "Atualizar CPF da pessoa com ID 1 para '98765432100'",
-    "SQL": "UPDATE pessoa SET cpfcnpj = '98765432100' WHERE objectid = 1;"
+    "Resposta": "UPDATE pessoa SET cpfcnpj = '98765432100' WHERE objectid = 1;"
   },
   {
     "Pergunta": "Atualizar tipo de associação com ID 1 para 3",
-    "SQL": "UPDATE associacaopessoa SET tipo = 3 WHERE objectid = 1;"
+    "Resposta": "UPDATE associacaopessoa SET tipo = 3 WHERE objectid = 1;"
   },
   {
     "Pergunta": "Alterar pessoa principal na associação com ID 1 para 2",
-    "SQL": "UPDATE associacaopessoa SET pessoaid = 2 WHERE objectid = 1;"
+    "Resposta": "UPDATE associacaopessoa SET pessoaid = 2 WHERE objectid = 1;"
   },
   {
     "Pergunta": "Alterar pessoa associada na associação com ID 1 para 3",
-    "SQL": "UPDATE associacaopessoa SET pessoaassociadaid = 3 WHERE objectid = 1;"
+    "Resposta": "UPDATE associacaopessoa SET pessoaassociadaid = 3 WHERE objectid = 1;"
   },
   {
     "Pergunta": "Atualizar classid do item com ID 1 para 2",
-    "SQL": "UPDATE itemdominio SET classid = 2 WHERE objectid = 1;"
+    "Resposta": "UPDATE itemdominio SET classid = 2 WHERE objectid = 1;"
   },
   {
     "Pergunta": "Atualizar descrição do domínio com ID 1 para 'Nova Descrição'",
-    "SQL": "UPDATE dominio SET descricao = 'Nova Descrição' WHERE objectid = 1;"
+    "Resposta": "UPDATE dominio SET descricao = 'Nova Descrição' WHERE objectid = 1;"
   },
   {
     "Pergunta": "Alterar código do domínio com ID 1 para 789",
-    "SQL": "UPDATE dominio SET codigo = 789 WHERE objectid = 1;"
+    "Resposta": "UPDATE dominio SET codigo = 789 WHERE objectid = 1;"
   },
   {
     "Pergunta": "Atualizar sigla do item com domínio 1 e código 10 para 'NS'",
-    "SQL": "UPDATE itemdominio SET sigla = 'NS' WHERE dominioid = 1 AND codigo = 10;"
+    "Resposta": "UPDATE itemdominio SET sigla = 'NS' WHERE dominioid = 1 AND codigo = 10;"
   },
   {
     "Pergunta": "Atualizar descrição do item com domínio 1 e código 10 para 'Descrição Atualizada'",
-    "SQL": "UPDATE itemdominio SET descricao = 'Descrição Atualizada' WHERE dominioid = 1 AND codigo = 10;"
+    "Resposta": "UPDATE itemdominio SET descricao = 'Descrição Atualizada' WHERE dominioid = 1 AND codigo = 10;"
   },
   {
     "Pergunta": "Alterar nome da pessoa com e-mail 'joao@exemplo.com' para 'João da Silva'",
-    "SQL": "UPDATE pessoa SET nome = 'João da Silva' WHERE email = 'joao@exemplo.com';"
+    "Resposta": "UPDATE pessoa SET nome = 'João da Silva' WHERE email = 'joao@exemplo.com';"
   },
   {
     "Pergunta": "Atualizar e-mail da pessoa com CPF '12345678901' para 'joao.silva@exemplo.com'",
-    "SQL": "UPDATE pessoa SET email = 'joao.silva@exemplo.com' WHERE cpfcnpj = '12345678901';"
+    "Resposta": "UPDATE pessoa SET email = 'joao.silva@exemplo.com' WHERE cpfcnpj = '12345678901';"
   },
   {
     "Pergunta": "Atualizar telefone da pessoa com CPF '12345678901' para '888888888'",
-    "SQL": "UPDATE pessoa SET telefone = '888888888' WHERE cpfcnpj = '12345678901';"
+    "Resposta": "UPDATE pessoa SET telefone = '888888888' WHERE cpfcnpj = '12345678901';"
   },
   {
     "Pergunta": "Atualizar data de nascimento da pessoa com CPF '12345678901' para '1985-06-15'",
-    "SQL": "UPDATE pessoa SET dtnascimentooucriacao = '1985-06-15' WHERE cpfcnpj = '12345678901';"
+    "Resposta": "UPDATE pessoa SET dtnascimentooucriacao = '1985-06-15' WHERE cpfcnpj = '12345678901';"
   },
   {
     "Pergunta": "Atualizar sexo da pessoa com CPF '12345678901' para 2",
-    "SQL": "UPDATE pessoa SET sexo = 2 WHERE cpfcnpj = '12345678901';"
+    "Resposta": "UPDATE pessoa SET sexo = 2 WHERE cpfcnpj = '12345678901';"
   },
   {
     "Pergunta": "Alterar tipo da pessoa com CPF '12345678901' para 102",
-    "SQL": "UPDATE pessoa SET classid = 102 WHERE cpfcnpj = '12345678901';"
+    "Resposta": "UPDATE pessoa SET classid = 102 WHERE cpfcnpj = '12345678901';"
   },
   {
     "Pergunta": "Atualizar CPF da pessoa com e-mail 'joao@exemplo.com' para '98765432100'",
-    "SQL": "UPDATE pessoa SET cpfcnpj = '98765432100' WHERE email = 'joao@exemplo.com';"
+    "Resposta": "UPDATE pessoa SET cpfcnpj = '98765432100' WHERE email = 'joao@exemplo.com';"
   },
   {
     "Pergunta": "Atualizar associação com e-mail 'pai@exemplo.com' para tipo 3",
-    "SQL": "UPDATE associacaopessoa SET tipo = 3 WHERE pessoaid IN (SELECT objectid FROM pessoa WHERE email = 'pai@exemplo.com');"
+    "Resposta": "UPDATE associacaopessoa SET tipo = 3 WHERE pessoaid IN (SELECT objectid FROM pessoa WHERE email = 'pai@exemplo.com');"
   },
   {
     "Pergunta": "Alterar pessoa associada com e-mail 'mae@exemplo.com' para 3",
-    "SQL": "UPDATE associacaopessoa SET pessoaassociadaid = 3 WHERE pessoaassociadaid IN (SELECT objectid FROM pessoa WHERE email = 'mae@exemplo.com');"
+    "Resposta": "UPDATE associacaopessoa SET pessoaassociadaid = 3 WHERE pessoaassociadaid IN (SELECT objectid FROM pessoa WHERE email = 'mae@exemplo.com');"
   }
 ]

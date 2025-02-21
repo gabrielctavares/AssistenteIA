@@ -1,4 +1,9 @@
-﻿using Npgsql;
+﻿using Dapper;
+using Npgsql;
+using Pgvector.Dapper;
+using System.Threading.Tasks;
+
+
 
 namespace AssistenteIA.ApiService.Repositories
 {
@@ -7,9 +12,13 @@ namespace AssistenteIA.ApiService.Repositories
         protected readonly string _connectionString = configuration.GetConnectionString("DefaultConnection");
         
         protected const string SCHEMA = "public";
-        protected NpgsqlConnection ObterConexao()
+        protected async Task<NpgsqlConnection> ObterConexao(CancellationToken cancellationToken = default)
         {
-            return new NpgsqlConnection(_connectionString);
+            var dataSourceBuilder = new NpgsqlDataSourceBuilder(_connectionString);
+            dataSourceBuilder.UseVector();
+            var source = dataSourceBuilder.Build();     
+            
+            return await source.OpenConnectionAsync(cancellationToken);
         }
     }
 }

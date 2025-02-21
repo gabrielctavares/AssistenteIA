@@ -1,0 +1,113 @@
+﻿@page "/treinar-rag"
+
+@inject AssistenteIAApiClient AssistenteApi
+@inject IJSRuntime JS
+
+@rendermode InteractiveServer
+
+<PageTitle>Treinar RAG</PageTitle>
+
+<div class="container mt-4">
+    <div class="card">
+        <div class="card-header bg-primary text-white">
+            Treinamento RAG
+        </div>
+        <div class="card-body">
+            <!-- Upload de arquivo JSON -->
+            <div class="form-group">
+                <label for="fileInput">Carregar arquivo JSON</label>
+                <InputFile id="fileInput" OnChange="HandleFileSelected" class="form-control" />
+            </div>
+
+            <!-- Tabela para exibir dados carregados -->
+            @if (ragItems.Any())
+            {
+                <div style="max-height: 300px; overflow-y: auto; border: 1px solid #ddd; padding: 5px; margin-top: 10px">
+                    <table class="table mt-4">
+                        <thead>
+                            <tr>
+                                <th>Pergunta</th>
+                                <th>Resposta</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in ragItems)
+                            {
+                                <tr>
+                                    <td>@item.Pergunta</td>
+                                    <td>@item.Resposta</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+
+            <!-- Botão para enviar dados para o endpoint -->
+            <button class="btn btn-success mt-4" @onclick="EnviarParaTreinamento" disabled="@(isSending || ragItems.Count == 0)">
+                @(isSending ? "Enviando..." : "Enviar para Treinamento")
+            </button>
+        </div>
+    </div>
+</div>
+
+@code {
+    private bool isSending = false;
+    private List<RAGItem> ragItems = new List<RAGItem>();
+
+
+    private async Task HandleFileSelected(InputFileChangeEventArgs e)
+    {
+        var file = e.File;
+        if (file == null)
+            return;
+
+        var buffer = new byte[file.Size];
+        await file.OpenReadStream().ReadAsync(buffer);
+
+        var jsonContent = System.Text.Encoding.UTF8.GetString(buffer);
+        try
+        {
+            ragItems = System.Text.Json.JsonSerializer.Deserialize<List<RAGItem>>(jsonContent) ?? new List<RAGItem>();
+            StateHasChanged();
+        }
+        catch (Exception ex)
+        {
+            Console.Error.WriteLine($"Erro ao processar arquivo JSON: {ex.Message}");
+        }
+    }
+
+    private async Task EnviarParaTreinamento()
+    {
+        if (ragItems.Count == 0 || isSending)
+            return;
+
+        isSending = true;
+
+        try
+        {
+            var response = await AssistenteApi.PostTreinarRag(ragItems);
+            if (response.IsSuccessStatusCode)
+            {
+                Console.WriteLine("Treinamento concluído com sucesso!");
+                await JS.InvokeVoidAsync("alert", "Treinamento concluído com sucesso!");
+                ragItems.Clear();
+                StateHasChanged();
+            }
+            else
+            {
+                await JS.InvokeVoidAsync("alert", "Falha no treinamento!");
+                Console.WriteLine("Falha no treinamento.");
+            }
+        }
+        catch (Exception ex)
+        {
+            await JS.InvokeVoidAsync("alert", $"Erro ao enviar dados para treinamento: {ex.Message}");
+            Console.Error.WriteLine($"Erro ao enviar dados para treinamento: {ex.Message}");
+        }
+        finally
+        {
+            isSending = false;
+        }
+    }
+}

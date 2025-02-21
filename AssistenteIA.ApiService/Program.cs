@@ -2,9 +2,12 @@ using AssistenteIA.ApiService.Extensions;
 using AssistenteIA.ApiService.Models.DTOs;
 using AssistenteIA.ApiService.Services;
 using AssistenteIA.ServiceDefaults;
+using Dapper;
 using HealthChecks.UI.Client;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.Mvc;
+using Npgsql;
+using Pgvector.Dapper;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -30,6 +33,9 @@ builder.Services.ConfigureChatClient(builder.Configuration);
 builder.Services.ConfigureRepositories();
 builder.Services.ConfigureServices();
 
+// Configurando o Dapper para trabalhar com vetores
+SqlMapper.AddTypeHandler(new VectorTypeHandler());
+
 
 var app = builder.Build();
 
@@ -44,18 +50,18 @@ app.UseHealthChecks("/health", new HealthCheckOptions
 app.UseHealthChecksUI(options => { options.UIPath = "/dashboard"; });
 
 
-app.MapPost("/chat", async (ChatService service, EmbeddingService rag, [FromBody] MensagemDTO mensagem) =>
+app.MapPost("/chat", async (ChatService service, RAGService rag, [FromBody] MensagemDTO mensagem, CancellationToken cancellationToken) =>
 {
-    return Results.Ok(await service.ProcessarChat(mensagem.Texto));
+    return Results.Ok(await service.ProcessarChat(mensagem.Texto, cancellationToken));
 })
 .WithName("Chat");
 
-app.MapPost("/chat-markdown", async (ChatService service, [FromBody] MensagemDTO mensagem) =>
+app.MapPost("/treinar-rag", async (RAGService service, [FromBody] List<RAGItemDTO> itens, CancellationToken cancellationToken) =>
 {
-    var resultado = await service.ProcessarChat(mensagem.Texto);
-    return Results.Ok(new MensagemDTO(resultado.ToMarkdown()));
+    await service.TreinarRAG(itens, cancellationToken);
+    return Results.Ok();
 })
-.WithName("Chat-Markdown");
+.WithName("Treinar-rag");
 
 
 app.MapDefaultEndpoints();

@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Update="Components\Pages\ChatMarkdown.razor">
+    <Content Update="Components\Pages\TreinarRag.razor">
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
     </Content>
   </ItemGroup>

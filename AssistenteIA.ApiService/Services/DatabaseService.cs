@@ -1,5 +1,6 @@
 ﻿using AssistenteIA.ApiService.Models.DTOs;
 using AssistenteIA.ApiService.Repositories;
+using Microsoft.Extensions.AI;
 using System.Text;
 using System.Text.Json;
 
@@ -7,25 +8,24 @@ namespace AssistenteIA.ApiService.Services;
 
 public class ChatHistory
 {
-    private readonly IList<string> _messages = [];
-    public void AddUserMessage(string message) => _messages.Add($"User: {message}");
-    public void AddAssistantMessage(string message) => _messages.Add($"Assistant: {message}");
+    private readonly IList<ChatMessage> _messages = [];
+    public void AddUserMessage(string message) => _messages.Add(new ChatMessage(ChatRole.User, message));
+    public void AddAssistantMessage(string message) => _messages.Add(new ChatMessage(ChatRole.Assistant, message));
     public string GetHistoryAsContext(int maxMessages = 10) => string.Join("\n", _messages.TakeLast(maxMessages));
 }
 
-
-public class DatabaseService(LLMService llmService, EmbeddingService embeddingService, MetadataRepository metadataRepository, QueryRepository queryRepository,   ILogger<DatabaseService> logger)
+public class DatabaseService(LLMService llmService, RAGService embeddingService, MetadataRepository metadataRepository, QueryRepository queryRepository,   ILogger<DatabaseService> logger)
 {
     private readonly ChatHistory chatHistory = new();
 
-    public async Task<DadosDTO> ConsultarDados(string pergunta)
+    public async Task<RespostaDTO> ConsultarDados(string pergunta, CancellationToken cancellationToken = default)
     {
         try
         {
-            var prompt = await  GerarPromptSQL();
+            var prompt = await GerarPromptSQL(cancellationToken);
 
-            var embedding = await embeddingService.GerarEmbedding(pergunta);
-            var resposta = await llmService.GerarResposta(embedding, prompt);
+            var embedding = await embeddingService.GerarEmbedding(pergunta, cancellationToken);
+            var resposta = await llmService.GerarResposta(embedding, prompt, cancellationToken);
             var respostaIA = TratarRespostaIA(resposta);
 
             
@@ -36,16 +36,18 @@ public class DatabaseService(LLMService llmService, EmbeddingService embeddingSe
             {
                 VerificaSQLSeguro(respostaIA.SQL);
 
-                var dados = await queryRepository.ObterDados(respostaIA.SQL);
+                var dados = await queryRepository.ObterDados(respostaIA.SQL, cancellationToken);
 
 
                 //TEMPORÁRIO: Adiciona o SQL gerado para debug
                 var mensagemDebug = $"<br> ***Debug:*** \n ```sql\n{respostaIA.SQL}\n```";
+                if (embedding != pergunta)
+                    mensagemDebug += $"  \n <br> ***Embedding:*** \n ```{embedding}```";
 
-                return new DadosDTO(respostaIA.Mensagem + mensagemDebug, dados);
+                return new RespostaDTO(respostaIA.Mensagem + mensagemDebug, dados);
             }
 
-            return new DadosDTO(respostaIA.Mensagem, []);
+            return new RespostaDTO(respostaIA.Mensagem, []);
         }
         catch (Exception ex)
         {
@@ -54,11 +56,11 @@ public class DatabaseService(LLMService llmService, EmbeddingService embeddingSe
         }
     }
 
-    private async Task<string> GerarPromptSQL()
+    private async Task<string> GerarPromptSQL(CancellationToken cancellationToken = default)
     {
         StringBuilder promptBuilder = new();
 
-        var schema = await FormatarSchema();
+        var schema = await FormatarSchema(cancellationToken);
 
         promptBuilder.AppendLine("Você é um assistente especializado em SQL. Converta a pergunta em uma consulta SQL segura.");
         promptBuilder.AppendLine();
@@ -86,10 +88,10 @@ public class DatabaseService(LLMService llmService, EmbeddingService embeddingSe
 
         return promptBuilder.ToString();
     }
-    private async Task<string> FormatarSchema()
+    private async Task<string> FormatarSchema(CancellationToken cancellationToken = default)
     {
         StringBuilder schemaBuilder = new();
-        var metadata = await metadataRepository.ObterMetadata();
+        var metadata = await metadataRepository.ObterMetadata(cancellationToken);
 
         foreach (var tabela in metadata)
         {
@@ -155,7 +157,7 @@ public class DatabaseService(LLMService llmService, EmbeddingService embeddingSe
         var sqlUpper = sql.ToUpperInvariant();
         var comandosProibidos = new[] { "DELETE", "DROP", "TRUNCATE", "ALTER" };
 
-        if (comandosProibidos.Any(x => sqlUpper.Contains(x)))
+        if (comandosProibidos.Any(sqlUpper.Contains))
             throw new InvalidOperationException("o SQL gerado não é permitido");
 
         bool isUpdate = sqlUpper.Contains("UPDATE");

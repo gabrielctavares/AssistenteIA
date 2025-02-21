@@ -1,90 +1,74 @@
-﻿using Microsoft.ML;
-using Microsoft.ML.Data;
-using System.Text.Json;
+﻿using System.Text.Json;
+using System.Collections.ObjectModel;
+using Microsoft.Extensions.AI;
+using System.Text;
+using AssistenteIA.ApiService.Repositories;
+using AssistenteIA.ApiService.Models.DTOs;
+using AssistenteIA.ApiService.Models;
 
 namespace AssistenteIA.ApiService.Services;
 
-public static class RAGService
+using IEmbeddingClient = IEmbeddingGenerator<string, Embedding<float>>;
+
+public class RAGService(IEmbeddingClient embeddingGenerator, RAGRepository repository,  ILogger<RAGService> logger)
 {
-    public static void TestarRAG(string texto)
+    public async Task<string> GerarEmbedding(string texto, CancellationToken cancellationToken = default)
     {
-        var mlContext = new MLContext();
-
-        var data = LoadDataFromJson("G:\\Projetos\\AssistenteIA\\AssistenteIA.ApiService\\Data\\RAGBaseConhecimento.json");
-
-        var trainingData = mlContext.Data.LoadFromEnumerable(data);
-
-        var pipeline = mlContext.Transforms.Text.FeaturizeText("Features", nameof(QuestionSqlPair.Pergunta))
-            .Append(mlContext.Transforms.Conversion.MapValueToKey("Label", nameof(QuestionSqlPair.SQL)))
-            .Append(mlContext.MulticlassClassification.Trainers.SdcaMaximumEntropy())
-            .Append(mlContext.Transforms.Conversion.MapKeyToValue("PredictedLabel"));
-
-        var model = pipeline.Fit(trainingData);
-
-        var predictionEngine = mlContext.Model.CreatePredictionEngine<QuestionSqlPair, SqlPrediction>(model);
-
-        var bestMatchSql = FindClosestQuery(texto, [.. data.Select(d => d.Pergunta)], [.. data.Select(d => d.SQL)]);
-        var prediction = predictionEngine.Predict(new QuestionSqlPair { Pergunta = texto, SQL = bestMatchSql });
-
-        Console.WriteLine($"Pergunta: {texto}");
-        Console.WriteLine($"SQL Previsto: {prediction.SqlQuery}");
-        Console.WriteLine($"SQL Mais Próximo: {bestMatchSql}");
-    }
-
-    public class QuestionSqlPair
-    {
-        [LoadColumn(0)]
-        public string Pergunta { get; set; }
-
-        [LoadColumn(1)]
-        public string SQL { get; set; }
-    }
-
-    public class SqlPrediction
-    {
-        [ColumnName("PredictedLabel")]
-        public string SqlQuery { get; set; }
-    }
-
-    static string FindClosestQuery(string userQuestion, List<string> questions, List<string> queries)
-    {
-        int bestIndex = 0;
-        double bestScore = 0;
-
-        for (int i = 0; i < questions.Count; i++)
+        try
         {
-            double similarity = ComputeSimilarity(userQuestion, questions[i]);
-            if (similarity > bestScore)
+            var queryEmbeddingResponse = await embeddingGenerator.GenerateEmbeddingAsync(texto, cancellationToken: cancellationToken);
+            float[] queryEmbedding = queryEmbeddingResponse.Vector.ToArray();
+            var matches = await repository.ObterProximos(new Pgvector.Vector(queryEmbedding), cancellationToken);
+
+            if (matches.Count == 0)
             {
-                bestScore = similarity;
-                bestIndex = i;
+                logger.LogWarning("Nenhum match encontrado com similaridade aceitável.");
+                return texto;
             }
+
+            var topMatch = matches.First();
+            var prompt = new StringBuilder();
+            prompt.AppendLine($"Embedding encontrado:");
+            prompt.AppendLine("Pergunta: " + topMatch.Pergunta);
+            prompt.AppendLine("Resposta: " + topMatch.Resposta);
+            prompt.AppendLine();
+            prompt.AppendLine("Pergunta do usuário: " + texto);
+            return prompt.ToString();
         }
-
-        return queries[bestIndex];
-    }
-
-    static double ComputeSimilarity(string a, string b)
-    {
-        var wordsA = new HashSet<string>(a.ToLower().Split(' '));
-        var wordsB = new HashSet<string>(b.ToLower().Split(' '));
-
-        var intersection = wordsA.Intersect(wordsB).Count();
-        var union = wordsA.Union(wordsB).Count();
-
-        return (double)intersection / union;
-    }
-
-    static List<QuestionSqlPair> LoadDataFromJson(string filePath)
-    {
-        if (!File.Exists(filePath))
+        catch (Exception e)
         {
-            Console.WriteLine($"⚠️ Arquivo {filePath} não encontrado!");
-            return [];
+            logger.LogError(e, "Erro ao executar TestarRAG");
+            throw;
         }
-
-        var json = File.ReadAllText(filePath);
-        return JsonSerializer.Deserialize<List<QuestionSqlPair>>(json);
     }
 
+    public async Task TreinarRAG(List<RAGItemDTO> itens, CancellationToken cancellationToken = default)
+    {
+        try
+        {
+            var ragItems = await CalcularEmbeddingsAsync(itens, cancellationToken: cancellationToken);
+            var tasks = ragItems.Select(x => repository.InserirItem(x, cancellationToken));
+            await Task.WhenAll(tasks);  
+        }
+        catch (Exception e)
+        {
+            logger.LogError(e, "Erro ao treinar RAG.");
+            throw;
+        }
+
+    }
+    private async Task<List<RAGItem>> CalcularEmbeddingsAsync(List<RAGItemDTO> itens, CancellationToken cancellationToken = default)
+    {
+        var tasks = itens.Select(item =>
+            embeddingGenerator.GenerateEmbeddingAsync(item.Pergunta, cancellationToken: cancellationToken)
+            .ContinueWith(task => new RAGItem
+            {
+                Pergunta = item.Pergunta,
+                Resposta = item.Resposta,
+                Embedding = new Pgvector.Vector(task.Result.Vector.ToArray())
+            }, cancellationToken));
+
+        return [.. await Task.WhenAll(tasks)];
+    }
 }
+
