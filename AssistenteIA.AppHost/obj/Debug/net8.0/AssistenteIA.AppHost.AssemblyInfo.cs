@@ -25,7 +25,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AssistenteIA.AppHost")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5eb36c83944724659c91eeb1362d312cf5ee25d3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+68a5827c5bc8d142936c701671d2b548b21c3a2a")]
 [assembly: System.Reflection.AssemblyProductAttribute("AssistenteIA.AppHost")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AssistenteIA.AppHost")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
