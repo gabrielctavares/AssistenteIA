@@ -1,10 +1,13 @@
 DO $$
 BEGIN
-   DROP TABLE IF EXISTS itemdominio; 
-   DROP TABLE IF EXISTS dominio;
+   --DROP TABLE IF EXISTS itemdominio; 
+   --DROP TABLE IF EXISTS dominio;
    
-   DROP TABLE IF EXISTS associacaopessoa;
-   DROP TABLE IF EXISTS pessoa;
+   --DROP TABLE IF EXISTS associacaopessoa;
+   --DROP TABLE IF EXISTS pessoa;
+   
+   --DROP TABLE IF EXISTS pessoatelefone;
+   DROP TABLE IF EXISTS pessoaendereco;
     
     IF NOT EXISTS (SELECT * FROM information_schema.tables 
                    WHERE table_name = 'dominio') THEN
@@ -57,4 +60,40 @@ BEGIN
         );
     END IF;
 
+    IF NOT EXISTS (SELECT * FROM information_schema.tables 
+                   WHERE table_name = 'pessoatelefone') THEN
+        CREATE TABLE pessoatelefone (
+            objectid VARCHAR (36) PRIMARY KEY,
+    		classid INTEGER,
+            tipo INTEGER,
+            pessoaid VARCHAR (36),
+            telefone VARCHAR (15), 
+            FOREIGN KEY (pessoaid) REFERENCES pessoa(objectid)			
+        );
+    END IF;
+
+	IF NOT EXISTS (SELECT * FROM information_schema.tables 
+                   WHERE table_name = 'endereco') THEN
+        CREATE TABLE endereco (
+            objectid VARCHAR (36) PRIMARY KEY,
+    		classid INTEGER,
+            endereco VARCHAR(100), 
+			numero VARCHAR(10),
+			cep VARCHAR(36)			
+        );
+    END IF;
+
+	IF NOT EXISTS (SELECT * FROM information_schema.tables 
+                   WHERE table_name = 'associacaopessoaendereco') THEN
+        CREATE TABLE associacaopessoaendereco (
+            objectid VARCHAR (36) PRIMARY KEY,
+    		classid INTEGER,
+            tipo INTEGER,
+            pessoaid VARCHAR (36),
+            enderecoid VARCHAR (36), 
+            FOREIGN KEY (pessoaid) REFERENCES pessoa(objectid),
+			FOREIGN KEY (enderecoid) REFERENCES endereco(objectid)			
+        );
+    END IF;
+	
 END $$;

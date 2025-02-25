@@ -10,7 +10,7 @@ public static class ChatClientExtensions
 {
     public static IServiceCollection ConfigureChatClient(this IServiceCollection services, IConfiguration configuration)
     {
-        services.AddScoped<IChatClient>(sp => CriarChatClient(configuration));      
+        services.AddSingleton<IChatClient>(sp => CriarChatClient(configuration));      
         return services;
     }
 
@@ -51,6 +51,7 @@ public static class ChatClientExtensions
             Timeout = TimeSpan.FromMinutes(5) // Limite alto por demora na resposta
 
         };
+
         return new OllamaChatClient(new Uri(ollamaConfig.Uri), ollamaConfig.Model, httpClient);
     }
 

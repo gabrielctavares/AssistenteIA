@@ -1,0 +1,194 @@
+[
+  {
+    "Pergunta": "Listar todos os registros da tabela pessoa.",
+    "Resposta": "SELECT * FROM pessoa;"
+  },
+  {
+    "Pergunta": "Selecionar todas as pessoas do sexo feminino.",
+    "Resposta": "SELECT * FROM pessoa WHERE sexo = 2;"
+  },
+  {
+    "Pergunta": "Selecionar todas as pessoas com classid 101 (PF).",
+    "Resposta": "SELECT * FROM pessoa WHERE classid = 101;"
+  },
+  {
+    "Pergunta": "Selecionar todas as pessoas com classid 102 (PJ).",
+    "Resposta": "SELECT * FROM pessoa WHERE classid = 102;"
+  },
+  {
+    "Pergunta": "Selecionar pessoas que nasceram após 1990-01-01.",
+    "Resposta": "SELECT * FROM pessoa WHERE dtnascimentooucriacao > '1990-01-01';"
+  },
+  {
+    "Pergunta": "Contar o número de pessoas do sexo masculino.",
+    "Resposta": "SELECT COUNT(*) AS total FROM pessoa WHERE sexo = 1;"
+  },
+  {
+    "Pergunta": "Contar o número de pessoas do sexo feminino.",
+    "Resposta": "SELECT COUNT(*) AS total FROM pessoa WHERE sexo = 2;"
+  },
+  {
+    "Pergunta": "Listar pessoas ordenadas pelo nome.",
+    "Resposta": "SELECT * FROM pessoa ORDER BY nome;"
+  },
+  {
+    "Pergunta": "Selecionar pessoas cujo nome começa com 'A'.",
+    "Resposta": "SELECT * FROM pessoa WHERE nome LIKE 'A%';"
+  },
+  {
+    "Pergunta": "Selecionar pessoas com email contendo 'gmail.com'.",
+    "Resposta": "SELECT * FROM pessoa WHERE email LIKE '%gmail.com%';"
+  },
+  {
+    "Pergunta": "Selecionar pessoas que não possuem email cadastrado.",
+    "Resposta": "SELECT * FROM pessoa WHERE email IS NULL OR email = '';"
+  },
+  {
+    "Pergunta": "Listar todos os registros da tabela associacaopessoa.",
+    "Resposta": "SELECT * FROM associacaopessoa;"
+  },
+  {
+    "Pergunta": "Selecionar todas as relações de associação onde o tipo é 'Pai' (1).",
+    "Resposta": "SELECT * FROM associacaopessoa WHERE tipo = 1;"
+  },
+  {
+    "Pergunta": "Selecionar todas as relações de associação onde o tipo é 'Mãe' (2).",
+    "Resposta": "SELECT * FROM associacaopessoa WHERE tipo = 2;"
+  },
+  {
+    "Pergunta": "Selecionar todas as relações de associação onde o tipo é 'Responsável' (3).",
+    "Resposta": "SELECT * FROM associacaopessoa WHERE tipo = 3;"
+  },
+  {
+    "Pergunta": "Listar todas as associações de pessoas junto com o nome da pessoa e da pessoa associada.",
+    "Resposta": "SELECT a.objectid, pa.nome AS Pessoa, pb.nome AS Associada FROM associacaopessoa a JOIN pessoa pa ON a.pessoaid = pa.objectid JOIN pessoa pb ON a.pessoaassociadaid = pb.objectid;"
+  },
+  {
+    "Pergunta": "Listar os telefones pessoais cadastrados na tabela pessoatelefone.",
+    "Resposta": "SELECT * FROM pessoatelefone WHERE tipo = 1;"
+  },
+  {
+    "Pergunta": "Listar os telefones profissionais cadastrados na tabela pessoatelefone.",
+    "Resposta": "SELECT * FROM pessoatelefone WHERE tipo = 2;"
+  },
+  {
+    "Pergunta": "Listar todos os registros da tabela pessoatelefone.",
+    "Resposta": "SELECT * FROM pessoatelefone;"
+  },
+  {
+    "Pergunta": "Selecionar todos os endereços residenciais na tabela associacaopessoaendereco.",
+    "Resposta": "SELECT * FROM associacaopessoaendereco WHERE tipo = 1;"
+  },
+  {
+    "Pergunta": "Selecionar todos os endereços comerciais na tabela associacaopessoaendereco.",
+    "Resposta": "SELECT * FROM associacaopessoaendereco WHERE tipo = 2;"
+  },
+  {
+    "Pergunta": "Listar todas as associações de pessoa e endereço com detalhes completos do endereço.",
+    "Resposta": "SELECT ape.objectid, p.nome, e.endereco, e.numero, e.cep FROM associacaopessoaendereco ape JOIN pessoa p ON ape.pessoaid = p.objectid JOIN endereco e ON ape.enderecoid = e.objectid;"
+  },
+  {
+    "Pergunta": "Listar todos os registros da tabela endereco.",
+    "Resposta": "SELECT * FROM endereco;"
+  },
+  {
+    "Pergunta": "Selecionar endereços com CEP '12345-678'.",
+    "Resposta": "SELECT * FROM endereco WHERE cep = '12345-678';"
+  },
+  {
+    "Pergunta": "Listar pessoas que possuem associação como 'Pai' e mostrar o nome do pai.",
+    "Resposta": "SELECT p.nome AS Filho, pai.nome AS Pai FROM associacaopessoa a JOIN pessoa p ON a.pessoaid = p.objectid JOIN pessoa pai ON a.pessoaassociadaid = pai.objectid WHERE a.tipo = 1;"
+  },
+  {
+    "Pergunta": "Listar pessoas que possuem associação como 'Mãe' e mostrar o nome da mãe.",
+    "Resposta": "SELECT p.nome AS Filho, mae.nome AS Mãe FROM associacaopessoa a JOIN pessoa p ON a.pessoaid = p.objectid JOIN pessoa mae ON a.pessoaassociadaid = mae.objectid WHERE a.tipo = 2;"
+  },
+  {
+    "Pergunta": "Listar pessoas que possuem associação como 'Responsável' e mostrar o nome do responsável.",
+    "Resposta": "SELECT p.nome AS Pessoa, resp.nome AS Responsável FROM associacaopessoa a JOIN pessoa p ON a.pessoaid = p.objectid JOIN pessoa resp ON a.pessoaassociadaid = resp.objectid WHERE a.tipo = 3;"
+  },
+  {
+    "Pergunta": "Encontrar a pessoa com o email 'exemplo@dominio.com'.",
+    "Resposta": "SELECT * FROM pessoa WHERE email = 'exemplo@dominio.com';"
+  },
+  {
+    "Pergunta": "Selecionar pessoas cujo CPF/CNPJ contém apenas números.",
+    "Resposta": "SELECT * FROM pessoa WHERE cpfcnpj ~ '^[0-9]+$';"
+  },
+  {
+    "Pergunta": "Listar pessoas que nasceram no mês de janeiro.",
+    "Resposta": "SELECT * FROM pessoa WHERE EXTRACT(MONTH FROM dtnascimentooucriacao) = 1;"
+  },
+  {
+    "Pergunta": "Contar o número de relações de associação para cada tipo (Pai, Mãe, Responsável).",
+    "Resposta": "SELECT tipo, COUNT(*) AS total FROM associacaopessoa GROUP BY tipo;"
+  },
+  {
+    "Pergunta": "Selecionar pessoas que não possuem nenhuma associação registrada na tabela associacaopessoa.",
+    "Resposta": "SELECT * FROM pessoa WHERE objectid NOT IN (SELECT pessoaid FROM associacaopessoa) AND objectid NOT IN (SELECT pessoaassociadaid FROM associacaopessoa);"
+  },
+  {
+    "Pergunta": "Listar todos os telefones (pessoal e profissional) de uma pessoa específica (objectid = '123').",
+    "Resposta": "SELECT * FROM pessoatelefone WHERE pessoaid = '123';"
+  },
+  {
+    "Pergunta": "Encontrar o endereço residencial associado a uma pessoa específica (objectid = '123').",
+    "Resposta": "SELECT e.* FROM associacaopessoaendereco ape JOIN endereco e ON ape.enderecoid = e.objectid WHERE ape.pessoaid = '123' AND ape.tipo = 1;"
+  },
+  {
+    "Pergunta": "Encontrar todas as pessoas que possuem mais de um telefone cadastrado na tabela pessoatelefone.",
+    "Resposta": "SELECT p.*, pt.total FROM pessoa p JOIN (SELECT pessoaid, COUNT(*) AS total FROM pessoatelefone GROUP BY pessoaid HAVING COUNT(*) > 1) pt ON p.objectid = pt.pessoaid;"
+  },
+  {
+    "Pergunta": "Contar o total de endereços cadastrados na tabela endereco.",
+    "Resposta": "SELECT COUNT(*) AS total FROM endereco;"
+  },
+  {
+    "Pergunta": "Listar todas as pessoas que possuem pelo menos um endereço comercial registrado.",
+    "Resposta": "SELECT DISTINCT p.* FROM pessoa p JOIN associacaopessoaendereco ape ON p.objectid = ape.pessoaid WHERE ape.tipo = 2;"
+  },
+  {
+    "Pergunta": "Selecionar pessoas e seus respectivos números de telefone unindo as tabelas pessoa e pessoatelefone.",
+    "Resposta": "SELECT p.nome, pt.telefone FROM pessoa p JOIN pessoatelefone pt ON p.objectid = pt.pessoaid;"
+  },
+  {
+    "Pergunta": "Listar os registros da tabela associacaopessoaendereco com detalhes do endereço e nome da pessoa.",
+    "Resposta": "SELECT p.nome, e.endereco, e.numero, e.cep FROM associacaopessoaendereco ape JOIN pessoa p ON ape.pessoaid = p.objectid JOIN endereco e ON ape.enderecoid = e.objectid;"
+  },
+  {
+    "Pergunta": "Contar o número de associações registradas para cada pessoa (usando o campo pessoaid).",
+    "Resposta": "SELECT pessoaid, COUNT(*) AS total_associacoes FROM associacaopessoa GROUP BY pessoaid;"
+  },
+  {
+    "Pergunta": "Selecionar pessoas ordenadas pela data de nascimento ou criação em ordem ascendente.",
+    "Resposta": "SELECT * FROM pessoa ORDER BY dtnascimentooucriacao ASC;"
+  },
+  {
+    "Pergunta": "Listar todas as pessoas com o mesmo CPF/CNPJ para identificar possíveis duplicatas.",
+    "Resposta": "SELECT cpfcnpj, COUNT(*) AS total FROM pessoa GROUP BY cpfcnpj HAVING COUNT(*) > 1;"
+  },
+  {
+    "Pergunta": "Selecionar pessoas que não possuem associação de endereço na tabela associacaopessoaendereco.",
+    "Resposta": "SELECT * FROM pessoa WHERE objectid NOT IN (SELECT pessoaid FROM associacaopessoaendereco);"
+  },
+  {
+    "Pergunta": "Selecionar o nome e o email das pessoas que possuem associação do tipo 'Responsável'.",
+    "Resposta": "SELECT p.nome, p.email FROM pessoa p JOIN associacaopessoa a ON p.objectid = a.pessoaid WHERE a.tipo = 3;"
+  },
+  {
+    "Pergunta": "Listar as pessoas que têm registros em todas as tabelas: pessoa, pessoatelefone e associacaopessoaendereco.",
+    "Resposta": "SELECT DISTINCT p.* FROM pessoa p JOIN pessoatelefone pt ON p.objectid = pt.pessoaid JOIN associacaopessoaendereco ape ON p.objectid = ape.pessoaid;"
+  },
+  {
+    "Pergunta": "Selecionar a pessoa mais jovem (com a última data de nascimento) da tabela pessoa.",
+    "Resposta": "SELECT * FROM pessoa ORDER BY dtnascimentooucriacao DESC LIMIT 1;"
+  },
+  {
+    "Pergunta": "Selecionar a pessoa mais antiga (com a primeira data de nascimento ou criação) da tabela pessoa.",
+    "Resposta": "SELECT * FROM pessoa ORDER BY dtnascimentooucriacao ASC LIMIT 1;"
+  },
+  {
+    "Pergunta": "Listar pessoas e as contagens de seus registros em telefones, associações e endereços relacionados.",
+    "Resposta": "SELECT p.objectid, p.nome, (SELECT COUNT(*) FROM pessoatelefone pt WHERE pt.pessoaid = p.objectid) AS total_telefones, (SELECT COUNT(*) FROM associacaopessoa a WHERE a.pessoaid = p.objectid) AS total_associacoes, (SELECT COUNT(*) FROM associacaopessoaendereco ape WHERE ape.pessoaid = p.objectid) AS total_enderecos FROM pessoa p;"
+  }
+]

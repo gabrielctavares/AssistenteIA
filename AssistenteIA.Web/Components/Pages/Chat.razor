@@ -16,7 +16,7 @@
         <div class="card-header bg-primary text-white">
             Chat
         </div>
-        <div class="card-body chat-container" style="height: 60vh; overflow-y: auto;" @ref="chatContainer">
+        <div class="card-body chat-container" style="height: 70vh; overflow-y: auto;" @ref="chatContainer">
             @foreach (var message in messages)
             {
                 <div class="message @(message.Autor == "Você" ? "user-message" : "ia-message")">
@@ -59,7 +59,7 @@
         <div class="card-footer">
             <div class="input-group">
                 <input type="text" class="form-control" placeholder="Digite sua mensagem..."
-                @bind="userInput" @onkeypress="HandleKeyDown" />
+                       @bind-value="userInput" @bind-value:event="oninput" @onkeydown="HandleKeyDown" />
                 <div class="input-group-append">
                     <button class="btn btn-primary" @onclick="SendMessage" disabled="@isSending">
                         @(isSending ? "Enviando..." : "Enviar")
@@ -124,7 +124,6 @@
 
     private async Task HandleKeyDown(KeyboardEventArgs e)
     {
-        Console.WriteLine(e.Key);
         if (e.Key == "Enter")
         {
             await SendMessage();

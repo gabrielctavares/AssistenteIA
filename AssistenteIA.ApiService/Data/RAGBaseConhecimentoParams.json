@@ -1,0 +1,206 @@
+[
+  {
+    "Pergunta": "Me diga qual é o número de telefone do responsável pela empresa 'Xpto'.",
+    "Resposta": "SELECT p_responsavel.nome AS Nome_Responsavel, pt.telefone AS Telefone_Comercial FROM pessoa p_empresa JOIN associacaopessoa ap ON p_empresa.objectid = ap.pessoaassociadaid JOIN pessoa p_responsavel ON ap.pessoaid = p_responsavel.objectid JOIN pessoatelefone pt ON p_responsavel.objectid = pt.pessoaid WHERE p_empresa.nome ILIKE '%XPTO%' AND p_empresa.classid = 102 AND ap.tipo = 3 and pt.tipo = 2;"
+  },
+  {
+    "Pergunta": "Quais são os endereços comerciais cadastrados para a empresa 'AlphaTech'?",
+    "Resposta": "SELECT e.endereco, e.numero, e.cep FROM pessoa p JOIN associacaopessoaendereco ape ON p.objectid = ape.pessoaid AND ape.tipo = 2 JOIN endereco e ON ape.enderecoid = e.objectid WHERE p.nome = 'AlphaTech' AND p.classid = 102;"
+  },
+  {
+    "Pergunta": "Mostre os telefones pessoais e profissionais do colaborador 'João Silva'.",
+    "Resposta": "SELECT p.nome, pt.telefone, CASE WHEN pt.tipo = 1 THEN 'Pessoal' WHEN pt.tipo = 2 THEN 'Profissional' END AS tipo_telefone FROM pessoa p JOIN pessoatelefone pt ON p.objectid = pt.pessoaid WHERE p.nome = 'João Silva';"
+  },
+  {
+    "Pergunta": "Quais os contatos, como telefone e e-mail, disponíveis do cliente 'Maria Oliveira'?",
+    "Resposta": "SELECT p.email, pt.telefone FROM pessoa p LEFT JOIN pessoatelefone pt ON p.objectid = pt.pessoaid WHERE p.nome = 'Maria Oliveira';"
+  },
+  {
+    "Pergunta": "Liste os filhos de 'Carlos' juntamente com o nome do responsável (pai ou mãe).",
+    "Resposta": "SELECT f.nome AS Filho, p.nome AS Responsavel FROM associacaopessoa ap JOIN pessoa f ON ap.pessoaid = f.objectid JOIN pessoa p ON ap.pessoaassociadaid = p.objectid WHERE p.nome = 'Carlos' AND ap.tipo IN (1, 2);"
+  },
+  {
+    "Pergunta": "Qual é o endereço residencial de 'Ana Paula'?",
+    "Resposta": "SELECT e.endereco, e.numero, e.cep FROM pessoa p JOIN associacaopessoaendereco ape ON p.objectid = ape.pessoaid AND ape.tipo = 1 JOIN endereco e ON ape.enderecoid = e.objectid WHERE p.nome = 'Ana Paula';"
+  },
+  {
+    "Pergunta": "Quais são os contatos (telefone e endereço) do colaborador 'Rafael Costa'?",
+    "Resposta": "SELECT pt.telefone, e.endereco, e.numero, e.cep FROM pessoa p LEFT JOIN pessoatelefone pt ON p.objectid = pt.pessoaid LEFT JOIN associacaopessoaendereco ape ON p.objectid = ape.pessoaid LEFT JOIN endereco e ON ape.enderecoid = e.objectid WHERE p.nome = 'Rafael Costa';"
+  },
+  {
+    "Pergunta": "Me informe o e-mail e o telefone profissional do responsável pelo cadastro da empresa 'BetaCorp'.",
+    "Resposta": "SELECT r.email, pt.telefone FROM pessoa p JOIN associacaopessoa ap ON p.objectid = ap.pessoaid JOIN pessoa r ON ap.pessoaassociadaid = r.objectid JOIN pessoatelefone pt ON r.objectid = pt.pessoaid WHERE p.nome = 'BetaCorp' AND p.classid = 102 AND ap.tipo = 3 AND pt.tipo = 2;"
+  },
+  {
+    "Pergunta": "Qual é o nome do responsável e o telefone de contato da pessoa 'Eduardo Lima'?",
+    "Resposta": "SELECT r.nome, pt.telefone FROM pessoa p JOIN associacaopessoa ap ON p.objectid = ap.pessoaid JOIN pessoa r ON ap.pessoaassociadaid = r.objectid JOIN pessoatelefone pt ON r.objectid = pt.pessoaid WHERE p.nome = 'Eduardo Lima' AND ap.tipo = 3 AND pt.tipo = 2;"
+  },
+  {
+    "Pergunta": "Mostre todas as informações de contato (telefone, e-mail e endereço) do cliente 'Fernanda Souza'.",
+    "Resposta": "SELECT p.email, pt.telefone, e.endereco, e.numero, e.cep FROM pessoa p LEFT JOIN pessoatelefone pt ON p.objectid = pt.pessoaid LEFT JOIN associacaopessoaendereco ape ON p.objectid = ape.pessoaid LEFT JOIN endereco e ON ape.enderecoid = e.objectid WHERE p.nome = 'Fernanda Souza';"
+  },
+  {
+    "Pergunta": "Quais os endereços residenciais e comerciais cadastrados para 'Marcelo Ferreira'?",
+    "Resposta": "SELECT e.endereco, e.numero, e.cep, CASE WHEN ape.tipo = 1 THEN 'Residencial' WHEN ape.tipo = 2 THEN 'Comercial' END AS tipo_endereco FROM pessoa p JOIN associacaopessoaendereco ape ON p.objectid = ape.pessoaid JOIN endereco e ON ape.enderecoid = e.objectid WHERE p.nome = 'Marcelo Ferreira';"
+  },
+  {
+    "Pergunta": "Para a empresa 'Delta Ltda', qual é o endereço comercial e o telefone do responsável?",
+    "Resposta": "SELECT e.endereco, e.numero, e.cep, pt.telefone FROM pessoa p JOIN associacaopessoa ap ON p.objectid = ap.pessoaid JOIN pessoa r ON ap.pessoaassociadaid = r.objectid JOIN associacaopessoaendereco ape ON r.objectid = ape.pessoaid AND ape.tipo = 2 JOIN endereco e ON ape.enderecoid = e.objectid JOIN pessoatelefone pt ON r.objectid = pt.pessoaid AND pt.tipo = 2 WHERE p.nome = 'Delta Ltda' AND p.classid = 102 AND ap.tipo = 3;"
+  },
+  {
+    "Pergunta": "Liste os nomes e telefones dos colaboradores que possuem mais de um número de contato registrado.",
+    "Resposta": "SELECT p.nome, COUNT(pt.objectid) AS total_telefones FROM pessoa p JOIN pessoatelefone pt ON p.objectid = pt.pessoaid GROUP BY p.nome HAVING COUNT(pt.objectid) > 1;"
+  },
+  {
+    "Pergunta": "Qual é o e-mail e o endereço residencial da pessoa com CPF/CNPJ '12345678900'?",
+    "Resposta": "SELECT p.email, e.endereco, e.numero, e.cep FROM pessoa p JOIN associacaopessoaendereco ape ON p.objectid = ape.pessoaid AND ape.tipo = 1 JOIN endereco e ON ape.enderecoid = e.objectid WHERE p.cpfcnpj = '12345678900';"
+  },
+  {
+    "Pergunta": "Me mostre o nome do responsável e o telefone de contato para o registro com o e-mail 'contato@exemplo.com'.",
+    "Resposta": "SELECT r.nome, pt.telefone FROM pessoa p JOIN associacaopessoa ap ON p.objectid = ap.pessoaid JOIN pessoa r ON ap.pessoaassociadaid = r.objectid JOIN pessoatelefone pt ON r.objectid = pt.pessoaid WHERE p.email = 'contato@exemplo.com' AND ap.tipo = 3 AND pt.tipo = 2;"
+  },
+  {
+    "Pergunta": "Quais são os nomes e endereços de todas as empresas que possuem endereço comercial cadastrado?",
+    "Resposta": "SELECT p.nome, e.endereco, e.numero, e.cep FROM pessoa p JOIN associacaopessoaendereco ape ON p.objectid = ape.pessoaid AND ape.tipo = 2 JOIN endereco e ON ape.enderecoid = e.objectid WHERE p.classid = 102;"
+  },
+  {
+    "Pergunta": "Liste o telefone pessoal e profissional do colaborador 'Roberto Martins'.",
+    "Resposta": "SELECT p.nome, pt.telefone, CASE WHEN pt.tipo = 1 THEN 'Pessoal' WHEN pt.tipo = 2 THEN 'Profissional' END AS tipo_telefone FROM pessoa p JOIN pessoatelefone pt ON p.objectid = pt.pessoaid WHERE p.nome = 'Roberto Martins';"
+  },
+  {
+    "Pergunta": "Quais os contatos (telefone, e-mail) e o endereço residencial de 'Luciana Freitas'?",
+    "Resposta": "SELECT p.email, pt.telefone, e.endereco, e.numero, e.cep FROM pessoa p LEFT JOIN pessoatelefone pt ON p.objectid = pt.pessoaid LEFT JOIN associacaopessoaendereco ape ON p.objectid = ape.pessoaid AND ape.tipo = 1 LEFT JOIN endereco e ON ape.enderecoid = e.objectid WHERE p.nome = 'Luciana Freitas';"
+  },
+  {
+    "Pergunta": "Me informe o nome do responsável e o e-mail associado para o funcionário 'Gabriel Souza'.",
+    "Resposta": "SELECT r.nome, r.email FROM pessoa p JOIN associacaopessoa ap ON p.objectid = ap.pessoaid AND ap.tipo = 3 JOIN pessoa r ON ap.pessoaassociadaid = r.objectid WHERE p.nome = 'Gabriel Souza';"
+  },
+  {
+    "Pergunta": "Qual é o endereço comercial e o telefone profissional do responsável da empresa 'Gamma Indústria'?",
+    "Resposta": "SELECT e.endereco, e.numero, e.cep, pt.telefone FROM pessoa p JOIN associacaopessoa ap ON p.objectid = ap.pessoaid JOIN pessoa r ON ap.pessoaassociadaid = r.objectid JOIN associacaopessoaendereco ape ON r.objectid = ape.pessoaid AND ape.tipo = 2 JOIN endereco e ON ape.enderecoid = e.objectid JOIN pessoatelefone pt ON r.objectid = pt.pessoaid AND pt.tipo = 2 WHERE p.nome = 'Gamma Indústria' AND p.classid = 102 AND ap.tipo = 3;"
+  },
+  {
+    "Pergunta": "Liste os nomes e telefones de todos os responsáveis cadastrados para pessoas físicas.",
+    "Resposta": "SELECT DISTINCT r.nome, pt.telefone FROM associacaopessoa ap JOIN pessoa p ON ap.pessoaid = p.objectid JOIN pessoa r ON ap.pessoaassociadaid = r.objectid JOIN pessoatelefone pt ON r.objectid = pt.pessoaid WHERE p.classid = 101 AND ap.tipo = 3 AND pt.tipo = 2;"
+  },
+  {
+    "Pergunta": "Mostre o endereço residencial e o telefone de contato do colaborador 'Patrícia Oliveira', que nasceu após 1995.",
+    "Resposta": "SELECT e.endereco, e.numero, e.cep, pt.telefone FROM pessoa p JOIN associacaopessoaendereco ape ON p.objectid = ape.pessoaid AND ape.tipo = 1 JOIN endereco e ON ape.enderecoid = e.objectid JOIN pessoatelefone pt ON p.objectid = pt.pessoaid AND pt.tipo = 1 WHERE p.nome = 'Patrícia Oliveira' AND p.dtnascimentooucriacao > '1995-01-01';"
+  },
+  {
+    "Pergunta": "Quais são os contatos (telefone e e-mail) do responsável associado ao registro com CPF/CNPJ '98765432100'?",
+    "Resposta": "SELECT r.nome, r.email, pt.telefone FROM pessoa p JOIN associacaopessoa ap ON p.objectid = ap.pessoaid JOIN pessoa r ON ap.pessoaassociadaid = r.objectid JOIN pessoatelefone pt ON r.objectid = pt.pessoaid WHERE p.cpfcnpj = '98765432100' AND ap.tipo = 3 AND pt.tipo = 2;"
+  },
+  {
+    "Pergunta": "Liste os nomes dos colaboradores que possuem associação como responsável e seus respectivos telefones.",
+    "Resposta": "SELECT p.nome, pt.telefone FROM pessoa p JOIN associacaopessoa ap ON p.objectid = ap.pessoaid JOIN pessoa r ON ap.pessoaassociadaid = r.objectid JOIN pessoatelefone pt ON r.objectid = pt.pessoaid WHERE ap.tipo = 3 AND pt.tipo = 2;"
+  },
+  {
+    "Pergunta": "Qual é o número do telefone profissional do responsável do cliente 'Juliana Mendes'?",
+    "Resposta": "SELECT pt.telefone FROM pessoa p JOIN associacaopessoa ap ON p.objectid = ap.pessoaid JOIN pessoa r ON ap.pessoaassociadaid = r.objectid JOIN pessoatelefone pt ON r.objectid = pt.pessoaid WHERE p.nome = 'Juliana Mendes' AND ap.tipo = 3 AND pt.tipo = 2;"
+  },
+  {
+    "Pergunta": "Mostre o nome e o endereço de todos os responsáveis que possuem um endereço comercial cadastrado.",
+    "Resposta": "SELECT r.nome, e.endereco, e.numero, e.cep FROM pessoa r JOIN associacaopessoaendereco ape ON r.objectid = ape.pessoaid AND ape.tipo = 2 JOIN endereco e ON ape.enderecoid = e.objectid WHERE r.objectid IN (SELECT pessoaassociadaid FROM associacaopessoa WHERE tipo = 3);"
+  },
+  {
+    "Pergunta": "Para o colaborador 'Sofia Ribeiro', mostre o contato de seu responsável, incluindo nome, e-mail e telefone.",
+    "Resposta": "SELECT r.nome, r.email, pt.telefone FROM pessoa p JOIN associacaopessoa ap ON p.objectid = ap.pessoaid AND ap.tipo = 3 JOIN pessoa r ON ap.pessoaassociadaid = r.objectid JOIN pessoatelefone pt ON r.objectid = pt.pessoaid AND pt.tipo = 2 WHERE p.nome = 'Sofia Ribeiro';"
+  },
+  {
+    "Pergunta": "Quais são os nomes e endereços residenciais dos clientes que possuem cadastro completo, ou seja, telefone e endereço?",
+    "Resposta": "SELECT DISTINCT p.nome, e.endereco, e.numero, e.cep FROM pessoa p JOIN associacaopessoaendereco ape ON p.objectid = ape.pessoaid AND ape.tipo = 1 JOIN endereco e ON ape.enderecoid = e.objectid JOIN pessoatelefone pt ON p.objectid = pt.pessoaid WHERE p.classid = 101;"
+  },
+  {
+    "Pergunta": "Mostre os dados de contato (telefone e endereço) da empresa 'Omega Solutions'.",
+    "Resposta": "SELECT pt.telefone, e.endereco, e.numero, e.cep FROM pessoa p JOIN associacaopessoaendereco ape ON p.objectid = ape.pessoaid JOIN endereco e ON ape.enderecoid = e.objectid JOIN pessoatelefone pt ON p.objectid = pt.pessoaid WHERE p.nome = 'Omega Solutions' AND p.classid = 102;"
+  },
+  {
+    "Pergunta": "Qual é o telefone e o endereço do responsável pelo cadastro com o e-mail 'admin@empresa.com'?",
+    "Resposta": "SELECT r.nome, pt.telefone, e.endereco, e.numero, e.cep FROM pessoa p JOIN associacaopessoa ap ON p.objectid = ap.pessoaid JOIN pessoa r ON ap.pessoaassociadaid = r.objectid JOIN pessoatelefone pt ON r.objectid = pt.pessoaid AND pt.tipo = 2 JOIN associacaopessoaendereco ape ON r.objectid = ape.pessoaid AND ape.tipo = 1 JOIN endereco e ON ape.enderecoid = e.objectid WHERE p.email = 'admin@empresa.com' AND ap.tipo = 3;"
+  },
+  {
+    "Pergunta": "Liste os nomes e telefones dos responsáveis cadastrados para empresas que foram criadas antes de 2010.",
+    "Resposta": "SELECT DISTINCT r.nome, pt.telefone FROM pessoa p JOIN associacaopessoa ap ON p.objectid = ap.pessoaid JOIN pessoa r ON ap.pessoaassociadaid = r.objectid JOIN pessoatelefone pt ON r.objectid = pt.pessoaid WHERE p.classid = 102 AND p.dtnascimentooucriacao < '2010-01-01' AND ap.tipo = 3 AND pt.tipo = 2;"
+  },
+  {
+    "Pergunta": "Me diga quais são os contatos (telefone, e-mail) e o endereço comercial do cliente 'Vitor Gomes'.",
+    "Resposta": "SELECT p.email, pt.telefone, e.endereco, e.numero, e.cep FROM pessoa p LEFT JOIN pessoatelefone pt ON p.objectid = pt.pessoaid AND pt.tipo = 2 LEFT JOIN associacaopessoaendereco ape ON p.objectid = ape.pessoaid AND ape.tipo = 2 LEFT JOIN endereco e ON ape.enderecoid = e.objectid WHERE p.nome = 'Vitor Gomes';"
+  },
+  {
+    "Pergunta": "Qual o número de telefone do responsável de 'EcoVerde'?",
+    "Resposta": "SELECT pt.telefone FROM pessoa p JOIN associacaopessoa ap ON p.objectid = ap.pessoaid JOIN pessoa r ON ap.pessoaassociadaid = r.objectid JOIN pessoatelefone pt ON r.objectid = pt.pessoaid WHERE p.nome = 'EcoVerde' AND ap.tipo = 3 AND pt.tipo = 2;"
+  },
+  {
+    "Pergunta": "Mostre o nome e os contatos de todas as pessoas que possuem mais de um endereço cadastrado.",
+    "Resposta": "SELECT p.nome, COUNT(ape.objectid) AS total_enderecos FROM pessoa p JOIN associacaopessoaendereco ape ON p.objectid = ape.pessoaid GROUP BY p.nome HAVING COUNT(ape.objectid) > 1;"
+  },
+  {
+    "Pergunta": "Para o funcionário 'Cláudia Silva', exiba o endereço residencial e o telefone pessoal.",
+    "Resposta": "SELECT e.endereco, e.numero, e.cep, pt.telefone FROM pessoa p JOIN associacaopessoaendereco ape ON p.objectid = ape.pessoaid AND ape.tipo = 1 JOIN endereco e ON ape.enderecoid = e.objectid JOIN pessoatelefone pt ON p.objectid = pt.pessoaid AND pt.tipo = 1 WHERE p.nome = 'Cláudia Silva';"
+  },
+  {
+    "Pergunta": "Quais os nomes dos responsáveis e o e-mail de contato para todos os clientes que nasceram antes de 1980?",
+    "Resposta": "SELECT DISTINCT r.nome, r.email FROM pessoa p JOIN associacaopessoa ap ON p.objectid = ap.pessoaid JOIN pessoa r ON ap.pessoaassociadaid = r.objectid WHERE p.dtnascimentooucriacao < '1980-01-01' AND ap.tipo = 3;"
+  },
+  {
+    "Pergunta": "Liste os nomes e telefones dos colaboradores que possuem cadastro em mais de uma forma de contato (telefone pessoal e profissional).",
+    "Resposta": "SELECT p.nome, COUNT(DISTINCT pt.tipo) AS tipos_telefone FROM pessoa p JOIN pessoatelefone pt ON p.objectid = pt.pessoaid GROUP BY p.nome HAVING COUNT(DISTINCT pt.tipo) > 1;"
+  },
+  {
+    "Pergunta": "Mostre os nomes e endereços dos clientes que não possuem nenhum telefone cadastrado.",
+    "Resposta": "SELECT p.nome, e.endereco, e.numero, e.cep FROM pessoa p LEFT JOIN pessoatelefone pt ON p.objectid = pt.pessoaid LEFT JOIN associacaopessoaendereco ape ON p.objectid = ape.pessoaid AND ape.tipo = 1 LEFT JOIN endereco e ON ape.enderecoid = e.objectid WHERE pt.objectid IS NULL AND p.classid = 101;"
+  },
+  {
+    "Pergunta": "Para o registro com CPF '11223344556', exiba o nome, e-mail e todos os telefones cadastrados.",
+    "Resposta": "SELECT p.nome, p.email, pt.telefone FROM pessoa p JOIN pessoatelefone pt ON p.objectid = pt.pessoaid WHERE p.cpfcnpj = '11223344556';"
+  },
+  {
+    "Pergunta": "Quais são os dados de contato (telefone, e-mail e endereço) do responsável por 'TechNova'?",
+    "Resposta": "SELECT r.nome, r.email, pt.telefone, e.endereco, e.numero, e.cep FROM pessoa p JOIN associacaopessoa ap ON p.objectid = ap.pessoaid JOIN pessoa r ON ap.pessoaassociadaid = r.objectid LEFT JOIN pessoatelefone pt ON r.objectid = pt.pessoaid AND pt.tipo = 2 LEFT JOIN associacaopessoaendereco ape ON r.objectid = ape.pessoaid AND ape.tipo = 1 LEFT JOIN endereco e ON ape.enderecoid = e.objectid WHERE p.nome = 'TechNova' AND p.classid = 102 AND ap.tipo = 3;"
+  },
+  {
+    "Pergunta": "Liste o nome e o telefone do responsável para cada pessoa que possui um responsável cadastrado.",
+    "Resposta": "SELECT p.nome, r.nome AS Responsavel, pt.telefone FROM associacaopessoa ap JOIN pessoa p ON ap.pessoaid = p.objectid JOIN pessoa r ON ap.pessoaassociadaid = r.objectid JOIN pessoatelefone pt ON r.objectid = pt.pessoaid WHERE ap.tipo = 3 AND pt.tipo = 2;"
+  },
+  {
+    "Pergunta": "Mostre os detalhes (nome, e-mail e endereço) do colaborador 'Leandro Alves' e de seu responsável.",
+    "Resposta": "SELECT p.nome AS Colaborador, p.email, e.endereco, e.numero, e.cep, r.nome AS Responsavel, r.email AS email_responsavel FROM pessoa p JOIN associacaopessoa ap ON p.objectid = ap.pessoaid AND ap.tipo = 3 JOIN pessoa r ON ap.pessoaassociadaid = r.objectid LEFT JOIN associacaopessoaendereco ape ON r.objectid = ape.pessoaid AND ape.tipo = 1 LEFT JOIN endereco e ON ape.enderecoid = e.objectid WHERE p.nome = 'Leandro Alves';"
+  },
+  {
+    "Pergunta": "Quais são os nomes dos responsáveis que atendem os clientes cadastrados com e-mail terminado em 'hotmail.com'?",
+    "Resposta": "SELECT DISTINCT r.nome FROM pessoa p JOIN associacaopessoa ap ON p.objectid = ap.pessoaid JOIN pessoa r ON ap.pessoaassociadaid = r.objectid WHERE p.email LIKE '%hotmail.com' AND ap.tipo = 3;"
+  },
+  {
+    "Pergunta": "Me informe o telefone pessoal e o endereço residencial do cliente 'Carla Dias'.",
+    "Resposta": "SELECT pt.telefone, e.endereco, e.numero, e.cep FROM pessoa p LEFT JOIN pessoatelefone pt ON p.objectid = pt.pessoaid AND pt.tipo = 1 LEFT JOIN associacaopessoaendereco ape ON p.objectid = ape.pessoaid AND ape.tipo = 1 LEFT JOIN endereco e ON ape.enderecoid = e.objectid WHERE p.nome = 'Carla Dias';"
+  },
+  {
+    "Pergunta": "Liste os nomes e telefones dos responsáveis dos clientes que nasceram depois de 1990.",
+    "Resposta": "SELECT DISTINCT r.nome, pt.telefone FROM pessoa p JOIN associacaopessoa ap ON p.objectid = ap.pessoaid JOIN pessoa r ON ap.pessoaassociadaid = r.objectid JOIN pessoatelefone pt ON r.objectid = pt.pessoaid WHERE p.dtnascimentooucriacao > '1990-01-01' AND ap.tipo = 3 AND pt.tipo = 2;"
+  },
+  {
+    "Pergunta": "Quais os contatos (telefone e endereço comercial) disponíveis para a empresa 'InovaTech'?",
+    "Resposta": "SELECT pt.telefone, e.endereco, e.numero, e.cep FROM pessoa p JOIN associacaopessoaendereco ape ON p.objectid = ape.pessoaid AND ape.tipo = 2 JOIN endereco e ON ape.enderecoid = e.objectid JOIN pessoatelefone pt ON p.objectid = pt.pessoaid AND pt.tipo = 2 WHERE p.nome = 'InovaTech' AND p.classid = 102;"
+  },
+  {
+    "Pergunta": "Mostre o nome do responsável e o telefone do colaborador 'Felipe Costa'.",
+    "Resposta": "SELECT r.nome, pt.telefone FROM pessoa p JOIN associacaopessoa ap ON p.objectid = ap.pessoaid AND ap.tipo = 3 JOIN pessoa r ON ap.pessoaassociadaid = r.objectid JOIN pessoatelefone pt ON r.objectid = pt.pessoaid WHERE p.nome = 'Felipe Costa' AND pt.tipo = 2;"
+  },
+  {
+    "Pergunta": "Liste os dados de contato (e-mail, telefone e endereço) do cliente com CPF/CNPJ '99887766554'.",
+    "Resposta": "SELECT p.email, pt.telefone, e.endereco, e.numero, e.cep FROM pessoa p LEFT JOIN pessoatelefone pt ON p.objectid = pt.pessoaid LEFT JOIN associacaopessoaendereco ape ON p.objectid = ape.pessoaid LEFT JOIN endereco e ON ape.enderecoid = e.objectid WHERE p.cpfcnpj = '99887766554';"
+  },
+  {
+    "Pergunta": "Quais são os nomes dos responsáveis e o telefone de contato dos clientes que possuem mais de um endereço cadastrado?",
+    "Resposta": "SELECT r.nome, pt.telefone FROM associacaopessoa ap JOIN pessoa p ON ap.pessoaid = p.objectid JOIN pessoa r ON ap.pessoaassociadaid = r.objectid JOIN pessoatelefone pt ON r.objectid = pt.pessoaid WHERE p.objectid IN (SELECT pessoaid FROM associacaopessoaendereco GROUP BY pessoaid HAVING COUNT(objectid) > 1) AND ap.tipo = 3 AND pt.tipo = 2;"
+  },
+  {
+    "Pergunta": "Me mostre os detalhes (nome, e-mail, telefone e endereço) do registro que possui o identificador 'ABC123'.",
+    "Resposta": "SELECT p.nome, p.email, pt.telefone, e.endereco, e.numero, e.cep FROM pessoa p LEFT JOIN pessoatelefone pt ON p.objectid = pt.pessoaid LEFT JOIN associacaopessoaendereco ape ON p.objectid = ape.pessoaid LEFT JOIN endereco e ON ape.enderecoid = e.objectid WHERE p.objectid = 'ABC123';"
+  },
+  {
+    "Pergunta": "Qual a média de idade das mulheres",
+    "Resposta": "SELECT AVG(EXTRACT(YEAR FROM AGE(CURRENT_DATE, dtnascimentooucriacao))) AS \"Média de Idade\" FROM pessoa WHERE sexo = 2;"
+  }
+]

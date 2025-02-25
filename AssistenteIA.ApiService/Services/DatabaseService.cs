@@ -1,31 +1,31 @@
-﻿using AssistenteIA.ApiService.Models.DTOs;
+﻿using AssistenteIA.ApiService.Models;
+using AssistenteIA.ApiService.Models.DTOs;
 using AssistenteIA.ApiService.Repositories;
-using Microsoft.Extensions.AI;
 using System.Text;
 using System.Text.Json;
 
 namespace AssistenteIA.ApiService.Services;
 
-public class ChatHistory
+public class DatabaseService(LLMService llmService, RAGService embeddingService, MetadataRepository metadataRepository, QueryRepository queryRepository, ILogger<DatabaseService> logger)
 {
-    private readonly IList<ChatMessage> _messages = [];
-    public void AddUserMessage(string message) => _messages.Add(new ChatMessage(ChatRole.User, message));
-    public void AddAssistantMessage(string message) => _messages.Add(new ChatMessage(ChatRole.Assistant, message));
-    public string GetHistoryAsContext(int maxMessages = 10) => string.Join("\n", _messages.TakeLast(maxMessages));
-}
-
-public class DatabaseService(LLMService llmService, RAGService embeddingService, MetadataRepository metadataRepository, QueryRepository queryRepository,   ILogger<DatabaseService> logger)
-{
-    private readonly ChatHistory chatHistory = new();
-
     public async Task<RespostaDTO> ConsultarDados(string pergunta, CancellationToken cancellationToken = default)
     {
         try
         {
+                
             var prompt = await GerarPromptSQL(cancellationToken);
+            var embedding = pergunta;// await embeddingService.GerarEmbedding(pergunta, cancellationToken);
 
-            var embedding = await embeddingService.GerarEmbedding(pergunta, cancellationToken);
-            var resposta = await llmService.GerarResposta(embedding, prompt, cancellationToken);
+
+            if (HistoricoChat.EstaVazio())
+                HistoricoChat.AddMensagemSistema(prompt);
+
+            var resposta = await llmService.GerarResposta(embedding, cancellationToken);
+
+
+            HistoricoChat.AddMensagemUsuario(pergunta);
+            HistoricoChat.AddMensagemAssistente(resposta);
+
             var respostaIA = TratarRespostaIA(resposta);
 
             
@@ -64,7 +64,7 @@ public class DatabaseService(LLMService llmService, RAGService embeddingService,
 
         promptBuilder.AppendLine("Você é um assistente especializado em SQL. Converta a pergunta em uma consulta SQL segura.");
         promptBuilder.AppendLine();
-        promptBuilder.AppendLine("### Utilizando o schema do banco de dados abaixo:");
+        promptBuilder.AppendLine("### Utilizando o schema do banco de dados abaixo (PostgreSQL):");
         promptBuilder.AppendLine($"{schema}");
         promptBuilder.AppendLine("Em caso de modificações, gere um SELECT para mostrar as alterações.");
         promptBuilder.AppendLine();

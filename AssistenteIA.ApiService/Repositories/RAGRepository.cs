@@ -12,8 +12,7 @@ public class RAGRepository(IConfiguration configuration, ILogger<RAGRepository> 
     {
         try
         {
-            using var connection = await ObterConexao(cancellationToken);
-
+            await using var connection = await ObterConexao(cancellationToken);
             var sqlCheck = "SELECT COUNT(*) FROM treinamento_rag WHERE pergunta = @pergunta;";
             var sqlInsert = "INSERT INTO treinamento_rag (pergunta, resposta, embedding) VALUES (@pergunta, @resposta, @embedding)";
             
@@ -36,8 +35,7 @@ public class RAGRepository(IConfiguration configuration, ILogger<RAGRepository> 
     {
         try
         {
-            await using var connection = await ObterConexao(cancellationToken);
-            
+            await using var connection = await ObterConexao(cancellationToken);            
             var sql = "SELECT id, pergunta, resposta, embedding FROM treinamento_rag WHERE 1 - (embedding <=> @embedding) >= @min_similaridade ORDER BY embedding <=> @embedding LIMIT 5;";
             return (await connection.QueryAsync<RAGItem>(sql, new { embedding, min_similaridade = MIN_SIMILARIDADE })).AsList();
         }

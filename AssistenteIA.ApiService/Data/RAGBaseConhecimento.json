@@ -100,10 +100,6 @@
     "Resposta": "SELECT * FROM dominio ORDER BY codigo DESC LIMIT 1;"
   },
   {
-    "Pergunta": "Pessoas com telefone",
-    "Resposta": "SELECT * FROM pessoa WHERE telefone IS NOT NULL AND telefone <> '';"
-  },
-  {
     "Pergunta": "Associações por tipo",
     "Resposta": "SELECT tipo, COUNT(*) AS total FROM associacaopessoa GROUP BY tipo;"
   },
@@ -164,10 +160,6 @@
     "Resposta": "SELECT * FROM pessoa ORDER BY email ASC;"
   },
   {
-    "Pergunta": "Nomes e telefones de mulheres",
-    "Resposta": "SELECT nome, telefone FROM pessoa WHERE sexo = 2;"
-  },
-  {
     "Pergunta": "Pessoas com 'Silva' no nome",
     "Resposta": "SELECT * FROM pessoa WHERE nome ILIKE '%Silva%';"
   },
@@ -224,10 +216,6 @@
     "Resposta": "UPDATE pessoa SET email = 'joao@exemplo.com' WHERE objectid = 1;"
   },
   {
-    "Pergunta": "Atualizar telefone da pessoa com ID 1 para '999999999'",
-    "Resposta": "UPDATE pessoa SET telefone = '999999999' WHERE objectid = 1;"
-  },
-  {
     "Pergunta": "Atualizar data de nascimento da pessoa com ID 1 para '1990-05-20'",
     "Resposta": "UPDATE pessoa SET dtnascimentooucriacao = '1990-05-20' WHERE objectid = 1;"
   },
@@ -282,10 +270,6 @@
   {
     "Pergunta": "Atualizar e-mail da pessoa com CPF '12345678901' para 'joao.silva@exemplo.com'",
     "Resposta": "UPDATE pessoa SET email = 'joao.silva@exemplo.com' WHERE cpfcnpj = '12345678901';"
-  },
-  {
-    "Pergunta": "Atualizar telefone da pessoa com CPF '12345678901' para '888888888'",
-    "Resposta": "UPDATE pessoa SET telefone = '888888888' WHERE cpfcnpj = '12345678901';"
   },
   {
     "Pergunta": "Atualizar data de nascimento da pessoa com CPF '12345678901' para '1985-06-15'",

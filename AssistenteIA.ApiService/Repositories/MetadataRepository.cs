@@ -12,7 +12,7 @@ public class MetadataRepository(IConfiguration configuration, ILogger<MetadataRe
         var metadata = new List<Metadata>();
         try
         {
-            using var connection = await ObterConexao(cancellationToken);
+            await using var connection = await ObterConexao(cancellationToken);
 
             string tableQuery = @"
                     SELECT table_name  

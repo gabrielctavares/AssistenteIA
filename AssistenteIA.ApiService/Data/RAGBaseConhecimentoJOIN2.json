@@ -1,0 +1,102 @@
+[
+  {
+    "Pergunta": "Listar todas as pessoas com seus telefones pessoais.",
+    "Resposta": "SELECT p.objectid, p.nome, pt.telefone FROM pessoa p JOIN pessoatelefone pt ON p.objectid = pt.pessoaid WHERE pt.tipo = 1;"
+  },
+  {
+    "Pergunta": "Listar todas as pessoas com seus telefones profissionais.",
+    "Resposta": "SELECT p.objectid, p.nome, pt.telefone FROM pessoa p JOIN pessoatelefone pt ON p.objectid = pt.pessoaid WHERE pt.tipo = 2;"
+  },
+  {
+    "Pergunta": "Listar todas as pessoas com todos os seus telefones (pessoal e profissional).",
+    "Resposta": "SELECT p.objectid, p.nome, pt.telefone, CASE WHEN pt.tipo = 1 THEN 'Pessoal' WHEN pt.tipo = 2 THEN 'Profissional' END AS tipo_telefone FROM pessoa p LEFT JOIN pessoatelefone pt ON p.objectid = pt.pessoaid;"
+  },
+  {
+    "Pergunta": "Listar todas as pessoas com seus endereços residenciais.",
+    "Resposta": "SELECT p.objectid, p.nome, e.endereco, e.numero, e.cep FROM pessoa p JOIN associacaopessoaendereco ape ON p.objectid = ape.pessoaid AND ape.tipo = 1 JOIN endereco e ON ape.enderecoid = e.objectid;"
+  },
+  {
+    "Pergunta": "Listar todas as pessoas com seus endereços comerciais.",
+    "Resposta": "SELECT p.objectid, p.nome, e.endereco, e.numero, e.cep FROM pessoa p JOIN associacaopessoaendereco ape ON p.objectid = ape.pessoaid AND ape.tipo = 2 JOIN endereco e ON ape.enderecoid = e.objectid;"
+  },
+  {
+    "Pergunta": "Exibir pessoas com seus telefones e endereços, se disponíveis.",
+    "Resposta": "SELECT p.objectid, p.nome, pt.telefone, e.endereco, e.numero, e.cep FROM pessoa p LEFT JOIN pessoatelefone pt ON p.objectid = pt.pessoaid LEFT JOIN associacaopessoaendereco ape ON p.objectid = ape.pessoaid LEFT JOIN endereco e ON ape.enderecoid = e.objectid;"
+  },
+  {
+    "Pergunta": "Listar pais e filhos, mostrando o nome de ambos.",
+    "Resposta": "SELECT f.nome AS Filho, p.nome AS Pai FROM associacaopessoa ap JOIN pessoa f ON ap.pessoaid = f.objectid JOIN pessoa p ON ap.pessoaassociadaid = p.objectid WHERE ap.tipo = 1;"
+  },
+  {
+    "Pergunta": "Listar mães e filhos, mostrando o nome de ambos.",
+    "Resposta": "SELECT f.nome AS Filho, m.nome AS Mãe FROM associacaopessoa ap JOIN pessoa f ON ap.pessoaid = f.objectid JOIN pessoa m ON ap.pessoaassociadaid = m.objectid WHERE ap.tipo = 2;"
+  },
+  {
+    "Pergunta": "Listar responsáveis e as pessoas associadas, mostrando o nome de ambos.",
+    "Resposta": "SELECT p.nome AS Pessoa, r.nome AS Responsável FROM associacaopessoa ap JOIN pessoa p ON ap.pessoaid = p.objectid JOIN pessoa r ON ap.pessoaassociadaid = r.objectid WHERE ap.tipo = 3;"
+  },
+  {
+    "Pergunta": "Exibir os dados completos de uma pessoa específica (objectid = '123') com seus telefones e endereços.",
+    "Resposta": "SELECT p.*, pt.telefone, e.endereco, e.numero, e.cep FROM pessoa p LEFT JOIN pessoatelefone pt ON p.objectid = pt.pessoaid LEFT JOIN associacaopessoaendereco ape ON p.objectid = ape.pessoaid LEFT JOIN endereco e ON ape.enderecoid = e.objectid WHERE p.objectid = '123';"
+  },
+  {
+    "Pergunta": "Listar pessoas que possuem mais de um telefone, exibindo o nome e a quantidade de telefones.",
+    "Resposta": "SELECT p.nome, COUNT(pt.objectid) AS total_telefones FROM pessoa p JOIN pessoatelefone pt ON p.objectid = pt.pessoaid GROUP BY p.nome HAVING COUNT(pt.objectid) > 1;"
+  },
+  {
+    "Pergunta": "Listar todas as associações de pais com seus respectivos filhos.",
+    "Resposta": "SELECT pai.nome AS Pai, filho.nome AS Filho FROM associacaopessoa ap JOIN pessoa pai ON ap.pessoaassociadaid = pai.objectid JOIN pessoa filho ON ap.pessoaid = filho.objectid WHERE ap.tipo = 1;"
+  },
+  {
+    "Pergunta": "Listar todas as associações de mães com seus respectivos filhos.",
+    "Resposta": "SELECT mae.nome AS Mãe, filho.nome AS Filho FROM associacaopessoa ap JOIN pessoa mae ON ap.pessoaassociadaid = mae.objectid JOIN pessoa filho ON ap.pessoaid = filho.objectid WHERE ap.tipo = 2;"
+  },
+  {
+    "Pergunta": "Listar todas as associações (pais, mães e responsáveis) com os nomes das pessoas e dos associados.",
+    "Resposta": "SELECT ap.tipo, p.nome AS Pessoa, a.nome AS Associado FROM associacaopessoa ap JOIN pessoa p ON ap.pessoaid = p.objectid JOIN pessoa a ON ap.pessoaassociadaid = a.objectid;"
+  },
+  {
+    "Pergunta": "Listar todas as pessoas que possuem cadastro completo, ou seja, com pelo menos um telefone e um endereço associado.",
+    "Resposta": "SELECT DISTINCT p.objectid, p.nome FROM pessoa p JOIN pessoatelefone pt ON p.objectid = pt.pessoaid JOIN associacaopessoaendereco ape ON p.objectid = ape.pessoaid;"
+  },
+  {
+    "Pergunta": "Listar os endereços de pessoas do sexo feminino.",
+    "Resposta": "SELECT p.nome, e.endereco, e.numero, e.cep FROM pessoa p JOIN associacaopessoaendereco ape ON p.objectid = ape.pessoaid JOIN endereco e ON ape.enderecoid = e.objectid WHERE p.sexo = 2;"
+  },
+  {
+    "Pergunta": "Listar os emails das pessoas que possuem telefone profissional cadastrado.",
+    "Resposta": "SELECT DISTINCT p.email FROM pessoa p JOIN pessoatelefone pt ON p.objectid = pt.pessoaid WHERE pt.tipo = 2 AND p.email IS NOT NULL AND p.email <> '';"
+  },
+  {
+    "Pergunta": "Listar os detalhes de pessoas associadas a um endereço com CEP '12345-678'.",
+    "Resposta": "SELECT p.objectid, p.nome, e.endereco, e.numero, e.cep FROM pessoa p JOIN associacaopessoaendereco ape ON p.objectid = ape.pessoaid JOIN endereco e ON ape.enderecoid = e.objectid WHERE e.cep = '12345-678';"
+  },
+  {
+    "Pergunta": "Listar os nomes das pessoas e dos responsáveis que possuem associação do tipo 'Responsável'.",
+    "Resposta": "SELECT p.nome AS Pessoa, r.nome AS Responsável FROM associacaopessoa ap JOIN pessoa p ON ap.pessoaid = p.objectid JOIN pessoa r ON ap.pessoaassociadaid = r.objectid WHERE ap.tipo = 3;"
+  },
+  {
+    "Pergunta": "Listar pessoas com seus pais e responsáveis, se existirem, utilizando LEFT JOIN.",
+    "Resposta": "SELECT p.nome, pai.nome AS Pai, resp.nome AS Responsável FROM pessoa p LEFT JOIN associacaopessoa ap1 ON p.objectid = ap1.pessoaid AND ap1.tipo = 1 LEFT JOIN pessoa pai ON ap1.pessoaassociadaid = pai.objectid LEFT JOIN associacaopessoa ap2 ON p.objectid = ap2.pessoaid AND ap2.tipo = 3 LEFT JOIN pessoa resp ON ap2.pessoaassociadaid = resp.objectid;"
+  },
+  {
+    "Pergunta": "Listar pessoas que nasceram após o ano 2000 junto com seus telefones, se disponíveis.",
+    "Resposta": "SELECT p.nome, p.dtnascimentooucriacao, pt.telefone FROM pessoa p LEFT JOIN pessoatelefone pt ON p.objectid = pt.pessoaid WHERE p.dtnascimentooucriacao > '2000-01-01';"
+  },
+  {
+    "Pergunta": "Listar detalhes das associações para pessoas cujo CPF/CNPJ é composto apenas por números.",
+    "Resposta": "SELECT p.nome, ap.tipo, a.nome AS Associado FROM pessoa p JOIN associacaopessoa ap ON p.objectid = ap.pessoaid JOIN pessoa a ON ap.pessoaassociadaid = a.objectid WHERE p.cpfcnpj ~ '^[0-9]+$';"
+  },
+  {
+    "Pergunta": "Listar o número de endereços associados a cada pessoa.",
+    "Resposta": "SELECT p.nome, COUNT(ape.objectid) AS total_enderecos FROM pessoa p JOIN associacaopessoaendereco ape ON p.objectid = ape.pessoaid GROUP BY p.nome;"
+  },
+  {
+    "Pergunta": "Listar pessoas com seus telefones pessoais e endereços residenciais.",
+    "Resposta": "SELECT p.nome, pt.telefone, e.endereco, e.numero, e.cep FROM pessoa p LEFT JOIN pessoatelefone pt ON p.objectid = pt.pessoaid AND pt.tipo = 1 LEFT JOIN associacaopessoaendereco ape ON p.objectid = ape.pessoaid AND ape.tipo = 1 LEFT JOIN endereco e ON ape.enderecoid = e.objectid;"
+  },
+  {
+    "Pergunta": "Listar informações detalhadas de associações, incluindo dados da pessoa, do associado e o tipo de relação.",
+    "Resposta": "SELECT p.nome AS Pessoa, a.nome AS Associado, CASE WHEN ap.tipo = 1 THEN 'Pai' WHEN ap.tipo = 2 THEN 'Mãe' WHEN ap.tipo = 3 THEN 'Responsável' END AS Relacao FROM associacaopessoa ap JOIN pessoa p ON ap.pessoaid = p.objectid JOIN pessoa a ON ap.pessoaassociadaid = a.objectid;"
+  }
+]

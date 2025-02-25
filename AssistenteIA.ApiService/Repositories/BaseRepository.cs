@@ -1,24 +1,30 @@
 ﻿using Dapper;
 using Npgsql;
 using Pgvector.Dapper;
+using System.Data.Common;
 using System.Threading.Tasks;
 
 
 
 namespace AssistenteIA.ApiService.Repositories
 {
-    public abstract class BaseRepository(IConfiguration configuration)
+    public abstract class BaseRepository
     {
-        protected readonly string _connectionString = configuration.GetConnectionString("DefaultConnection");
-        
+
         protected const string SCHEMA = "public";
-        protected async Task<NpgsqlConnection> ObterConexao(CancellationToken cancellationToken = default)
+        private readonly NpgsqlDataSource _dataSource;
+        protected BaseRepository(IConfiguration configuration)
         {
-            var dataSourceBuilder = new NpgsqlDataSourceBuilder(_connectionString);
+            var connectionString = configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' não encontrada.");
+
+            var dataSourceBuilder = new NpgsqlDataSourceBuilder(connectionString);
             dataSourceBuilder.UseVector();
-            var source = dataSourceBuilder.Build();     
-            
-            return await source.OpenConnectionAsync(cancellationToken);
+
+            _dataSource = dataSourceBuilder.Build();
+        }
+        protected async Task<NpgsqlConnection> ObterConexao(CancellationToken cancellationToken = default)
+        {            
+            return await _dataSource.OpenConnectionAsync(cancellationToken);
         }
     }
 }

@@ -1,11 +1,5 @@
-﻿using AssistenteIA.ApiService.Models;
-using AssistenteIA.ApiService.Services;
+﻿using AssistenteIA.ApiService.Services;
 using AssistenteIA.ApiService.Repositories;
-
-using System.ClientModel;
-using OpenAI;
-using Azure.AI.Inference;
-using Microsoft.Extensions.AI;
 
 
 namespace AssistenteIA.ApiService.Extensions;

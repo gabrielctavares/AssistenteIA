@@ -1,15 +1,40 @@
 ﻿
+using AssistenteIA.ApiService.Models;
+using Microsoft.CodeAnalysis.Options;
 using Microsoft.Extensions.AI;
 using System.Text;
 namespace AssistenteIA.ApiService.Services;
 
 public class LLMService(IChatClient client, ILogger<LLMService> logger)
 {
+    public async Task<string> GerarResposta(string userQuery, CancellationToken cancellationToken = default)
+    {
+        try
+        {
+            var historicoMensagens = HistoricoChat.ObterHistorico() ?? [];
+            var mensagemCliente = new ChatMessage(ChatRole.User, userQuery);
+            var options = new ChatOptions()
+            {               
+                ResponseFormat = ChatResponseFormat.Json,
+            };       
+            
+            var answer = await client.CompleteAsync([..historicoMensagens, mensagemCliente], options: options, cancellationToken: cancellationToken);
+
+            return answer.Choices.FirstOrDefault()?.Text!;
+        }
+        catch (Exception e)
+        {
+            logger.LogError(e, "Erro ao processar resposta");
+            throw;
+        }
+
+    }
+
     public async Task<string> GerarResposta(string userQuery, string prompt = null, CancellationToken cancellationToken = default)
     {
         try
         {
-            if (string.IsNullOrEmpty(prompt))
+            if (string.IsNullOrWhiteSpace(prompt))
                 prompt = CriarPromptPadrao();
 
             var mensagemSistema = new ChatMessage(ChatRole.System, prompt);
@@ -24,7 +49,6 @@ public class LLMService(IChatClient client, ILogger<LLMService> logger)
             logger.LogError(e, "Erro ao processar resposta");
             throw;
         }
-
     }
 
     private static string CriarPromptPadrao()
