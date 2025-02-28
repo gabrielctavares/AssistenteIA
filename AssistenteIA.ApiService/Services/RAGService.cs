@@ -1,6 +1,4 @@
-﻿using System.Text.Json;
-using System.Collections.ObjectModel;
-using Microsoft.Extensions.AI;
+﻿using Microsoft.Extensions.AI;
 using System.Text;
 using AssistenteIA.ApiService.Repositories;
 using AssistenteIA.ApiService.Models.DTOs;

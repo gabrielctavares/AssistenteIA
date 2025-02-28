@@ -4,7 +4,7 @@ using System.Text;
 
 namespace AssistenteIA.ApiService.Services;
 
-public class ChatService(LLMService llmService, DatabaseService databaseService, HealthCheckService healthCheckService)
+public class ChatService(LLMService llmService, ChatDatabaseService databaseService, ChatHealthCheckService healthCheckService)
 {
     public async Task<RespostaDTO> ProcessarChat(string mensagem, CancellationToken cancellationToken = default)
     {
@@ -29,6 +29,7 @@ public class ChatService(LLMService llmService, DatabaseService databaseService,
 
         return ClassificacaoAtendimento.ConsultarOuAlterarDados;               
     }
+
     private string CriarPrompt()
     {
         StringBuilder promptBuilder = new();

@@ -6,28 +6,27 @@ using System.Text.Json;
 
 namespace AssistenteIA.ApiService.Services;
 
-public class DatabaseService(LLMService llmService, RAGService embeddingService, MetadataRepository metadataRepository, QueryRepository queryRepository, ILogger<DatabaseService> logger)
+public class ChatDatabaseService(LLMService llmService, RAGService embeddingService, MetadataRepository metadataRepository, QueryRepository queryRepository, ILogger<ChatDatabaseService> logger)
 {
     public async Task<RespostaDTO> ConsultarDados(string pergunta, CancellationToken cancellationToken = default)
     {
         try
-        {
-                
-            var prompt = await GerarPromptSQL(cancellationToken);
-            var embedding = pergunta;// await embeddingService.GerarEmbedding(pergunta, cancellationToken);
-
+        {                
+            
+            var embedding = await embeddingService.GerarEmbedding(pergunta, cancellationToken);
 
             if (HistoricoChat.EstaVazio())
+            {
+                var prompt = await GerarPromptSQL(cancellationToken);
                 HistoricoChat.AddMensagemSistema(prompt);
-
+            }
+                
             var resposta = await llmService.GerarResposta(embedding, cancellationToken);
-
-
+            
             HistoricoChat.AddMensagemUsuario(pergunta);
             HistoricoChat.AddMensagemAssistente(resposta);
 
             var respostaIA = TratarRespostaIA(resposta);
-
             
             if (respostaIA == null)
                 throw new InvalidDataException("Resposta da IA não foi processada corretamente.");            
@@ -69,7 +68,7 @@ public class DatabaseService(LLMService llmService, RAGService embeddingService,
         promptBuilder.AppendLine("Em caso de modificações, gere um SELECT para mostrar as alterações.");
         promptBuilder.AppendLine();
         promptBuilder.AppendLine("### Contexto Adicional:");
-        promptBuilder.AppendLine("Utilize o embedding como referência, mas priorize a pergunta do usuário.");
+        promptBuilder.AppendLine("Utilize o embedding como referência, mas priorize a pergunta do usuário e o histórico da conversa.");
         promptBuilder.AppendLine("### Regras:");
         promptBuilder.AppendLine("- Não altere a estrutura das tabelas.");
         promptBuilder.AppendLine("- Não crie novas tabelas.");

@@ -13,13 +13,11 @@
             Treinamento RAG
         </div>
         <div class="card-body">
-            <!-- Upload de arquivo JSON -->
             <div class="form-group">
                 <label for="fileInput">Carregar arquivo JSON</label>
                 <InputFile id="fileInput" OnChange="HandleFileSelected" class="form-control" />
             </div>
 
-            <!-- Tabela para exibir dados carregados -->
             @if (ragItems.Any())
             {
                 <div style="max-height: 300px; overflow-y: auto; border: 1px solid #ddd; padding: 5px; margin-top: 10px">
@@ -43,7 +41,6 @@
                 </div>
             }
 
-            <!-- Botão para enviar dados para o endpoint -->
             <button class="btn btn-success mt-4" @onclick="EnviarParaTreinamento" disabled="@(isSending || ragItems.Count == 0)">
                 @(isSending ? "Enviando..." : "Enviar para Treinamento")
             </button>

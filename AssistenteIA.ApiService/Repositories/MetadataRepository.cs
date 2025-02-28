@@ -1,5 +1,4 @@
 ﻿using AssistenteIA.ApiService.Models;
-using Microsoft.Extensions.Configuration;
 using Npgsql;
 using Dapper;
 
@@ -21,7 +20,7 @@ public class MetadataRepository(IConfiguration configuration, ILogger<MetadataRe
 
             var tabelas = (await connection.QueryAsync<string>(tableQuery, new { schemaName = SCHEMA })).AsList();
 
-            foreach (var tabela in tabelas)
+            foreach (var tabela in tabelas.Where(x => !x.Contains("dominio") || !x.Equals("treinamento_rag")))
             {
                 metadata.Add(await ObterMetadadosTabela(tabela, connection));
             }

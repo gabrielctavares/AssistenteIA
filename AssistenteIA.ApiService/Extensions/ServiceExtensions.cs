@@ -21,8 +21,8 @@ public static class ServiceExtensions
         services.AddScoped<RAGService>();
         services.AddScoped<LLMService>();
 
-        services.AddScoped<DatabaseService>();
-        services.AddScoped<HealthCheckService>();
+        services.AddScoped<ChatDatabaseService>();
+        services.AddScoped<ChatHealthCheckService>();
 
         services.AddScoped<ChatService>();        
         return services;

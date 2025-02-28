@@ -23,6 +23,7 @@ public static class EmbeddingExtensions
         var _configuration = configuration.GetSection("AIConfig").Get<AIConfig>()
             ?? throw new InvalidOperationException("A seção 'AIConfig' não foi encontrada ou está mal formatada.");
 
+        // Só estou usando o ollama por enquanto.
         if (true || _configuration.Provider.Equals("ollama", StringComparison.OrdinalIgnoreCase))
         {
             if (_configuration.Ollama is null)
@@ -53,7 +54,6 @@ public static class EmbeddingExtensions
         {
             BaseAddress = new Uri(ollamaConfig.Uri),
             Timeout = TimeSpan.FromMinutes(5) // Limite alto por demora na resposta
-
         };
 
         return new OllamaEmbeddingGenerator(new Uri(ollamaConfig.Uri), ollamaConfig.EmbeddingModel, httpClient);

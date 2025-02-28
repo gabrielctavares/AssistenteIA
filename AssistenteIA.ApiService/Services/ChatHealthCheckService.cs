@@ -1,9 +1,8 @@
 ﻿using AssistenteIA.ApiService.Models.DTOs;
-using System.Text.Json;
 
 namespace AssistenteIA.ApiService.Services;
 
-public class HealthCheckService(HttpClient httpClient)
+public class ChatHealthCheckService(HttpClient httpClient)
 {
 
     public async Task<RespostaDTO> VerificarServicos(CancellationToken cancellationToken = default)

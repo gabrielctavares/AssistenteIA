@@ -3,29 +3,25 @@ using AssistenteIA.ApiService.Models.DTOs;
 using AssistenteIA.ApiService.Services;
 using AssistenteIA.ServiceDefaults;
 using Dapper;
-using HealthChecks.UI.Client;
-using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.Mvc;
-using Npgsql;
 using Pgvector.Dapper;
+using System.Runtime.InteropServices;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add service defaults & Aspire client integrations.
 builder.AddServiceDefaults();
 
+builder.Logging.ClearProviders(); 
+builder.Logging.AddConsole(); 
+builder.Logging.AddDebug();
+
+if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+    builder.Logging.AddEventLog();
+
 // Add services to the container.
 builder.Services.AddProblemDetails();
-
-
 builder.Services.AddHealthChecks();
-
-builder.Services.AddHealthChecksUI(options =>
-{
-    options.SetEvaluationTimeInSeconds(5);
-    options.MaximumHistoryEntriesPerEndpoint(10);
-    options.AddHealthCheckEndpoint("API de Chat", "/health");
-}).AddInMemoryStorage();
 
 // Configurando todas as injeções de depêndencia aqui
 builder.Services.ConfigureEmbeddingClient(builder.Configuration);
@@ -41,28 +37,52 @@ var app = builder.Build();
 
 app.UseExceptionHandler();
 
-app.UseHealthChecks("/health", new HealthCheckOptions
+
+app.MapPost("/chat", async ([FromServices] ChatService service, [FromServices] ILogger<Program> logger, [FromBody] MensagemDTO mensagem, CancellationToken cancellationToken = default) =>
 {
-    Predicate = p => true,
-    ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
-});
+    if (string.IsNullOrWhiteSpace(mensagem.Texto))
+        return Results.BadRequest("Texto não pode ser vazio.");
 
-app.UseHealthChecksUI(options => { options.UIPath = "/dashboard"; });
-
-
-app.MapPost("/chat", async (ChatService service, RAGService rag, [FromBody] MensagemDTO mensagem, CancellationToken cancellationToken) =>
-{
-    return Results.Ok(await service.ProcessarChat(mensagem.Texto, cancellationToken));
+    try
+    {
+        var resultado = await service.ProcessarChat(mensagem.Texto, cancellationToken);
+        return Results.Ok(resultado);
+    }
+    catch (OperationCanceledException)
+    {
+        logger.LogInformation("Operação de chat cancelada pelo cliente.");
+        return Results.StatusCode(499);
+    }
+    catch (Exception e)
+	{
+        logger.LogError(e, "Erro ao processar chat.");
+        return Results.Problem(e.Message);
+    }
 })
 .WithName("Chat");
 
-app.MapPost("/treinar-rag", async (RAGService service, [FromBody] List<RAGItemDTO> itens, CancellationToken cancellationToken) =>
+app.MapPost("/treinar-rag", async ([FromServices] RAGService service, [FromServices] ILogger<Program> logger, [FromBody] List<RAGItemDTO> itens, CancellationToken cancellationToken = default) =>
 {
-    await service.TreinarRAG(itens, cancellationToken);
-    return Results.Ok();
-})
-.WithName("Treinar-rag");
+    if (itens == null || itens.Count == 0)
+        return Results.BadRequest("A lista de itens para treinamento não pode ser vazia.");
 
+    try
+    {
+        await service.TreinarRAG(itens, cancellationToken);
+        return Results.Ok();
+    }
+    catch (OperationCanceledException)
+    {
+        logger.LogInformation("Treinamento RAG cancelado pelo cliente.");
+        return Results.StatusCode(499);
+    }
+    catch (Exception ex)
+    {
+        logger.LogError(ex, "Erro ao treinar RAG");
+        return Results.Problem("Erro interno ao processar o treinamento.");
+    }
+})
+.WithName("Treinar RAG");
 
 app.MapDefaultEndpoints();
 

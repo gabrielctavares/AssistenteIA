@@ -95,23 +95,21 @@
 
         var mensagem = userInput;
         userInput = string.Empty;
-        // Adiciona a mensagem do usuário
+
         messages.Add(new ChatMessage { Autor = "Você", Texto = mensagem });
-        await ScrollToBottomAsync();
 
         isSending = true;
         StateHasChanged();
+        await ScrollToBottomAsync();
 
         try
         {
-            // Chama o Assistente API para obter a resposta
             var resposta = await AssistenteApi.PostMessage(mensagem);
             messages.Add(new ChatMessage { Autor = "Assistente", Texto = resposta.Mensagem, Dados = resposta.Dados });
         }
         catch (Exception ex)
         {
-            // Em caso de erro, exibe mensagem de erro no chat
-            messages.Add(new ChatMessage { Autor = "Erro", Texto = $"Não foi possível obter resposta da IA. {ex}" });
+            messages.Add(new ChatMessage { Autor = "Erro", Texto = $"Não foi possível obter resposta da IA." });
             Console.Error.WriteLine($"Erro ao enviar mensagem: {ex.Message}");
         }
         finally
@@ -119,6 +117,7 @@
             isSending = false;
         }
 
+        StateHasChanged();
         await ScrollToBottomAsync();
     }
 
@@ -132,6 +131,8 @@
 
     private async Task ScrollToBottomAsync()
     {
+        await InvokeAsync(StateHasChanged);
+        await Task.Delay(50);
         await JS.InvokeVoidAsync("scrollToBottom", chatContainer);
     }  
 

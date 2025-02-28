@@ -1,6 +1,4 @@
-﻿
-using AssistenteIA.ApiService.Models;
-using Microsoft.CodeAnalysis.Options;
+﻿using AssistenteIA.ApiService.Models;
 using Microsoft.Extensions.AI;
 using System.Text;
 namespace AssistenteIA.ApiService.Services;

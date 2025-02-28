@@ -1,8 +1,4 @@
-﻿using Dapper;
-using Npgsql;
-using Pgvector.Dapper;
-using System.Data.Common;
-using System.Threading.Tasks;
+﻿using Npgsql;
 
 
 

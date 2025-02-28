@@ -1,5 +1,3 @@
-using System.Text.Json;
-
 namespace AssistenteIA.Web;
 
 public class AssistenteIAApiClient(HttpClient httpClient)

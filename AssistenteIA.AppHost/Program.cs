@@ -8,7 +8,9 @@ var servico2 = builder.AddProject<Projects.AssistenteIA_Servico2>("servico2").Wi
 
 var apiService = builder.AddProject<Projects.AssistenteIA_ApiService>("apiservice")
     .WithReference(servico1)
-    .WithReference(servico2);
+    .WithReference(servico2)
+    .WithReference(cache)
+    .WaitFor(cache);
 
 builder.AddProject<Projects.AssistenteIA_Web>("webfrontend")
     .WithExternalHttpEndpoints()
